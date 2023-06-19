@@ -3,6 +3,6 @@ Materijali za Algebra Front-End Developer tečaj
 
 
 
-Cjeliona HTML
+Cjelina HTML
 
 
