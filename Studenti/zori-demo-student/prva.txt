@@ -1,1 +1,2 @@
 Ovo je moja prva datoteka.
+Dodao sam novi tekst.
