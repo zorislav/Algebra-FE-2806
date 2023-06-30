@@ -17,3 +17,4 @@ Vjezba 5 - AV - Zadatak 1
 6. U dokumentu kreirati neuredjenu listu sa popisom svih podrzanih video formata
 
 7. U dokumentu kreirati video podrucja:
+	- mountains.mp4 pomoću <source> elementa
