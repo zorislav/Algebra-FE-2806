@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadatak5</title>
+</head>
+<body>
+  
+   <canvas id="my canvas1" width="200" height="200"></canvas>
+
+  <script>
+    var canvasEl= document.getElementById("my canvas1");
+    var ctx = canvasEl.getContext ("2d");
+
+    ctx.beginPath();
+    ctx.rect(10,10,90,90);
+    ctx.fillStyle = "#ff6";
+    ctx.fill();
+    ctx.strokeStyle = "red"
+    ctx.lineWidth = 1;
+    ctx.stroke ();
+
+
+    ctx.beginPath();
+    ctx.arc(55,55,30,0,2*Math.PI);
+    ctx.fillStyle = "blue";
+    ctx.fill();
+    ctx.strokeStyle = "black"
+    ctx.lineWidth = 1;
+    ctx.stroke ();
+
+    ctx.beginPath();
+    ctx.rect(37,37,37,37)
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.strokeStyle = "white"
+    ctx.lineWidth = 1;
+    ctx.stroke ();
+
+  </script>
+  </body>
+  </html>
