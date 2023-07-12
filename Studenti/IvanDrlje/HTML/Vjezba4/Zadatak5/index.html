@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+
+    <script>
+        var c=document.getElementById("myCanvas")
+        var ctx=c.getContext("2d");
+
+        //Četverokut
+        ctx.beginPath();
+        ctx.rect(5, 5, 190, 190);
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 8;
+        ctx.stroke();
+        ctx.fillStyle = "yellow"
+        ctx.fill();
+
+        //Krug
+        ctx.beginPath();
+        ctx.arc(100,100,50,0,2*Math.PI);
+        ctx.fillStyle = "blue";
+        ctx.fill()
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 8;
+        ctx.stroke();
+
+        //Četverokut
+        ctx.fillStyle = "white";
+        ctx.fillRect(75,75,50,50);
+    </script>
+</body>
+</html>
