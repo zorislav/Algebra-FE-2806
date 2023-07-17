@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>canvas2</title>
+</head>
+
+<body>
+  <h1>Canvas</h1>
+  <h2>Linija</h2>
+  <canvas id="myCanvas1" width="600" height="200"></canvas>
+  <script>
+   var canvasEl = document.getElementById("myCanvas1");
+   var ctx = canvasEl.getContext("2d");
+
+   ctx.beginPath();
+   ctx.moveTo(30,180)
+   ctx.lineTo(460,30);
+   ctx.lineWidth = 8;
+   ctx.strokeStyle = "#f00";
+   ctx.stroke()
+  </script>
+
+  <h2>Kvadrat</h2>
+  <canvas id="myCanvas2" width="600" height="200"></canvas>
+  <script>
+  var canvasEl = document.getElementById("myCanvas2");
+  var ctx = canvasEl.getContext("2d");
+
+  ctx.beginPath();
+  ctx.rect(20,20,150,150)
+  ctx.fillStyle = "#FF6";
+  ctx.fill()
+
+  ctx.strokeStyle = "#333"
+  ctx.lineWidth = 5;
+  ctx.stroke();
+</script>
+
+
+
+</body>
+</html>
+
+
