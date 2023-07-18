@@ -35,5 +35,43 @@
         ctx.fillStyle = "white";
         ctx.fillRect(75,75,50,50);
     </script>
+
+<br>
+<hr>
+
+<canvas id="myCanvas2" width="200" height="200"></canvas>
+
+<script>
+    var crtanje = document.getElementById("myCanvas2"); //pristupanje elementu
+    var ctx = crtanje.getContext("2d"); //2d crtanje i izrada contekst objekta
+    
+    ctx.beginPath();
+    ctx.rect(10,10,180,180);
+    ctx.strokeStyle = "red";
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    ctx.fillStyle = "#ff6"
+    ctx.fill(); 
+
+
+        ctx.beginPath();
+        ctx.arc(100,100,50,0,2*Math.PI);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+
+        // ctx.fillStyle ="#fff";
+        // ctx.fillRect(75,75,50,50);
+
+        ctx.beginPath();
+        ctx.rect(75,75,50,50);
+        ctx.fillStyle = "#fff";
+        ctx.fill();
+
+
+    
+</script>
 </body>
 </html>
