@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas2</title>
+</head>
+<body>
+    <h1>Canvas</h1>
+    <h2>Linija</h2>
+    <canvas id="myCanvas" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        ctx.beginPath();
+        ctx.moveTo(30, 180);
+        ctx.lineTo(460, 30);
+        ctx.lineWidth = 8;
+        ctx.strokeStyle = "#F00"
+        ctx.stroke();
+    </script>
+    <h2>Kvadrat</h2>
+
+    <canvas id="myCanvas1" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas1"); 
+        var ctx = c.getContext("2d") 
+
+        ctx.beginPath();
+        ctx.rect(20, 20, 150, 150);
+        ctx.fillStyle = "#FF6"
+        ctx.fill();
+
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+
+    <h2>Krug</h2>
+
+    <canvas id="myCanvas2" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas2"); 
+        var ctx = c.getContext("2d") 
+        var centerX = c.width / 2;
+        var centerY = c.height / 2;
+        var radius = 80;
+
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+        ctx.fillStyle = "#F00";
+        ctx.fill();
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+
+<h2>Polukrug</h2>
+
+    <canvas id="myCanvas3" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas3"); 
+        var ctx = c.getContext("2d") 
+        var centerX = c.width / 2;
+        var centerY = c.height / 2;
+        var radius = 80;
+
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, 1 * Math.PI);
+        ctx.fillStyle = "#F00";
+        ctx.fill();
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+
+    <h3>Proizvoljni oblik</h3>
+    <canvas id="myCanvas4" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas4"); 
+        var ctx = c.getContext("2d") 
+        var centerX = c.width / 2;
+        var centerY = c.height / 2;
+        var radius = 80;
+
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, 1 * Math.PI);
+        ctx.fillStyle = "#F00";
+        ctx.fill();
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+
+
+
+
+</body>
+</html>
