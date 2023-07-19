@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+    <script>
+        var canvasEl = document.getElementById("myCanvas");
+        var ctx = canvasEl.getContext("2d");
+        
+        ctx.beginPath();
+        ctx.rect(10,10,180,180);
+        ctx.fillStyle = "#FF6";
+        ctx.fill();
+        ctx.strokeStyle = "#F00";
+        ctx.lineWidht = 5;
+        ctx.stroke();
+
+        var centerX = canvasEl.width / 2;
+        var centerY = canvasEl.height / 2;
+        var radius = 50;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, 2*Math.PI);
+        ctx.fillStyle = "#00F";
+        ctx.fill();
+        ctx.strokeStyle = "#000";
+        ctx.lineWidht = 5;
+
+        ctx.beginPath();
+        ctx.rect(75,75,50,50);
+        ctx.fillStyle = "#FFF";
+        ctx.fill();
+
+        // Bijeli kvadratic - mozemo i ovako 
+        // ctx.fillStyle ="#FFF";
+        // ctx.fillRect(75,75,50,50);
+
+    </script>
+</body>
+</html>
