@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrasci</title>
+  </head>
+  <body>
+    <form action="">
+      <p>
+        <label for="ime">Ime i prezime</label><br />
+        <input
+          id="ime"
+          name="imeiprezime"
+          type="text"
+          size="20"
+          maxlength="40"
+          placeholder="ime i prezime"
+          required
+        />
+      </p>
+      <p>
+        <label for="email">E-mail adresa</label> <br />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          size="30"
+          max="30"
+          placeholder="ime@tvrtka.com"
+          required
+        />
+      </p>
+      <p>
+        <label for="telefon">Telefon</label> <br />
+        <input
+          type="number"
+          name="brojtelefona"
+          id="telefon"
+          placeholder="099/1234-567"
+          pattern="[0-9]{3}/[0-9]{4}-[0-9]{4}"
+        />
+      </p>
+      <p>
+        <label for="pass">Vaša zaporka</label> <br />
+        <input type="password" name="password" id="pass" />
+      </p>
+      <p>
+        <label for="boja">Boja</label>
+        <input type="color" name="moja boja" id="boja" />
+      </p>
+
+      <p>
+        <label for="obavijest">Želim primati obavijesti</label>
+        <input
+          type="checkbox"
+          name="obavijesti"
+          id="obavijest"
+          value="true"
+          checked
+        />
+      </p>
+
+      <p>
+        Ocijenite usluge naše tvrtke <br />
+        <label for="o1">1</label>
+        <input type="radio" name="o" id="o1" value="1" />
+        <label for="o2">2</label>
+        <input type="radio" name="o" id="o2" value="2" />
+        <label for="o3">3</label>
+        <input type="radio" name="o" id="o3" value="3" />
+        <label for="o4">4</label>
+        <input type="radio" name="o" id="o4" value="4" />
+        <label for="o5">5</label>
+        <input type="radio" name="o" id="o5" value="5" />
+      </p>
+    </form>
+  </body>
+</html>
