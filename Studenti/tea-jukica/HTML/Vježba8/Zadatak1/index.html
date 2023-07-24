@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrasci</title>
+</head>
+<body>
+  <form action="">
+    
+    <p>
+      <label for="imeiprezime">Ime i prezime *</label><br>
+      <input type="text" name="ime" id="imeiprezime" placeholder="Vaše Ime i Prezime" required>
+    </p>
+    
+    <p>
+      <label for="email">Email adresa *</label><br>
+      <input type="email" name="mail" id="email" placeholder="Upišite valjanu e-mail adresu" size="40" required>
+    </p>
+
+    <p>
+      <label for="tel">Kontakt broj telefona</label><br>
+      <input type="tel" name="telefon" id="tel">
+    </p>
+
+    <p>
+      <label for="datum">Datum rođenja</label><br>
+      <input type="date" name="datum" id="datum">
+    </p>
+
+    <p>
+      Koji jezik govorite? <br>
+      <label for="eng">Engleski</label>
+      <input type="checkbox" name="jezik" id="eng">
+      <label for="fr">Francuski</label>
+      <input type="checkbox" name="jezik" id="fr">
+      <label for="tal">Talijanski</label>
+      <input type="checkbox" name="jezik" id="tal">
+      <label for="esp">Španjolski</label>
+      <input type="checkbox" name="jezik" id="esp">
+      <label for="de">Njemački</label>
+      <input type="checkbox" name="jezik" id="de">
+    </p>
+
+    <p>
+      Da li ste dosada koristili naše usluge?<br>
+      <label for="da">Da</label>
+      <input type="radio" name="radio" id="da">
+      <label for="ne">Ne</label>
+      <input type="radio" name="radio" id="ne">
+    </p>
+
+    <p>
+      <label for="cv">Priložite životopis</label><br>
+      <input type="file" name="životopis" id="cv">
+    </p>
+    <p>
+      <input type="reset" name="poništi-button" value="Poništi">
+      <input type="submit" name="prijavise-button" value="Prijavi se">
+    </p>
+    
+  </form>
+</body>
+</html>
