@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obrasci</title>
+    <style>
+      #telefon:valid {
+        background-color: lightgreen;
+      }
+      #telefon:invalid {
+        background-color: lightcoral;
+      }
+    </style>
   </head>
   <body>
     <form action="">
@@ -34,11 +42,12 @@
       <p>
         <label for="telefon">Telefon</label> <br />
         <input
-          type="number"
-          name="brojtelefona"
+          type="tel"
+          name="telefon"
           id="telefon"
           placeholder="099/1234-567"
-          pattern="[0-9]{3}/[0-9]{4}-[0-9]{4}"
+          pattern="[0-9]{3}/[0-9]{4}-[0-9]{3}"
+          required
         />
       </p>
       <p>
@@ -73,6 +82,52 @@
         <input type="radio" name="o" id="o4" value="4" />
         <label for="o5">5</label>
         <input type="radio" name="o" id="o5" value="5" />
+      </p>
+      <p>
+        <label for="dokument">Priložite dokument</label> <br />
+        <input id="dokument" type="file" name="dokument" />
+      </p>
+
+      <p>
+        <label for="datum">Odaberite datum</label> <br />
+        <input
+          type="date"
+          name="odabir-datuma"
+          id="datum"
+          min="2019-12-31"
+          max="2022-12-31"
+        />
+      </p>
+
+      <p>
+        <label for="komentar">Upišite komentar</label> <br />
+        <textarea
+          name="upis-komentara"
+          id="komentar"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </p>
+      <p>
+        <label for="grad">Odaberi seminar</label> <br />
+        <select name="gradovi" id="grad">
+          <option value="VŽ">Varaždin</option>
+          <option value="ZG">Zagreb</option>
+          <option value="OG" selected>Ogulin</option>
+        </select>
+      </p>
+      <p>
+        <label for="grad2">Odaberite ili upišite grad</label> <br />
+        <input type="text" name="gradovi2" id="grad2" list="gradovi" />
+        <datalist id="gradovi">
+          <option value="varaždin"></option>
+          <option value="zagreb"></option>
+          <option value="ogulin"></option>
+        </datalist>
+      </p>
+      <p>
+        <input type="reset" name="reset_btn" value="Poništi" />
+        <input type="submit" name="submit_btn" value="Pošalji" />
       </p>
     </form>
   </body>
