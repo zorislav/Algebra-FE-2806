@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrasci</title>
+    <style>
+        #tel:valid {
+            background-color: lightgreen;
+        } 
+        #tel:invalid{
+            background-color: red;
+        } 
+    </style>
 </head>
 <body>
     <form action="">
@@ -18,8 +26,8 @@
 
         </p>
         <p>
-            <label for="">Telefon</label><br>
-            <input type="tel" name="Telefon" type="tel" placeholder="099/1234-123" pattern="[0-9]{3}/[0-9]{4}[0-9]{3}">
+            <label for="tel">Telefon</label><br>
+            <input id="tel" type="tel" name="Telefon" type="tel" placeholder="099/1234-123" pattern="[0-9]{3}/[0-9]{4}[0-9]{3}" required>
         </p>
         <p>
             <label for="pass">Vaša zaporka</label><br>
@@ -45,6 +53,41 @@
             <input type="radio" name="o" id="o4" value="4">
             <label for="o5">5</label>
             <input type="radio" name="o" id="o5" value="5">
+        </p>
+
+        <p>
+            <label for="dokument">Priložite dokument</label><br>
+                <input id="dokument" type="file" name="dokument">
+            
+        </p>
+        <p>
+            <label for="datum">Odaberite datum</label><br>
+            <input id="datum" type="date" name="datum" min="2019-12-31" max="2022-12-31">
+        </p>
+        <p>
+            <label for="komentar">Napišite komentar</label><br>
+             <textarea name="komentar" id="komentar" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <label for="grad">Odaberite seminar</label><br>
+            <select name="grad" id="grad">
+                <option value="london">London</option>
+                <option value="pariz">Pariz</option>
+                <option value="rim">Rim</option>
+            </select>
+        </p>
+        <p>
+            <label for="grad2">Odaberite ili upišite grad</label><br>
+            <input id="grad2" name="grad2" type="text" list="gradovi"> 
+             <datalist id="gradovi">
+                <option value="london"></option>
+                <option value="pariz"></option>
+                <option value="rim"></option>
+             </datalist>
+        </p>
+        <p>
+            <input name="reset_btn" type="reset" value="Poništi">
+            <input name="submit_btn" type="submit" value="Pošalji podatke">
         </p>
     </form>
 </body>
