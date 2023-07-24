@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrasci</title>
+    <style>
+        #tel:valid
+{
+    background-color: lightgreen;
+}
+#tel:invalid 
+{background-color: red;}
+    </style>
 </head>
 <body>
     <form action="">
     <p>
         <label for="ime">Ime i Prezime</label><br>
-        <input id="ime" name= "ime i prezime" type="text" size="50" maxlength="5" placeholder="ime i prezime" required>
+        <input id="ime" name= "ime i prezime" type="text" size="50" maxlength="50" placeholder="ime i prezime" required>
 
     
     </p>
@@ -47,6 +55,41 @@
         <input type="radio" id="o4" name="o1" value="4">
         <label for="o5">5</label>
         <input type="radio" id="o5" name="o1" value="5">
+    </p>
+    <p>
+        <label for="dokument">Prilozite dokument</label><br>
+            <input id="dokument"type="file" name="dokument">
+       
+    </p>
+    <p>
+        <label for="datum">Odaberite datum</label><br>
+        <input id="datum" type="date" name="datum" min="2019-12-31" max="2022-12-31">
+    </p>
+    <p>
+        <label for="komentar">Upisite komentar</label><br>
+        <textarea name="komentar" id="komentar" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        <label for="grad">Odaberite seminar</label><br>
+        <select name="grad" id="grad">
+        <option value="London">London</option>
+        <option value="Pariz">Pariz</option>
+        <option value="Rim">Rim</option>
+    </select> 
+    <p>
+        <label for="grad2">Odaberite ili upisite grad</label><br>
+        <input id="grad2" name="grad2" type="text" list="gradovi">
+        <details id="gradovi">
+        <option value="London">London</option>
+        <option value="Pariz">Pariz</option>
+        <option value="Rim">Rim</option>
+    </details>
+    </p>
+    <p>
+        <input name="reset_btn" type="reset" value="Ponisti">
+        <input name="submit_btn" type="submit" value="Posalji">
+    </p>
+        
     </p>
 
     </form>
