@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <p>
+        <label for="ime">Ime i prezime*</label><br />
+        <input
+          id="ime"
+          name="imeiprezime"
+          type="text"
+          size="50"
+          maxlength="50"
+          placeholder="Vaše ime i prezime"
+          required
+        />
+      </p>
+      <p>
+        <label for="e-mail">E-mail adresa*</label><br />
+        <input
+          id="e-mail"
+          name="e-mail"
+          type="email"
+          size="30"
+          maxlength="20"
+          placeholder="Upišite valjanu e-mail adresu"
+          required
+        />
+      </p>
+      <p>
+        <label for="kontakt">Kontakt broj telefona</label><br />
+        <input
+          id="kontakt"
+          name="kontakt"
+          type="tel"
+          size="30"
+          maxlength="20"
+        />
+      </p>
+      <p>
+        <label for="datum">Datum rođenja</label><br />
+        <input
+          id="datum"
+          name="datum"
+          type="date"
+          size="30"
+          maxlength="20"
+        />
+      </p>
+      <p>
+        Koje jezike govorite?<br>
+        <label for="engleski">Engleski</label>
+        <input type="checkbox" id="engleski" name="engleski" value="Engleski">
+        <label for="talijanski">Talijanski</label>
+        <input type="checkbox" id="talijanski" name="talijanski" value="Talijanski">
+        <label for="njemački">Njemački</label>
+        <input type="checkbox" id="njemački" name="njemački" value="Njemački">
+        <label for="francuski">Francuski</label>
+        <input type="checkbox" id="francuski" name="francuski" value="Francuski">
+        <label for="španjolski">Španjolski</label>
+        <input type="checkbox" id="španjolski" name="španjolski" value="Španjolski">
+        </p>
+        <p>
+          Da li ste do sada koristili usluge naše tvrtke?<br>
+          <label for="da">Da</label>
+          <input type="radio" id="da" name="o" value="Da">
+          <label for="ne">Ne</label>
+          <input type="radio" id="ne" name="o" value="Ne">
+        </p>
+        <p>
+         <label for="dokument" >Priložite životopis</label><br>
+         <input type="file" id="dokument" name="dokument">
+        </p>
+        <p>
+          <input type="reset" name="reset_btn" value="Poništi">
+          <input type="submit" name="submit_btn" value="Pošalji">
+        </p>
+    </form>
+  </body>
+</html>
