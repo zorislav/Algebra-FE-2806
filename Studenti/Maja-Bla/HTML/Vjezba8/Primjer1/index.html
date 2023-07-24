@@ -47,6 +47,46 @@
 <input type="radio" name="o" id="o5" value="4">
 </p>
 
+<p>
+<label for="dokument">Priložite dokument</label> <br>
+<input id="dokument" type="file" name="dokument">
+</p>
+
+<p>
+  <label for="datum">Odaberite datum</label>
+  <input id="datum" type="date" name="datum" min="2019-12-31" max="2022-12-31">
+</p>
+
+<p>
+  <label for="komentar">Upišite komentar</label><br>
+  <textarea name="komentar" id="komentar" cols="30" rows="10"></textarea>
+</p>
+
+
+<p>
+<label for="grad">Odaberite seminar</label> <br>
+<select name="grad" id="grad">
+  <option value="London">London</option>
+  <option value="Pariz">Pariz</option>
+  <option value="Rim" selected>Rim</option>
+</select>
+</p>
+
+<p>
+  <label for="grad2"></label>Odaberite ili upišite grad<br>
+  <input id="grad2"  name="grad2" type="text" list="gradovi">
+  <datalist id="gradovi"> 
+    <option value="London"></option>
+    <option value="Pariz"></option>
+    <option value="Rim"></option>
+  </datalist>
+</p>
+
+<p>
+  <input name="reset_btn" type="reset" value="Poništi">
+  <input name="subimt_btn" type="submit" value="Pošalji">
+</p>
+
   </form>
 
 </body>
