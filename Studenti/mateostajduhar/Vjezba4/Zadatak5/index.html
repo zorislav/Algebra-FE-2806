@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="mojcanvas" width="200" height="200"></canvas>
+    <script>
+        var mojCanvas = document.getElementById("mojcanvas");
+        var ctx = mojCanvas.getContext("2d");
+
+        ctx.beginPath("");
+        ctx.rect(10,10,100,100);
+        ctx.strokeStyle = "red";
+        ctx.lineWidth - 5;
+        ctx.stroke();
+        ctx.fileStyle = "#ff6"
+        ctx.fill();
+
+        ctx.beginPath("");
+        ctx.arc(100,100,50,0,2 *Math.PI)
+        ctx.fillStyle = "blue";
+        ctx.fill();
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.ract(75,75,50,50);
+        ctx.fillStyle = "#fff"
+        ctx.fill();
+
+
+    </script>
+</body>
+</html>
