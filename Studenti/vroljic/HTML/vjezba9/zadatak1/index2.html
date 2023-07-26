@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress-bar-container {
+        width: 160px;
+        height: 6px;
+        background-color: lightgrey;
+        border: 1px solid gray;
+        border-radius: 6px;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 75%;
+            background-color: blue;
+            border-radius: 6px 0 0 6px;
+
+        }
+    </style>
+</head>
+<body>
+    <a href="#" role="button" >Slijedeća stranica</a><br>
+    <progress id="percent-loading" aria-valuenow="75" aria-valuemax="100"></progress>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
+
+</body>
+</html>
