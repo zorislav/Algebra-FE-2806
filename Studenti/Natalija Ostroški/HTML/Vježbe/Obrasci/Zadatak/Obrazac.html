@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrasci</title>
+  </head>
+  <body>
+    <p>
+      <label for="ime">Ime i prezime *</label> <br />
+      <input
+        type="text"
+        name="imeiprezime"
+        id="ime"
+        placeholder="Vaše ime i prezime"
+        required
+      />
+    </p>
+    <p>
+      <label for="mail">E-mail adresa *</label> <br />
+      <input
+        type="email"
+        name="email_adresa"
+        id="mail"
+        size="25"
+        maxlength="35"
+        placeholder="Upišite valjanu e-mail adresu"
+        required
+      />
+    </p>
+    <p>
+      <label for="broj">Kontakt broj telefona</label> <br />
+      <input type="tel" name="broj_telefona" id="broj" />
+    </p>
+    <p>
+      <label for="datum">Datum rođenja</label> <br />
+      <input type="date" name="datum_rođenja" id="datum" />
+    </p>
+    <p>
+      Koje jezike govorite? <br />
+      <label for="eng">Engleski</label>
+      <input type="checkbox" name="Engleski" id="eng" value="Engleski" />
+
+      <label for="tal">Talijanski</label>
+      <input type="checkbox" name="Talijanski" id="tal" value="Talijanski" />
+
+      <label for="njem">Njemački</label>
+      <input type="checkbox" name="Njemački" id="njem" value="Njemački" />
+
+      <label for="fran">Francuski</label>
+      <input type="checkbox" name="Francuski" id="fran" value="Francuski" />
+
+      <label for="spa">Španjolski</label>
+      <input type="checkbox" name="Španjolski" id="spa" value="Španjolski" />
+    </p>
+    <p>
+      Da li ste do sada koristili usluge naše tvrtke? <br />
+      <label for="yes">Da</label>
+      <input type="radio" name="odabir" id="yes" value="da" />
+      <label for="no">Ne</label>
+      <input type="radio" name="odabir" id="no" value="ne" />
+    </p>
+    <p>
+      <label for="doc">Priložite životopis</label> <br />
+      <input type="file" name="životopis" id="doc" />
+    </p>
+    <p>
+      <input type="reset" name="reset_btn" value="Poništi" />
+      <input type="submit" name="submit_btn" value="Prijavi se" />
+    </p>
+  </body>
+</html>
