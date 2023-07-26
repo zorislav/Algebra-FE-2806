@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=, initial-scale=1.0">
@@ -18,7 +19,7 @@
   <form action="">
     <p>
       <label for="ime">Ime i prezime</label><br>
-      <input id="ime" name="imeiprezime" type="text" size="50" maxlength="5" placeholder="ime i prezime" required>
+      <input id="ime" name="imeiprezime" type="text" size="50" maxlength="50" placeholder="ime i prezime" required>
     </p>
 
     <p>
@@ -85,19 +86,16 @@
         <option value="london">London</option>
         <option value="pariz">Pariz</option>
         <option value="rim" selected>Rim </option>
-   
       </select>
     </p>
 
     <p>
-      <label for="grad">Odaberite seminar</label> <br>
-      <input id=grad2 name="grad" type="text" list="gradovi">
+      <label for="grad2">Odaberite ili upišite grad</label> <br>
+      <input id=grad2 name="grad2" type="text" list="gradovi">
       <datalist id="gradovi" >
-      <select name="grad" id="grad">
         <option value="london"></option>
         <option value="pariz"></option>
         <option value="rim"> </option>
-        </select>
       </datalist>
     </p>
 
