@@ -1,4 +1,4 @@
-Vjezba 2 - Tekst - Primjer 2
+Vjezba 3 - Tekst - Primjer 2
 
 1. Kreirati html5 dokument osnovne strukture imena index.html
 
