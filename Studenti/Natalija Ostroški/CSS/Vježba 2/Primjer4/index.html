@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selektori HTML elemenata</title>
+    <style>
+      body {
+        color: #333;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+      }
+      [title] {
+        text-decoration: underline solid red;
+      }
+      [title="prvi odlomak"] {
+        font-weight: bold;
+      }
+      [title*="odlomak"] {
+        color: darkgreen;
+      }
+      [title~="odlomak"] {
+        text-transform: uppercase;
+      }
+      [title^="odlomak"] {
+        font-style: italic;
+      }
+      [title|="odlomak"] {
+        font-family: "Courier New", Courier, monospace;
+      }
+      [title$="odlomak"] {
+        color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 title="Naslov stranice">Labore veniam dolore eiusmod.</h1>
+    <h2>Sunt non ipsum adipisicing .</h2>
+    <h3>Velit amet sit dolore.</h3>
+    <p title="prvi odlomak">
+      Cillum consequat officia aute minim sunt laboris amet non quis irure officia excepteur deserunt. Nisi culpa laborum duis
+      esse exercitation culpa sit nulla commodo pariatur aliquip veniam qui. Sit adipisicing aliqua consectetur nisi.
+    </p>
+    <p title="odlomak-2">
+      Incididunt consequat dolor dolor enim elit aliquip esse non elit sint. Velit minim velit ad reprehenderit. Pariatur cillum
+      duis consequat veniam do exercitation sit sunt nisi exercitation aute.
+    </p>
+    <p title="odlomak 3">
+      Cillum <strong>rminim <span title="adipisicing">labore ut in</span> id anim enim</strong>. Reprehenderit nulla mollit
+      occaecat voluptate nisi et consequat cupidatat tempor sint. Incididunt cupidatat consectetur sunt exercitation qui esse et
+      quis tempor reprehenderit esse aute laborum duis. Duis eiusmod anim magna in labore adipisicing exercitation.
+    </p>
+    <p title="odlomakbla">
+      Incididunt consequat <strong title="adipisicing">dolor <span>dolor enim</span> elit aliquip</strong> esse non elit sint.
+      Velit minim velit ad reprehenderit. Pariatur cillum duis consequat veniam do exercitation sit sunt nisi exercitation aute.
+    </p>
+    <p>
+      Cillum minim <strong>labore <span title="adipisicing">ut in id</span> anim enim</strong>. Reprehenderit nulla mollit
+      occaecat voluptate nisi et consequat cupidatat tempor sint. Incididunt cupidatat consectetur sunt exercitation qui esse et
+      quis tempor reprehenderit esse aute laborum duis. Duis eiusmod anim magna in labore adipisicing exercitation.
+    </p>
+  </body>
+</html>
