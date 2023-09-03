@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrasci</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label for="ime">Ime i prezime</label>
+            <input id="ime" name="Ime i prezime" type="text" size="50" maxlength="10" placeholder="Ime i prezime" required>
+        </p>
+        <p>
+            <label for="email">E-mail adresa *</label>
+            <input id="email" name="email" type="email" size="30" maxlength="20" placeholder="ime@tvrta.com" required>
+        </p>
+        <p>
+            <label for="tel">Kontakt broj telefona</label>
+            <input id="tel" name="tel" type="tel" placeholder="099/1234-123" pattern="[0-9]{3}/[0-9]{4}[0-9]{3}" required>
+        </p>
+        <p>
+            <label for="datum">Datum rođenja</label>
+            <input id="datum" name="date" type="date" >
+        </p>
+
+        <p>
+            Koje jezike govorite
+            <label for="o1">Engleski</label>
+            <input type="radio" name="o" id="o1" value="1">
+            <label for="o2">Talijanski</label>
+            <input type="radio" name="o" id="o2" value="2">
+            <label for="o3">Njemački</label>
+            <input type="radio" name="o" id="o3" value="3">
+            <label for="o4">Francuski</label>
+            <input type="radio" name="o" id="o4" value="4">
+            <label for="o5">Španjolski</label>
+            <input type="radio" name="o" id="o5" value="5">
+        </p>
+
+        <p>
+            Da li ste do sada koristili usluge naše tvrtke?
+            <label for="o1">Da</label>
+            <input type="radio" name="o" id="o1" value="1">
+            <label for="o2">Ne</label>
+            <input type="radio" name="o" id="o2" value="2">
+            
+        </p>
+
+        <p>
+            <label for="dokument">Priložite životopis</label><br>
+            <input id="dokument" type="file" name="dokument">
+        </p>
+        <p>
+            <input name="reset_btn" type="reset" value="Poništi">
+            <input name="submit_btn" type="submit" value="Prijavi se">
+        </p>
+
+
+
+
+    </form>
+</body>
+</html>

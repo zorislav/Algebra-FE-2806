@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Obrasci</title>
+</head>
+<body>
+  
+  <form action=""></form>
+    <p>
+      <label for="ime">Ime i prezime*</label><br>
+      <input id="imeiprezime" type="text" size="40" maxlength="30" placeholder="Vaše ime i prezime" required>
+    </p>
+
+    <p>
+      <label for="E-mail">E-mail adresa*</label><br>
+      <input id="e-mail" type="e-mail" size="60" maxlength="30" placeholder="Upišite valjanu e-mail adresu" required>
+    </p>
+
+    <p>
+      <label for="tel">Kontakt broj telefona*</label><br>
+      <input id="tel" type="tel" size="50" maxlength="20" required>
+    </p> 
+
+    <p>
+      <label for="datum">Datum rođenja</label><br>
+      <input id="datum" type="date" name="datum">
+   </p>
+
+   <p>
+    Koje jezike govorite?<br>
+    <label for="engleski">Engleski</label>
+    <input id="engleski" name="jezik" type="checkbox" value="engleski">
+    
+    <label for="talijanski">Talijanski</label>
+    <input id="talijanski" name="jezik" type="checkbox" value="talijanski">
+    
+  
+    <label for="njemački">Njemački</label>
+    <input id="njemački" name="jezik" type="checkbox" value="njemački">
+    
+    <label for="francuski">Francuski</label>
+    <input id="francuski" name="jezik" type="checkbox" value="francuski">
+    
+    <label for="španjolski">Španjolski</label>
+    <input id="španjolski" name="jezik" type="checkbox" value="španjolski">
+  </p>
+
+<p>
+ Da li ste do sada koristili usluge naše tvrtke?<br>
+  <label for="usluge">Da</label>
+  <input type="radio" name="usluge" id="usluge" value="yes">
+  <label for="usluge">Ne</label>
+  <input type="radio" name="usluge" id="usluge" value="no">
+</p>
+
+<p>
+  <label for="cv">Priložite životopis</label><br>
+  <input id="cv" name="cv" type="file">
+</p>
+
+<p>
+  <input type="reset" name="reset_btn" value="Poništi">
+  <input type="submit" name="submit_btn" value="Prijavi se">
+</p>
+
+</body>
+</html>
