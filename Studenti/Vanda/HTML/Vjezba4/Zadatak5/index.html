@@ -1,35 +1,51 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Canvas</title>
 </head>
+
 <body>
-  <canvas id="myCanvas" width="200" height="200"></canvas>
+ <canvas id="mojCanvas" width="200" height="200"> </canvas> 
+<script>
+  var c=document.getElementById("mojCanvas");
+  var ctx=c.getContext ("2d");
+  
+  ctx.beginPath();
+  ctx.rect(0,0,200,200);
+  ctx.fillStyle="yellow";
+  ctx.fill();
+  ctx.strokeStyle="grey";
+  ctx.lineWidth=3;
+  ctx.stroke();
+ 
+  ctx.beginPath();
+  ctx.arc(100,100,70, 0,2*Math.PI);
+  ctx.fillStyle="grey";
+  ctx.fill();
+  ctx.strokeStyle="black";
+  ctx.lineWidth=1;
+  ctx.stroke();
 
-  <script>
-      var c=document.getElementById("myCanvas")
-      var ctx=c.getContext("2d");
+  
+  ctx.beginPath();
+  ctx.rect(90,90,50,50);
+  ctx.fillStyle="yellow";
+  ctx.fill();
+  ctx.strokeStyle="black";
+  ctx.lineWidth=0,5;
+  ctx.stroke();
+ 
+  
+  // ctx.fillStyle = "yellow";
+  // ctx.fillRect(90,90,50,50);
 
-      ctx.beginPath();
-      ctx.rect(10, 10, 180, 180);
-      ctx.strokeStyle = "green";
-      ctx.lineWidth = 5;
-      ctx.stroke();
-      ctx.fillStyle = "#FF6"
-      ctx.fill();
 
-      ctx.beginPath();
-      ctx.arc(100,100,50,0,2*Math.PI);
-      ctx.fillStyle = "grey";
-      ctx.fill()
-      ctx.strokeStyle = "black";
-      ctx.lineWidth = 5;
-      ctx.stroke();
-
-      ctx.fillStyle = "#FFFFFF";
-      ctx.fillRect(75,75,50,50);
-  </script>
+</script>
 </body>
+
 </html>
