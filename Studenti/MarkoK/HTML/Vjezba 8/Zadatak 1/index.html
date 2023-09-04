@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Obrasci</title>
+</head>
+<body>
+  <form action="" name="prijava" method="post" enctype="multipart/form-data" autocomplete="on">
+    <p>
+      <label for="ime">Ime i prezime *</label><br>
+      <input type="text" id="ime" name="ime" placeholder="Vase ime i prezime" required>
+    </p>
+
+    <p>
+      <label for="email">E-mail adresa *</label><br>
+      <input type="email" name="email" id="email" placeholder="Upisite valjanu e-mail adresu" required size="40">
+    </p>
+
+    <p>
+      <label for="tel">Kontakt broj telefona</label><br>
+      <input type="tel" id="tel" name="tel">
+    </p>
+
+    <p>
+      <label for="datum">Datum rodjenja</label><br>
+      <input type="date" name="datum" id="datum">
+    </p>
+
+    <p>
+      Koje jezike govorite?<br>
+      <label for="jezik1">engleski</label>
+      <input type="checkbox" id="jezik1" name="engleski" value="engleski" checked>
+      <label for="jezik2">francuski</label>
+      <input type="checkbox" id="jezik2" name="francuski" value="francuski">
+      <label for="jezik3">njemacki</label>
+      <input type="checkbox" id="jezik3" name="njemacki" value="njemacki">
+      <label for="jezik4">talijanski</label>
+      <input type="checkbox" id="jezik4" name="talijanski" value="talijanski">
+      <label for="jezik5">svedski</label>
+      <input type="checkbox" id="jezik5" name="svedski" value="svedski">
+    </p>
+
+    <p>
+      Jeste li dosad koristili usluge nase tvrtke?<br>
+      <input type="radio" id="da" name="da" value="yes">
+      <label for="da">Da</label>
+      <input type="radio" id="ne" name="ne" value="no">
+      <label for="ne">Ne</label>
+    </p>
+
+    <p>
+      <label for="file">Prilozite zivotopis *</label><br>
+      <input type="file" id="file" name="file" multiple required>
+    </p>
+    
+    <p>
+      <input type="reset" name="reset_btn" value="Ponisti">
+      <input type="submit" name="submit_btn" value="Prijavi se">
+    </p>
+  </form>
+</body>
+</html>
