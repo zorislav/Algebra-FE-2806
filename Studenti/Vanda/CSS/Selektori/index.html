@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selektori</title>
+  <style>
+    a[title] {
+      color:green
+    }
+
+    a[href="http://example.org"] {
+      color:red
+    }
+
+    a[href*="primjer.org"] {
+      color:blue
+    }
+
+    a[href$=".com"] {
+      color:yellow
+    }
+
+    p:hover {
+     background-color: indigo;
+    }
+
+    div::selection {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <a title href="">Prvi a element</a>
+  <a  href="http://example.org">Drugi a element</a>
+  <a  href="http://primjer.org">Treci a element</a>
+  <a  href="http://primjer.com">Cetvrti a element</a>
+  <p> Moj p element</p>
+  <div>Moj proizvoljni sadržaj</div>
+</body>
+</html>

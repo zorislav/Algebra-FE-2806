@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selektori atributa</title>
+    <style>
+      body {
+        color: #333;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+      }
+
+      [title]{
+        text-decoration: underline solid red;
+      }
+
+      [title="Prvi odlomak"]{
+        font-weight: bold;
+      }
+
+      [title*="odlomak"]{
+        color: darkgreen;
+      }
+
+      [title~="odlomak"]{
+        text-transform: uppercase;
+      }
+
+      [title^="odlomak"]{
+        font-style: italic;
+      }
+
+      [title|="odlomak"]{
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      [title$="odlomak"]{
+        color: darkorange;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <h1 title="Naslov stranice">
+      Non ea ullamco esse excepteur elit ad dolor non duis cupidatat do
+      cupidatat.
+    </h1>
+    <h2>
+      Eiusmod enim labore do aliqua nostrud ea nulla sunt cupidatat mollit ex
+      elit.
+    </h2>
+    <h3>
+      Quis magna dolore irure veniam nostrud anim ipsum ullamco enim incididunt
+      nulla aute Lorem.
+    </h3>
+    <p title="Prvi odlomak">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+      voluptate eius quia laborum nobis consequuntur, officia voluptatibus rem
+      nemo corrupti possimus quam, molestias magnam maxime maiores iure nam! In,
+      itaque.
+    </p>
+    <p title="odlomak-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+      exercitationem unde corporis itaque in obcaecati iure modi delectus
+      voluptatum et sit sequi molestias dolores. Optio velit nobis deserunt
+      iusto aspernatur.
+    </p>
+    <p title="odlomak 3">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, optio
+      debitis eligendi, eius obcaecati hic impedit rem aliquam velit vitae
+      itaque, eveniet voluptates ipsum? Blanditiis consectetur quas repellendus
+      minima esse.
+    </p>
+    <p title="odlomakbla">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, optio
+      debitis eligendi, eius obcaecati hic impedit rem aliquam velit vitae
+      itaque, eveniet voluptates ipsum? Blanditiis consectetur quas repellendus
+      minima esse.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit <span title="amet consectetur ">amet consectetur </span>adipisicing elit. Tempora, optio
+      debitis eligendi, eius obcaecati hic impedit rem aliquam velit vitae
+      itaque, eveniet voluptates ipsum? Blanditiis consectetur quas repellendus
+      minima esse.
+    </p>
+
+  </body>
+</html>

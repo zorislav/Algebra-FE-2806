@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selektori atributa</title>
+    <style>
+      body {
+        color: #333;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+      }
+
+      [title] {
+      text-decoration: underline solid red;
+    }
+
+    [title="Prvi odlomak"] {
+      font-weight: bold;
+    }
+
+    [title*=odlomak] {
+      color: darkgreen;
+    }
+
+    [title~=odlomak] {
+      text-transform: uppercase;
+    }
+
+    [title~=odlomak] {
+      text-transform: uppercase;
+    }
+
+    [title^=odlomak] {
+      text-transform: uppercase;
+    }
+
+     /* navedani izraz nalazi se na početku vrijednosti atributa  */
+     [title^="odlomak"] {
+            font-style: italic;
+        }
+
+        /* navedani izraz nalazi se na početku vrijednosti atributa odvojen znakom '-' */
+        [title|="odlomak"] {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* navedani izraz nalazi se na završetku vrijednosti atributa  */
+        [title$="odlomak"] {
+            color: darkorange;
+        }
+    </style>
+   
+  </head>
+  <body>
+    <h1 title="Naslov stranice">Et excepteur tempor minim do aliquip laborum.</h1>
+    <h2>Elit laboris officia reprehenderit exercitation exercitation.</h2>
+    <h3>
+      Excepteur sunt excepteur irure ut culpa reprehenderit occaecat pariatur
+      Lorem in duis.
+    </h3>
+
+    <p title="Prvi odlomak">
+      Sint fugiat enim aliquip amet dolore id esse minim dolore veniam occaecat
+      do cillum. Enim tempor mollit irure magna labore. Cupidatat ea tempor et
+      anim exercitation nulla. Qui adipisicing esse voluptate do ad. Et cillum
+      amet labore consequat ipsum labore aliqua mollit. Esse est tempor dolor
+      reprehenderit magna esse ea id. Do aliqua sit ea laborum adipisicing.
+    </p>
+    <p title="odlomak-2">
+      Et et reprehenderit pariatur ullamco dolor tempor officia deserunt. Enim
+      in enim officia ipsum sunt aliquip adipisicing anim. Aute cupidatat ex
+      deserunt voluptate.
+    </p>
+    <p title="odlomak 3">
+      Incididunt veniam mollit est duis enim irure dolore aliqua. Anim in aliqua
+      sint laboris esse laborum irure culpa sunt. Culpa fugiat ullamco anim amet
+      labore aute.
+    </p>
+
+    <p title="odlomakbla">
+      Esse eu ipsum incididunt consectetur est eiusmod. Incididunt nostrud elit
+      consequat minim. Ad velit minim aliquip do. Nisi ea commodo mollit nulla
+      dolor dolore esse pariatur irure laboris sint laborum.
+    </p>
+    <p>
+      Nulla laborum ullamco cupidatat non ipsum sint non amet sunt ut eu
+      proident. Eu ex sunt cillum consequat. Excepteur qui labore exercitation
+      ipsum pariatur nostrud. Cillum nisi proident quis commodo consectetur et
+      cupidatat ex dolor minim. Sunt voluptate ea ea consectetur sunt duis culpa
+      excepteur enim.
+    </p>
+  </body>
+</html>
