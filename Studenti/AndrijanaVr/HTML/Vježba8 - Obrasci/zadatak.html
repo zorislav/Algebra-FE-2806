@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrasci</title>
+</head>
+
+<body>
+  <form action="">
+    <p>
+      <label for="imeiprezime">Ime i prezime*</label><br>
+      <input type="text" name="ime" id="imeiprezime" required placeholder="Ana Horvat" maxlength="40">
+    </p>
+    <p>
+      <label for="mail">E-mail adresa*</label><br>
+      <input type="email" name="email" id="email" required placeholder="upišite vašu mail adresu">
+    </p>
+    <p>
+      <label for="tel">Kontakt borj telefona</label><br>
+      <input type="tel" name="telefon" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="000-111-222"
+        size="11">
+    </p>
+    <p>
+      <label for="datum">Datum rođenja</label><br>
+      <input type="date" name="date" min="1920-01-01" max="2005-01-01" id="datum">
+    </p>
+    <p>
+      Koliko jezika govorite? <br>
+      <label for="eng">Engleski</label>
+      <input type="checkbox" name="eng" id="eng">
+      <label for="tal">Talijanski</label>
+      <input type="checkbox" name="tal" id="tal">
+      <label for="njem">Njemački</label>
+      <input type="checkbox" name="njem" id="njem">
+      <label for="fran">Francuski</label>
+      <input type="checkbox" name="fran" id="fran">
+      <label for="spain">Španjolski</label>
+      <input type="checkbox" name="spain" id="spain">
+    </p>
+    <p>
+      Da li ste do sada koristili usluge naše tvrtke? <br>
+      <label for="da">Da</label>
+      <input type="radio" name="checkbox" id="da">
+      <label for="ne">Ne</label>
+      <input type="radio" name="checkbox" id="ne">
+    </p>
+    <p>
+      <label for="doc">Priložite životopis</label>
+      <input type="file" id="doc" name="životopis">
+    </p>
+    <p>
+      <input type="reset" name="reset_btn" value="poništi">
+      <input type="submit" name="submit_btn" value="pošalji">
+    </p>
+  </form>
+</body>
+
+</html>

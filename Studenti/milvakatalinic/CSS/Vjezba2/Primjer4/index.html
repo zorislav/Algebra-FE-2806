@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori HTML elemenata</title>
+</head>
+<style>
+    body{
+        color: #333;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        
+        }
+        [title]{
+            text-decoration: underline solid red;
+        }
+        [title="Prvi odlomak"]{
+            font-weight: bold;
+        }
+        [title*=odlomak]{
+            color: darkgreen;
+       
+        }
+        [title~=odlomak]{
+            text-transform: uppercase;
+        }
+        [title^=odlomak]{
+            font-style: italic;
+        }
+        [title|=odlomak]{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        [title$=odlomak]{
+            color: darkorange;
+        }
+</style>
+
+<body>
+    <h1 title="Naslov stranice">Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nulla
+    </h2>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <p title="Prvi odlomak">
+        Proident consequat mollit amet veniam id proident sint in officia qui amet eu tempor ex. Tempor do aliquip excepteur quis non deserunt enim. Lorem occaecat velit nulla nisi ut exercitation ex cupidatat.Mollit ipsum consequat anim irure nisi laborum ea nisi magna. Ut Lorem labore dolore incididunt do voluptate cillum deserunt labore mollit dolore irure. Duis voluptate exercitation sit adipisicing labore fugiat officia ad do voluptate do ut. In nisi reprehenderit consequat aliqua dolore. Eu occaecat ex amet reprehenderit minim laborum excepteur est dolore. Enim duis irure culpa veniam eiusmod qui.</p>
+    <p title="odlomak-2">
+        Eiusmod sit esse amet dolore quis veniam ut et tempor. Officia sit cupidatat et deserunt. Aliqua laboris excepteur veniam dolore elit mollit irure cillum dolor proident adipisicing labore irure nulla.</p>
+    <p title="odlomal 3">Nulla deserunt eiusmod sit ea ea id <strong>est aliqua <span title="velit">velit</span> consequat</strong> dolor est. Nostrud aliqua mollit fugiat ut non voluptate amet. Adipisicing occaecat dolor sunt cupidatat laborum irure elit eu qui sit sint excepteur ut sint. Quis enim incididunt aliqua non reprehenderit ad laboris commodo deserunt anim id eu.</p> 
+    <p>
+        Labore ipsum consequat occaecat <span title>adipisicing </span> elit veniam. Nostrud nulla anim labore elit officia ex culpa anim eu cillum aliquip. Anim adipisicing ullamco amet in nostrud exercitation. Esse mollit laborum nulla dolor enim reprehenderit excepteur elit non nulla non. Anim fugiat amet voluptate culpa id. Dolor cillum culpa culpa nisi pariatur deserunt. In tempor fugiat nisi mollit anim sunt ex.
+    </p>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selektori atributa</title>
+    <style>
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        [title] {
+            text-decoration: underline solid red;
+        }
+
+        [title="Prvi odlomak"] {
+            font-weight: bold;
+        }
+
+        [title*="odlomak"] {
+            color: darkgreen;
+        }
+
+        [title~="odlomak"] {
+            text-transform: uppercase;
+        }
+
+        [title^="odlomak"] {
+            font-style: italic;
+        }
+
+        [title|="odlomak"] {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        [title$="odlomak"] {
+            color: darkorange;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1 title="Naslov stranice">Ipsum cillum laborum.</h1>
+    <h2>Quis sit nisi sunt cupidatat laborum consequat non veniam.</h2>
+    <h3>
+      Amet ut pariatur enim reprehenderit enim laboris enim ipsum deserunt enim
+      reprehenderit exercitation cupidatat magna.
+    </h3>
+    <p title="Prvi odlomak">
+      Culpa ea ex eiusmod Lorem qui aliquip elit. Ea magna eiusmod ullamco ad
+      nostrud nulla quis enim quis est esse amet incididunt. Commodo in dolore
+      deserunt labore tempor magna laborum eiusmod.
+    </p>
+    <p title="odlomak-2">
+      Culpa ea ex eiusmod Lorem qui aliquip elit. Ea magna eiusmod ullamco ad
+      nostrud nulla quis enim quis est esse amet incididunt. Commodo in dolore
+      deserunt labore tempor magna laborum eiusmod.
+    </p>
+    <p title="odlomak 3">
+      Ea magna eiusmod ullamco ad
+      nostrud nulla quis enim quis est esse amet incididunt. Commodo in dolore
+      deserunt labore tempor magna laborum eiusmod.
+    </p>
+    <p title="odlomakbla">
+      Elit tempor commodo ad aliqua cillum anim magna duis. Do laboris labore
+      laboris dolore commodo reprehenderit mollit ullamco consectetur. Sint quis
+      culpa eu dolore labore. Qui veniam exercitation enim officia ullamco
+      dolor. Aliquip aliquip proident deserunt reprehenderit aliquip esse amet
+      et sit officia ipsum adipisicing. Ea magna et commodo eu voluptate ad
+      incididunt ut quis. Dolor culpa velit ad sunt ipsum laborum pariatur
+      officia ad nulla.
+    </p>
+    <p>
+        Elit tempor commodo ad aliqua cillum anim magna duis. Do laboris labore
+        laboris dolore commodo reprehenderit mollit ullamco consectetur. Sint quis
+        culpa eu dolore labore. Qui veniam <span title>exercitation</span> enim officia ullamco
+        dolor. Aliquip aliquip proident deserunt reprehenderit aliquip esse amet
+        et sit officia ipsum adipisicing. Ea magna et commodo eu voluptate ad
+        incididunt ut quis. Dolor culpa velit ad sunt ipsum laborum pariatur
+        officia ad nulla.
+    </p>
+  </body>
+</html>
