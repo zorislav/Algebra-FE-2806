@@ -1,0 +1,24 @@
+div {
+    background-color: #eee;
+    border: 20px solid #999;
+    height: 900px;
+    width: 900px;
+    margin: 2em auto;
+}
+
+div > div {
+    height: 50%;
+    width: 50%;
+}
+
+div > div:first-child {
+    background-color: #e55b56;
+    margin: 0 auto auto 0;
+    border: none;
+}
+
+div > div:last-child {
+    background-color: #5599ff;
+    margin: auto 0 0 auto;
+    border: none;
+}
