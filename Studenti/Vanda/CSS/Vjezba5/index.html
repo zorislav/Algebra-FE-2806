@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasljeđivanje CSS svojstava</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+      }
+      p {
+        color: #060;
+      }
+      em {
+        color: aqua;
+      }
+      strong {
+        text-decoration: underline wavy red;
+      }
+      span {
+        font-weight: normal;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      #div1 {
+        background-color: red; /* inherit; */
+        border: 5px solid blue;
+        padding: 10px;
+       box-sizing: border-box;   /* content-box */
+      }
+      .klasa1 {
+       background-color: blue; /* !important; inherit; */
+      }
+       /* padding: padding-top padding-right padding-bottom padding-left;
+       padding: padding-top padding-left&padding-right padding-bottom;
+       padding: padding-top&padding-bottom padding-left&padding-right;
+       padding: padding-top&padding-bottom&padding-left&padding-right; */
+      
+
+    
+    </style>  
+  </head>
+  <body>
+    <h1>Ad mollit consequat ex ex cillum.</h1>
+    <h2>Sunt ex veniam mollit sunt est dolor.</h2>
+    <h3>Mollit id id veniam ad Lorem.</h3>
+    <h4>Ullamco quis Lorem reprehenderit occaecat.</h4>
+    <p>
+      Aliquip proident commodo dolor adipisicing deserunt reprehenderit labore
+      occaecat occaecat consequat officia aute. Aliquip reprehenderit id et
+      pariatur do quis. Proident veniam velit officia occaecat sit consequat do.
+      Aliquip proident commodo dolor adipisicing deserunt reprehenderit labore
+      occaecat occaecat consequat officia aute. Aliquip reprehenderit id et
+      pariatur do quis. Proident veniam velit officia occaecat sit consequat do.
+    </p>
+    <p>
+      Aliquip proident commodo dolor adipisicing deserunt reprehenderit labore
+      occaecat occaecat consequat officia aute. Aliquip reprehenderit id et
+      pariatur do quis. Proident veniam velit officia occaecat sit consequat do.
+      Aliquip proident commodo dolor adipisicing deserunt reprehenderit labore
+      occaecat occaecat consequat officia aute. Aliquip reprehenderit id et
+      pariatur do quis. Proident veniam velit officia occaecat sit consequat do.
+    </p>
+    <p>
+      Aliquip proident commodo <strong>dolor adipisicing <span>deserunt</span> reprehenderit labore</strong>
+      occaecat occaecat consequat officia aute. Aliquip reprehenderit id et
+      pariatur do quis. Proident veniam velit officia occaecat sit consequat do.
+      Aliquip proident commodo  <em>dolor adipisicing deserunt reprehenderit</em> labore
+      occaecat occaecat consequat officia aute. Aliquip reprehenderit id et
+      pariatur do quis. Proident veniam velit officia occaecat sit consequat do.
+    </p>
+    <div style="background-color: yellow;">
+          <div id="div1" class="klasa1" style="background-color: #060;"></div>
+    </div>
+  </body>
+</html>
