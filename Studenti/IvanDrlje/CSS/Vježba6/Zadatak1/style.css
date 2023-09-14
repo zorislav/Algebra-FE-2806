@@ -1,0 +1,39 @@
+body {
+    font-family:  Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+div {
+    background-color: #eee;
+    text-align: justify;
+}
+
+#div1{
+    border: 3px solid #666;
+    margin: 2em auto;
+    padding: 2em;
+    width: 300px;
+}
+
+#div2 {
+    border: 5px dashed #666;
+    margin: 2em 0 2em auto; /*ovo će biti centrirano desno, jer je desni margin 0, a lijevi auto*/
+    padding: 2em 4em;
+    width: 25%;
+}
+
+.div3 {
+    border-right: 8px double #666;
+    margin: 2em auto 2em 0; /*ovo je onda centrirano lijevo iz istih razloga kao gore*/
+    padding: 5px 20px 30px 50px;
+    width: 30em;
+}
+
+.div4 {
+    border-top: 4px dashed #666;
+    border-bottom: 6px dotted #333;
+    padding: 10px;
+    width: 80%;
+}
