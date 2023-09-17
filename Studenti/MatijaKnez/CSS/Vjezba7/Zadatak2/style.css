@@ -1,0 +1,7 @@
+img {
+    size: 20%;
+    display: block;
+    border: 2px solid #666;
+    padding: 3em;
+    margin: 3em auto;
+}

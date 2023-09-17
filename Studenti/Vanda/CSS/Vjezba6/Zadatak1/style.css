@@ -1,0 +1,39 @@
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  
+}
+
+div {
+  text-align: justify;
+  background-color: #eee; 
+}
+
+.div1 {
+  width: 25%;
+  border: solid 5px #666;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.div2 {
+  border: dashed 5px #666;
+  padding: 40px;
+  margin: 2em 0 2em auto;
+  width: 25%;  
+}
+
+.div3 {
+  border-right: double 5px #666;
+  padding: 10px;
+  margin: 2em auto 2em 0;
+  width: 40%;
+}
+
+.div4 {
+  border-top:dashed 5px #999;
+  border-bottom:dotted 5px #333;
+  margin: 50px 200px 50px 200px;
+}
