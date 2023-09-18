@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 1px;
+  border: 2px solid #a4a0a0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-top: 2px;
+  text-align: center;
+  border: 2px solid rgb(90, 185, 185);
+  background-color: rgb(183, 229, 213);
+  flex-basis: 33%
+}
