@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori HTML elemenata</title>
+    <style>
+
+        body {
+            color: #333; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+        [title]{
+            text-decoration: underline solid red;
+        }
+        [title="Prvi odlomak"]{
+            font-weight: bold;   
+        }
+        [title*="odlomak"]{
+            color: darkgreen;
+        }
+        [title~="odlomak"]{
+            text-transform: uppercase;
+        }
+        [title|="odlomak"]{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        [title$="odlomak"]{
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1 title="Naslov stranice">Sint enim ut magna in incididunt anim.</h1>
+    <h2>Elit commodo dolore nostrud veniam in exercitation irure anim.</h2>
+    <h3>Reprehenderit qui consequat ipsum magna magna laboris deserunt occaecat cupidatat eiusmod tempor reprehenderit nisi aliqua.</h3>
+    <p title="Prvi odlomak">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestias ad commodi, totam aliquid quae, saepe reiciendis quod nulla temporibus cupiditate voluptates odio non earum! Deleniti recusandae quas nemo dolores.</p>
+    <p title="odlomak-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis ab voluptate incidunt id aliquam autem fugit, distinctio dolor voluptatem a accusamus, sit assumenda, magni quibusdam explicabo et voluptas perferendis!</p>
+    <p title="odlomak 3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illum totam sint vitae dolor culpa debitis labore necessitatibus, saepe sunt eligendi temporibus quia cum aperiam. Eveniet perferendis quod aliquam praesentium?</p>
+    <p title="odlomakbla">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque minima repudiandae autem, officiis voluptatibus quo provident voluptatem corrupti ducimus quas molestiae accusamus dolorum doloribus optio dolores. Eveniet fuga excepturi voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet, <span title="consectetur">consectetur adipisicing</span> elit. Incidunt officiis fugit ad nesciunt reiciendis non voluptas eius, similique perferendis natus ut, reprehenderit dignissimos veritatis voluptatum! Eligendi veritatis alias similique illum.</p>
+</body>
+</html>
