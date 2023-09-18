@@ -1,0 +1,40 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0
+}
+
+div {
+    background-color: #eee;
+    text-align: justify;
+}
+
+#div1 {
+    border: 5px solid #555;
+    width: 300px;
+    padding: 2em;
+    margin: 2em auto;
+}
+
+#div2 {
+    border: 5px dashed #555;
+    width: 500px;
+    padding: 2em 4em;
+    margin: 2em 0em 2em auto;
+}
+
+#div3 {
+    border-right: 6px double #555;
+    width: 400px;
+    padding: 0em 1em 1.5em 3em; 
+    margin-bottom: 2em;
+}
+
+#div4 {
+    border-top: 4px dashed #999;
+    border-bottom: 6px dotted #333;
+    width: 75%;
+    padding: 0.5em;
+    margin: 1em auto 0em auto;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasljeđivanje CSS svojstava</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #333;
+            font-size: 20px;
+            text-align: center;
+        }
+        p {
+            color: #060;
+        }
+        em {
+            color: aqua
+        }
+        strong {
+            text-decoration: underline wavy red;
+        }
+        span {
+            font-weight: normal;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        #div1 {
+            background-color: red;
+        }
+        .klasa1 {
+            background-color: blue !important;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Excepteur exercitation nulla do occaecat</h1>
+    <h2>Qui ea nulla proident mollit cupidatat id nostrud irure</h2>
+    <h3>Excepteur exercitation nulla do occaecat</h3>
+    <h4>Qui ea nulla proident mollit cupidatat id nostrud irure</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure
+      quam sit vel, unde ducimus excepturi fugit quo? Incidunt quae quos iste
+      qui, explicabo ut distinctio natus quibusdam hic laboriosam?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure
+      quam sit vel, unde ducimus excepturi fugit quo? Incidunt quae quos iste
+      qui, explicabo ut distinctio natus quibusdam hic laboriosam?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure
+        quam sit vel, unde ducimus excepturi fugit quo? Incidunt quae quos iste
+        qui, explicabo ut distinctio natus quibusdam hic laboriosam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure
+        quam sit vel, unde ducimus excepturi fugit quo? Incidunt quae quos iste
+        qui, explicabo ut distinctio natus quibusdam hic laboriosam?
+      </p>
+      <p>
+        Lorem <strong>ipsum dolor sit <span>amet</span> consectetur</strong> adipisicing elit. Reiciendis iure
+        quam sit vel, unde ducimus excepturi fugit quo? Incidunt quae quos iste
+        qui, explicabo ut distinctio natus quibusdam hic laboriosam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure
+        quam sit vel, unde <em>ducimus excepturi fugit</em> quo? Incidunt quae quos iste
+        qui, explicabo ut distinctio natus quibusdam hic laboriosam?
+      </p>
+      <div id="div1" class="klasa1"></div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasljeđivanje CSS svojstava</title>
+    <style>
+      body{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       color:#333;
+       font-size:20px;
+       text-align: center;
+      }
+      p{
+        color:green
+      }
+      em{
+        color:aqua;
+      }
+      strong{
+        text-decoration: underline wavy red;
+      }
+      span{
+        font-weight: normal;
+      }
+      div{
+        width: 200px;
+        height: 200px;
+      }
+      #div1{
+        background-color: red;
+        border: 5px solid blue;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .klasa1{
+        background-color: inherit;
+        /*padding: padding-top padding-right padding-bottom padding-left;
+        padding: padding-top padding-left&padding-right padding-bottom;
+        padding: padding-top&padding-bottom padding-left&padding-right;
+        padding: padding-top&paddingrigt&padding-bottom&padding-left;*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Est mollit dolore proident</h1>
+    <h2>Amet laboris dolore eu nostrud</h2>
+    <h3>Ut Lorem aliquip nostrud sunt</h3>
+    <p>
+      Elit ut magna nostrud ut reprehenderit veniam cupidatat. Proident et
+      excepteur commodo labore. Lorem proident est in officia labore irure ex
+      dolore aliquip occaecat minim eu ad magna. Ipsum consectetur ullamco quis
+      sit reprehenderit consequat qui qui magna proident. Elit incididunt
+      pariatur et ullamco nisi aute magna eiusmod sit aliquip irure veniam.
+      Elit ut magna nostrud ut reprehenderit veniam cupidatat. Proident et
+      excepteur commodo labore. Lorem proident est in officia labore irure ex
+      dolore aliquip occaecat minim eu ad magna. Ipsum consectetur ullamco quis
+      sit reprehenderit consequat qui qui magna proident. Elit incididunt
+      pariatur et ullamco nisi aute magna eiusmod sit aliquip irure veniam.
+    </p>
+    <p>Elit ut magna nostrud ut reprehenderit veniam cupidatat. Proident et
+      excepteur commodo labore. Lorem proident est in officia labore irure ex
+      dolore aliquip occaecat minim eu ad magna. Ipsum consectetur ullamco quis
+      sit reprehenderit consequat qui qui magna proident. Elit incididunt
+      pariatur et ullamco nisi aute magna eiusmod sit aliquip irure veniam.
+      Elit ut magna nostrud ut reprehenderit veniam cupidatat. Proident et
+      excepteur commodo labore. Lorem proident est in officia labore irure ex
+      dolore aliquip occaecat minim eu ad magna. Ipsum consectetur ullamco quis
+      sit reprehenderit consequat qui qui magna proident. Elit incididunt
+      pariatur et ullamco nisi aute magna eiusmod sit aliquip irure veniam.
+    </p>
+    <p>Elit ut magna nostrud <strong>ut reprehenderit <span>veniam</span> cupidatat</strong>. 
+      Proident et excepteur commodo labore. Lorem proident est in officia labore irure ex
+      dolore aliquip occaecat minim eu ad magna. Ipsum consectetur ullamco quis
+      sit reprehenderit consequat qui qui magna proident. Elit incididunt
+      pariatur et ullamco nisi aute magna eiusmod sit aliquip irure veniam.
+      Elit ut magna nostrud ut reprehenderit veniam cupidatat. Proident et
+      excepteur commodo labore. <em>Lorem proident est in</em> officia labore irure 
+      ex dolore aliquip occaecat minim eu ad magna. Ipsum consectetur ullamco quis
+      sit reprehenderit consequat qui qui magna proident. Elit incididunt
+      pariatur et ullamco nisi aute magna eiusmod sit aliquip irure veniam.
+    </p>
+    <div style="background-color: yellow;">
+      <div id="div1" class="klasa1" style="background-color: #060;"></div>
+  </div>
+    
+  </body>
+</html>

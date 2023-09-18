@@ -1,0 +1,20 @@
+.div1{
+  background-color: lightgray;
+  border: 20px solid grey;
+  margin: 40px auto;
+  height: 800px;
+  width: 800px;
+  align-items: center;
+}
+.div2{
+  height: 50%;
+  width: 50%;
+  background-color: lightcoral;
+}
+.div3{
+  background-color: blue;
+  height: 50%;
+  width: 50%;
+  margin-left: 50%;
+  
+}
