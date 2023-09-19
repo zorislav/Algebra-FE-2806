@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 3px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.item {
+  width: 350px;
+  height: 75px;
+  text-align: center;
+  border: 2px solid rgb(90, 185, 185);
+  background-color: rgb(183, 229, 213);
+
+}
