@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transformacije</title>
+    <!-- <link rel="stylesheet" href="style.css"> --> 
+    <!-- OVAJ DOKUMENT POSLI UKLJUČIT OVO JE BILO SAMO ZA MATRIX -->
+    <style>
+        #div1{
+            position: relative;
+            top: 500px;
+            left: 300px;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        #div2 {
+            position: relative;
+            top: 600px;
+            left: 300px;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        #div1:hover {
+            transform: translateY(50px) translateX(50px) scaleY(2) skewX(45deg) skewY(0) scaleX(2);
+
+        }
+        #div2:hover {
+            transform: matrix(2,0,1,2,50,50)
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transformacije</h1>
+    <div class="translate"></div>
+    <div class="rotate"></div>
+    <div class="scale"></div>
+    <div class="skew"></div>
+    <div class="multiple"></div>
+    <div class="multiple2"></div>
+
+    <br>
+    <hr>
+    <br>
+    <div id="div1">1</div>
+    <div id="div2">2</div>
+
+</body>
+</html>
