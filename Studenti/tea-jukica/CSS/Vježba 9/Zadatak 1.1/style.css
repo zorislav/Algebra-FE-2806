@@ -1,0 +1,14 @@
+.div1{
+  border: 1px dashed #666;
+  height: 600px;
+  padding: 1px;
+  display: flex;
+}
+.div1 div{
+  background-color: #eee;
+  border: 1px solid #666;
+  width: 32%;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+}
