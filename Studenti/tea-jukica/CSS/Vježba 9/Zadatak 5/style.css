@@ -1,0 +1,18 @@
+*{
+  box-sizing: border-box;
+}
+.div1{
+  padding: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: space-between;
+}
+.div1 div{
+  background-color: #eee;
+  border: 1px solid #666;
+  width: 23%;
+  height: 80px;
+  margin: 8px;
+  text-align: center;
+}
