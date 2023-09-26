@@ -1,0 +1,36 @@
+* {
+  margin:0;
+ box-sizing:border-box;
+}
+
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  color:gray ;
+}
+
+
+.wrapper {
+  border: 2px dashed gainsboro;
+  min-height: 100vh;
+  padding: 1px;
+}
+
+.wrapper div {
+  background: gainsboro;
+  border:2px solid darkgray;
+  padding:1em;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+ 
+ .item {
+  flex-basis: 33%;
+  height: 23%;
+ }
+ 

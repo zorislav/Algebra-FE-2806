@@ -1,0 +1,22 @@
+* {
+  margin:0;
+ box-sizing:border-box;
+}
+
+.container {
+  padding: 4px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.item {
+  flex-basis: 32%;
+  width:24%;
+  text-align: center;
+  border: 2px solid gainsboro;
+  background-color: aqua;
+}
