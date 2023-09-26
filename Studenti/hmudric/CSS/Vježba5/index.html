@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasljeđivanje CSS svojstava</title>
+
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      p {
+        color: #060;
+      }
+
+      em {
+        color: aqua;
+      }
+
+      strong {
+        text-decoration:underline wavy red;
+      }
+
+      span {
+        font-weight:normal ;
+      }
+
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      #div1 {
+        background-color: red;
+        border: 1px solid blue;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .klasa1 {
+        background-color:inherit;
+        /* padding: padding-top padding-right padding-bottom padding-left; */
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <h1>Anim proident esse nulla</h1>
+    <h2>Esse non ad excepteur</h2>
+    <h3>Ipsum commodo dolore sit qui</h3>
+    <h4>Aliqua eiusmod veniam aute aute</h4>
+
+    <p>
+      Occaecat velit minim ea id aliqua sit et aliquip ipsum commodo occaecat
+      occaecat. Non duis reprehenderit amet anim aliquip laborum veniam eiusmod
+      exercitation deserunt. Dolore aute et amet deserunt duis. Proident ex ex
+      quis aute excepteur ipsum. Reprehenderit sint amet sint in mollit labore
+      non non esse id est. Magna ex minim proident eiusmod reprehenderit ut
+      nostrud do fugiat eu magna aute dolore. Amet labore ipsum eiusmod enim
+      tempor enim ad esse esse non veniam.
+    </p>
+
+    <p>
+      Occaecat velit minim ea id aliqua sit et aliquip ipsum commodo occaecat
+      occaecat. Non duis reprehenderit amet anim aliquip laborum veniam eiusmod
+      exercitation deserunt. Dolore aute et amet deserunt duis. Proident ex ex
+      quis aute excepteur ipsum. Reprehenderit sint amet sint in mollit labore
+      non non esse id est. Magna ex minim proident eiusmod reprehenderit ut
+      nostrud do fugiat eu magna aute dolore. Amet labore ipsum eiusmod enim
+      tempor enim ad esse esse non veniam.
+    </p>
+
+    <p>
+      Occaecat velit <strong>minim ea id <span>aliqua</span> sit et aliquip</strong>  ipsum commodo occaecat
+      occaecat. Non duis reprehenderit amet anim aliquip laborum veniam eiusmod
+      exercitation deserunt. Dolore aute et amet deserunt duis. Proident ex ex
+      quis aute excepteur ipsum. Reprehenderit <em>sint amet sint in mollit labore</em> 
+      non non esse id est. Magna ex minim proident eiusmod reprehenderit ut
+      nostrud do fugiat eu magna aute dolore. Amet labore ipsum eiusmod enim
+      tempor enim ad esse esse non veniam.
+    </p>
+    <div style="background-color: yellow;">
+       <div id="div1" class="klasa1" style="background-color: #060;"></div>
+    </div>
+
+   
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori atributa</title>
+
+    <style>
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        [title]{
+            text-decoration: underline solid red;
+        }
+        [title="Prvi odlomak"]{
+            font-weight: bold;
+        }
+        [title*="odlomak"]{
+            color: darkgreen;
+        }
+
+        [title~="odlomak"]{
+            text-transform: uppercase;
+            }
+            [title^="odlomak"]{
+             font-style: italic;
+            }
+            [title|="odlomak"]{
+             font-family: 'Courier New', Courier, monospace;
+            }
+            [title$="odlomak"]{
+             color: darkorange;
+            }
+            
+
+
+    </style>
+</head>
+<body>
+    
+        <h1 title="Naslov stranice">Aliqua incididunt ullamco elit est et non occaecat tempor culpa.</h1>
+        <h2 >Ipsum minim cillum voluptate fugiat sunt veniam labore et ut anim.</h2>
+        <h3>Eiusmod esse nulla exercitation consequat do.</h3>
+        <p title="Prvi odlomak">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste modi suscipit unde quis, explicabo, sequi vel error eos aperiam sunt quia omnis ipsam ab aspernatur, accusantium illo natus distinctio.</p>
+        <p title="odlomak-2">Ea consectetur enim nisi in in duis nostrud ipsum laborum. Est quis ex ut laborum fugiat. Veniam consectetur pariatur eiusmod cupidatat excepteur irure magna est magna. Nostrud et ea pariatur ex velit reprehenderit. Nostrud excepteur officia sunt in pariatur amet aute deserunt nulla pariatur reprehenderit. Pariatur deserunt sunt consequat anim duis do laboris.</p>
+        <p title="odlomak 3">Officia reprehenderit ex ea ad dolor. Ipsum cillum in amet do duis. Minim Lorem dolor id ipsum anim ad eiusmod exercitation dolore.</p>
+        <p title="odlomakbla">Sint cupidatat ad minim fugiat ea dolor aliquip sint pariatur irure aute minim occaecat. Amet voluptate dolore in laborum cillum dolore consequat in irure officia qui anim. Mollit incididunt dolor id aliquip do occaecat do adipisicing esse. Laborum culpa aute duis laboris enim excepteur magna mollit. Voluptate laborum dolor in ea ipsum labore in. Elit fugiat aliquip incididunt tempor Lorem aliquip officia laboris laboris veniam eiusmod labore. Aliquip ut in proident cillum qui proident ad consectetur.</p>
+        <p>Anim exercitation <span title="irure">irure cupidatat</span> proident in ipsum pariatur excepteur ad excepteur irure veniam aliquip eu. Eiusmod proident ut aliquip ullamco irure eu et exercitation exercitation nostrud laboris. Culpa laborum velit officia nulla in quis nulla commodo.</p>
+    
+
+</body>
+</html>

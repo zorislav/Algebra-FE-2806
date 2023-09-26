@@ -1,0 +1,29 @@
+body {
+    font-family: Tahoma, sans-serif;
+  	font-size: 16px;
+  	color: #333;
+  	margin: 0;
+}
+
+body > div {
+    background-color: #999;
+    border: 20px solid #666;
+    height: 800px;
+    margin: 2em auto;
+    width: 800px;
+}
+
+#div1 {
+    height: 400px;
+    width: 400px;
+    background: #f66;
+    margin: 0 auto 0 0; 
+
+}
+
+#div2 {
+    width: 400px;
+    height: 400px;
+    background: #69f;
+    margin: 0 0 0 auto;
+}
