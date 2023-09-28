@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+   
+}
+
+h1 {
+    text-align: center;
+  
+}
+
+section {
+    text-align: center; /* s ovim sam centrira elemente jer su u inline-box*/
+}
+
+div {
+    background-color: #f93;
+    border: 4px solid #333;
+    font-size: 2em;
+    width: 100px;
+    height: 100px;
+    line-height: 95px; 
+    text-align: center;
+    margin: 1em;
+    position: relative;
+    border-radius: 100%; 
+    display: inline-block;
+    
+}
+
+
+@keyframes animacija1 { 
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+        background-color: red;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes animacija2 { 
+    0% {
+        transform: translate(0,0) scale(1) rotate(0);
+    }
+    50% {
+        transform: translate(0,300px) scale(0.6) rotate(360deg);
+    }
+    100% {
+        transform: translate(0,0) scale(1) rotate(0);
+    }
+}
+
+
+div:first-of-type {
+    /* animation: animacija1 1s ease-in-out infinite; */ /*ovo je ovo sve dolje u jednom pravilu*/
+    animation-name: animacija1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+ div:nth-of-type(2) {
+    animation-name: animacija2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+} 
+
+
+@keyframes animacija3 { 
+    0% {
+       transform: rotate(0);
+       border-radius: 100%;
+    }
+    50% {
+       transform: rotate(180deg);
+       border-radius: 0;
+    }
+    100% {
+       transform: rotate(360deg);
+       border-radius: 100%; 
+    }
+}
+
+div:nth-of-type(3) {
+    animation-name: animacija3;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacija4 { 
+    0% {
+      transform: translate(0,0);
+      
+    }
+    50% {
+       transform: translate(0, -20px);
+        
+    }
+    100% {
+     
+        transform: translate(0,0);
+    }
+}
+
+div:nth-of-type(4) {
+    animation-name: animacija4;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+div:nth-of-type(4):hover {
+   animation-play-state: paused;/*kad dođemo na njega mišom zaustavi se*/
+}
+
+@keyframes animacija5 { 
+    0% {
+       top: 0;
+    }
+
+    25% {
+        top: 600px;
+        background-color: #f93;
+        transform: rotate(0deg);
+    }
+   
+    50% {
+       background-color: red;
+       transform: rotate(360deg);
+    }
+
+    75% {
+        top: 600px;
+        background-color: #f93;
+        transform: rotate(0deg);
+    }
+
+    100% {
+       top: 0;
+        
+    }
+}
+
+
+div:nth-of-type(5) {
+    animation-name: animacija5;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes animacija6 { 
+    0% {
+     transform: scale(1);
+      
+    }
+    50% {
+       transform: scale(2);
+        
+    }
+    100% {
+     
+     transform: scale(1);
+    }
+}
+
+
+div:nth-of-type(6):hover {/*ovdi se minja samo na prelaz miša, ne na reload stranice*/
+    animation-name: animacija6;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+
+

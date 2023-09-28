@@ -1,0 +1,24 @@
+* {
+ box-sizing:border-box 
+}
+
+.container {
+  display: flex;
+  padding: 2%;
+  border: 2px dotted #333;
+  height: 600px;
+  justify-content: space-evenly;
+  gap: 1em;
+  flex-flow: column;
+ }
+
+ .item {
+  border: 2px solid #333;
+  text-align: center;
+  background-color:gainsboro;
+  flex-basis: 100%;
+  height:auto;
+ }
+
+ 
+ 
