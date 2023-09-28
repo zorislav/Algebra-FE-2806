@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.flex-container > *, section {
+    padding: 10px;
+}
+
+header, footer {
+    background-color: #999;
+    flex: 0 100%;
+    height: 10vh;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 100%;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+section {
+    background-color: #eee;
+    flex: 0 100%;
+    height: 24%;
+    /*
+        flex: <flex-grow> <flex-shrink> <flex-basis>
+        flex: <flex-grow> <flex-shrink> ili flex: <flex-grow> <flex-basis>
+        flex: <flex-grow> ili flex: <flex-basis>
+    */
+}
+
+@media (min-width: 480px) {
+    section {
+        height: 24%;
+    }
+    section:not(:first-child, :last-child) {
+        flex: 0 49%;
+        height: 49%;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        flex: 0 49%;
+        height: 49%;
+    }
+}
+
+@media (min-width: 1024px) {
+    section, section:not(:first-child, :last-child) {
+        flex: 0 24%;
+        height: 100%;
+    }
+}
