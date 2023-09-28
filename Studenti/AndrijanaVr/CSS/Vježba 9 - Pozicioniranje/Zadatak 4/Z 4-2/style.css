@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 3px;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.item {
+  flex-basis: 25%;
+  height: 150px;
+  text-align: center;
+  border: 2px solid rgb(90, 185, 185);
+  background-color: rgb(183, 229, 213);
+
+}

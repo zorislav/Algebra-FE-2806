@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori atributa</title>
+    <style>
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+
+        [title]{
+            text-decoration: underline solid red;
+        }
+
+
+        [title = prvi-odlomak]{
+            font-weight: bold;
+        }
+
+        [title*="odlomak"] {
+            color: darkgreen;
+        }
+
+        [title~="odlomak"] {
+            text-transform: uppercase;
+        }
+
+        [title^="odlomak"] {
+            font-style: italic;
+        }
+
+        [title|="odlomak"] {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        [title$="odlomak"] {
+            color: darkorange;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 title="Naslov-stranice">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+    <p title="prvi-odlomak">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aspernatur odio velit unde a dolores, vel alias assumenda ad! 
+        Autem obcaecati maiores nostrum 
+        earum. Impedit deleniti, quis dignissimos labore atque 
+        accusantium?</p>
+    <p title="Odlomak-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aspernatur odio velit unde a dolores, vel alias assumenda ad! 
+        Autem obcaecati maiores nostrum 
+        earum. Impedit deleniti, quis dignissimos labore atque 
+        accusantium?</p>
+    <p title="Odlomak-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aspernatur odio velit unde a dolores, vel alias assumenda ad! 
+        Autem obcaecati maiores nostrum 
+        earum. Impedit deleniti, quis dignissimos labore atque 
+        accusantium?</p>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+    <p title="Odlomak-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aspernatur odio velit unde a dolores, vel alias assumenda ad! 
+        Autem obcaecati maiores nostrum 
+        earum. Impedit deleniti, quis dignissimos labore atque 
+        accusantium?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aspernatur odio velit unde a dolores, vel alias assumenda ad! 
+        Autem obcaecati maiores nostrum 
+        earum. Impedit deleniti, quis dignissimos labore atque 
+        accusantium?</p>
+    <p>Lorem ipsum <strong>dolor sit <span title="amet consectetur">amet consectetur</span>amet consectetur adipisicing</strong>dolor sit amet consectetur adipisicing elit. 
+        Aspernatur odio velit unde a dolores, vel alias assumenda ad! 
+        Autem obcaecati maiores nostrum 
+        earum. Impedit deleniti, <em>quis dignissimos labore</em>quis dignissimos labore atque 
+        accusantium?</p>
+</body>
+</html>

@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-body>div {
+body > div {
   background-color: #eee;
   border: 20px solid #999;
   height: 800px;
@@ -15,18 +15,17 @@ body>div {
 }
 
 div > div {
-  background-color: lightcoral;
-  height: 400px;
-  width: 400px;
+  height: 50%;
+  width: 50%;
 }
 
 div > div:first-child {
-  background: lightcoral;
+  background: #f66;
 }
 
 div > div:last-child {
-  background: lightblue;
-  margin-left: auto;
+  background: #69e;
   margin-right: 0;
+  margin-left: auto;
 }
 

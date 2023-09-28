@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  width: 350px;
+  height: 150px;
+  background-color: rebeccapurple;
+  border: 1px solid #333;
+  color: azure;
+  font-size: 36px;
+  text-align: center;
+  margin: 4em auto;
+  padding: 50px 0;
+}
+
+.prvi {
+  transition: color 1s ease, width 1s ease, background-color 1s ease;
+}
+
+.prvi:hover {
+  width: 600px;
+  background-color: rgb(207, 176, 238);
+  color: #333;
+}
+
+.drugi {
+  transition: transform 2s ease-in;
+}
+
+.drugi:hover {
+  transform: rotate(360deg);
+}
+
+.treci {
+  transition: transform 1.5s ease-in;
+}
+
+.treci:hover {
+  transform: translate(150px, 25px) rotate(90deg);
+}
+
+.cetvrti {
+  transition: background-color 0.5s linear, color 0.5s ease, height 1s ease, transform 2s ease-out;
+}
+
+.cetvrti:hover {
+  background-color: yellow;
+  color: blueviolet;
+  height: 200px;
+  transform: translate(0, 300px);
+}

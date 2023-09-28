@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float - clear</title>
+    <style>
+        .box1 {
+            width: 700px;
+            height: 300px;
+            border: 2px solid red;
+            background-color: lightblue;
+            overflow: hidden; /*kada sadržaj curi iz elementa, on briše višak*/
+            /*da smo stavili scroll mogli smo skrolati ostatak*/
+        }
+        img {
+            float: right;
+        }
+        #div1 {
+            background-color: yellow;
+            float: right;
+        }
+        #div2 {
+            background-color: green;
+            clear: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <img src="coffee-cup(1).png" alt="coffee" width="150" height="150">
+        <p>Conmji ur mollit do veniam eu id sint anim deserunt. Exercitation nisi adipisicing labore nostrud ad laboris irure sint velit cillum nisi excepteur. Incididunt in anim ex aute eiusmod nostrud culpa duis tempor enim dolore. Fugiat nostrud voluptate consequat in officia enim magna.</p>
+    </div>
+
+    <div class="box1">
+        <div id="div1">Prvi dio</div>
+        <div id="div2">Drugi dio</div>
+    </div>
+    
+</body>
+</html>
