@@ -2,9 +2,11 @@ body {
   font-family: tahoma, sans-serif;
 }
 
-header, footer, article {
-  background-color: #333;
-  color: #eee;
+header,
+footer,
+article {
+  background-color: #eee;
+  color: #333;
   /* true or false */
   margin: 1em;
   padding: 2em;

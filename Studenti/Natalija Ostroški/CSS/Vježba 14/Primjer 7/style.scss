@@ -1,29 +1,26 @@
 $color1: #eee;
-$color2:  #333;
+$color2: #333;
 $color3: #800;
 $font1: tahoma, sans-serif;
-
-@mixin theme-colors($light-theme: true){
+@mixin theme-colors($light-theme: true) {
   @if $light-theme {
     background-color: $color1;
     color: $color2;
-  }
-  @else {
+  } @else {
     background-color: $color2;
     color: $color1;
   }
 }
-
-@mixin spacing($margin, $padding){
+@mixin spacing($margin, $padding) {
   margin: $margin;
   padding: $padding;
 }
-
-body{
+body {
   font-family: $font1;
 }
-
-header, footer, article {
-  @include theme-colors($light-theme: false); /* true or false */
-  @include spacing(1em, 2em)
+header,
+footer,
+article {
+  @include theme-colors($light-theme: true); /* true or false */
+  @include spacing(1em, 2em);
 }
