@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  color: #333;
+  font-family: Tahoma, sans-serif;
+  content: "di si?";
+}
+
+div {
+  margin: 0 0 1em 0;
+  padding: 0;
+  background-color: #333;
+  color: #eee;
+}
+
+.col-8:after {
+  content: "8";
+}
+
+.col-7:after {
+  content: "7";
+}
+
+.col-6:after {
+  content: "6";
+}
+
+.col-5:after {
+  content: "5";
+}
+
+.col-4:after {
+  content: "4";
+}
+
+.col-3:after {
+  content: "3";
+}
+
+.col-2:after {
+  content: "2";
+}
+
+.col-1:after {
+  content: "1";
+}/*# sourceMappingURL=style.css.map */
