@@ -1,0 +1,67 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+  
+}
+
+h1 {
+text-align: center;
+
+}
+
+div{
+  background-color: #f93;
+  border: 1px solid #333;
+  width: 300px;
+  height: 150px;
+  margin: 4em auto;
+}
+.translate {
+  transform: translate(150px, -20px);
+}
+
+.rotate{
+  transform: rotate(30deg);
+}
+.scale{
+  transform: scale(0.5,0.3);
+}
+.skew{
+  transform: skew(20deg, 15deg);
+}
+
+.multiple{
+  transform: rotate(30deg) scale(0.5, 0.3) skew(20deg, 15deg) ; 
+}
+.multiple2{
+  transform: skew(20deg, 15deg) rotate(30deg) scale(0.5, 0.3) ;
+}
+/* Matrica */
+#div1{
+  position: relative;
+  top: 500px;
+  left: 300px;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+#div2{
+  position: relative;
+  top: 500px;
+  left: 300px;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+#div1:hover{
+  transform: translateY(50px) translateX(50px) scaleY(2) skewX(45deg) skewY(0) scaleX(2);
+}
+#div2:hover{
+  transform: matrix(2,0,1,2,50,50);
+}
