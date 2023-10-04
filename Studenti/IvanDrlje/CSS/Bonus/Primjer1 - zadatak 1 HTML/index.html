@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simole website using HTML only</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="banner.jpeg" link="black" alink="blue" vlink="black">
+
+   <header id="header-container">
+    <p id="logo">LOGO</p>
+    <nav>
+        <ul id="inner-header-container">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">VIDEOS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    
+     <!-- <div>
+         <h3>
+             <font face="sans-serif" size="6" color="black">LOGO</font>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         
+             
+    
+        <font size="4" face="sans">
+              <a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;<!--ovo su razmaci između elemenata po starim pravilima-->
+              <!-- <a href="#">VIDEOS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#portfolio">PORTFOLIO</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#">BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#contact">CONTACT US</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </font size="4">
+         </h3>
+     </div> --> 
+   
+
+     <main>
+        <section id="section-title">
+            <h1>SIMPLE AND ONE PAGE WEBSITE</h1>
+            <h3>USING HTML ONLY(NO CSS USED)</h3>
+            <ul>
+                <li><a href="#">GET STARTED</a></li>
+                <li><a href="#">SUBSCRIBE US</a></li>
+            </ul>
+        </section>
+
+        <section id="section-portfolio">
+           <div id="portfolio">
+             <hr>
+             <p>PORTFOLIO</p>
+             <hr>
+           </div>
+
+           <div id="image-grid">
+            <div>
+                <img src="img1.jpeg" alt="img1" class="image">
+            </div>
+            <div>
+                <img src="img2.jpeg" alt="img2" class="image">
+            </div>
+            <div>
+                <img src="img3.jpeg" alt="img3" class="image">
+            </div>
+            <div>
+                <img src="img4.jpeg" alt="img4" class="image">
+            </div>
+            <div>
+                <img src="img5.jpeg" alt="img5" class="image">
+            </div>
+            <div>
+                <img src="img6.jpeg" alt="img6" class="image">
+            </div>
+
+    
+           </div>
+           
+           <div id="more">
+                <a href="#">LOAD MORE</a>
+            </div>
+        </section>
+
+        <section id="contact">
+          
+              <div id="conatc-us">
+                <hr>
+                <p>CONTACT US</p>
+                <hr>
+                
+              </div>
+
+              <form action="" id="contact-form">
+               <div>
+                 <div>
+                     <div>
+                         <input type="text" name="first-name" placeholder="First Name">
+                     </div>
+                 </div>
+                 <div>
+                     <div>
+                         <input type="text" name="last-name" placeholder="Last Name">
+                     </div>
+                 </div>
+                
+                 <div>
+                     <div>
+                         <input type="email" name="email" placeholder="Email">
+                     </div>
+                 </div>
+                 <div>
+                     <div>
+                         <input type="text" name="Subject" placeholder="Subject">
+                     </div>
+                 </div>
+                 <div>
+                    <textarea name="message"  placeholder="Enter Message"></textarea>
+
+                </div>
+                <div>
+                    <input type="submit" name="contact-submit" value="SEND">
+                </div>
+
+               </div>
+
+              </form>
+        </section>
+
+     </main>
+
+
+    <!-- <div align="center">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 align="center">
+            <font face="sans-serif" color="blue" size="7">SIMPLE AND ONE PAGE WEBSITE</font>
+            </h1>
+          <h3>
+              <h3 align="center"> <font face="sans-serif" color="black" size="5">USING HTML ONLY(NO CSS USED)</font></h3>
+            
+            
+              <a href=""><font face="lato " color="black">GET STARTED</font>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <a href="" align="center"><font face="lato" color="red">SUBSCRIBE US</font></a>
+          </h3>
+    </div>
+    <br><br><br>
+    <div id="portfolio">
+        <hr color="white" width="20%">
+        <p align="center">
+            <font face="sans-serif" color="green" size="5.5">PORTFOLIO</font>
+            
+        </p>
+        <hr color="white" width="20%">
+    </div>
+
+    <br><br>
+    <table align="center" cellspacing="10" cellpadding="15">
+        <tr>
+            <td>
+                <img src="img1.jpeg" alt="img1" width="300" height="200">
+            </td>
+            <td>
+                <img src="img2.jpeg" alt="img2" width="300" height="200">
+            </td>
+            <td>
+                <img src="img3.jpeg" alt="img3" width="300" height="200">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img4.jpeg" alt="img4" width="300" height="200">
+            </td>
+            <td>
+                <img src="img5.jpeg" alt="img5" width="300" height="200">
+            </td>
+            <td>
+                <img src="img6.jpeg" alt="img6" width="300" height="200">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"><a href="#">LOAD MORE</a></td>
+        </tr>
+    </table>
+
+    <br><br><br><br>
+<div>
+
+    <div id="contact">
+        <hr color="black" width="20%">
+        <p align="center">
+            <font face="sans-serif" color="blue" size="5.5">CONTACT US</font>
+            
+        </p>
+        <hr color="black" width="20%">
+        <br><br>
+    </div>
+
+
+    <form action="">
+        <table align="center" border="1" cellspacing="12" cellpadding="5">
+            <tr>
+                <td>
+                    <input type="text" name="first-name" placeholder="First Name" required>
+                </td>
+                <td>
+                    <input type="text" name="last-name" placeholder="Last Name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" name="email" placeholder="Email" required>
+                </td>
+                <td>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <textarea name="message"  placeholder="Enter message"></textarea>
+                </th>s ovim th smo dobili centrirani textara-->
+            <!-- </tr>
+
+
+            <th colspan="2">
+                <input type="submit" name="submit button" value="SEND">
+            </th>
+
+        </table>
+
+    </form>
+
+
+</div> --> 
+
+
+<footer>
+    <hr>
+    <div id="footer-logo">
+        <a href="#">LOGO</a>
+        <hr>
+        <p>Made by Ivan. Free to use!</p>
+    
+      </div>
+</footer>
+
+<br><br><br><br>
+
+<!-- 
+<div>
+    <hr color="black">
+    <p align="center"><a href="#"><font face="sans-serif" size="7" color="red">LOGO</font></a></p>
+
+    <p>
+        <p align="center"><font face="sans-serif" size="4" color="black">Made by Ivan. Free to use!</font></p> 
+    </p>
+</div> -->
+
+
+</body>
+</html>

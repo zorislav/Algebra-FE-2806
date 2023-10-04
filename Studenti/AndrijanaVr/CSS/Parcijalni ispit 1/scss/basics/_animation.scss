@@ -1,0 +1,23 @@
+@keyframes animacija1 {
+  0% {
+    transform: translate(0, -400px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@mixin animacija1 {
+  transform: translate(0, -400px);
+  animation: animacija1 2s linear forwards 1s;
+}
+
+@mixin animacija2 {
+  transform: translate(0, -400px);
+  animation: animacija1 2s linear forwards 3s;
+}
+
+@mixin animacija3 {
+  transform: translate(0, -400px);
+  animation: animacija1 2s linear forwards 5s;
+}
