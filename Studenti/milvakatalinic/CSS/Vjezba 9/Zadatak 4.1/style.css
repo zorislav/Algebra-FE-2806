@@ -1,0 +1,39 @@
+* 
+  {
+    margin: 0;
+    box-sizing: border-box;}
+
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+
+.wrapper {
+    border: 1px dashed #666;
+    min-height: 100vh;
+    padding: 1em;
+}
+  
+
+.wrapper div {
+    background: #eee;
+    border: 1px solid #666;
+    padding: 1em;
+    text-align: center;
+}
+  
+
+.flex-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between; 
+    min-height: 100vh;
+}  
+  
+.flex-item {
+    margin-top: 2px;
+    text-align: center;
+    flex-basis: 33%
+  }
+  

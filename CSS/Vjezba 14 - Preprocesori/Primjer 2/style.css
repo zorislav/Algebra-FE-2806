@@ -1,18 +1,55 @@
 body {
   background-color: #eee;
   color: #333;
-  font-family: Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0;
 }
 
-h1 {
+header,
+footer {
+  background-color: #333;
+  color: #eee;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
   color: #800;
 }
-
-a {
-  font-family: Courier, monospace;
+header p {
+  font-size: 20px;
+}
+header a {
+  color: #ff6;
 }
 
-article {
-  border: 2px solid #800;
-  margin: 1em;
+section h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+section p {
+  text-align: justify;
+}
+section a {
+  color: #800;
+}
+section article {
+  background-color: #800;
+}
+section article p {
+  color: #eee;
+}
+section article a {
+  color: #fff;
+}
+
+footer h1 {
+  color: #ff6;
+}
+footer p {
+  font-size: 12px;
+}
+footer a {
+  color: #0f0;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
