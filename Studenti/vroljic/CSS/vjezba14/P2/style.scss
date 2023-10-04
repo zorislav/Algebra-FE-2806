@@ -1,0 +1,73 @@
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+body {
+    background-color: $color1;
+    color: $color2;
+    font-family: $font1;
+    margin: 0;
+
+}
+
+header, footer {
+    text-align: center;
+    h1 {
+        color: $color3;
+    }
+    p {
+        font-size: 20px;
+    }
+    a {
+        color: #ff6;
+    }
+    background-color: $color2;
+    color: $color1;
+}
+
+h1 {
+    color: $color3;
+}
+
+a {
+    font-family: $font2;
+}
+
+article {
+    border: 2px solid $color3;
+    margin: 1em;
+}
+section {
+    h1 {
+        font-family: $font2;
+    }
+    p {
+        text-align: justify;
+    }
+    a {
+        color: $color3;
+    }
+    article {
+        background-color: $color3;
+        p {
+            color: $color1;;
+        }
+        a {
+            color: $color1;
+        }
+    }
+    footer {
+        h1 {
+            color: #ff6;
+        }
+        p {
+            font-size: 12px;
+        }a {
+            color: #fff;
+
+        }
+    }
+
+}

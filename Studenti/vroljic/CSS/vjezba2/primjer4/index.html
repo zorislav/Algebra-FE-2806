@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori HTML elemenata</title>
+   
+        <!---4. Pomocu internog CSS-a definirati slijedeća pravila
+
+body
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+[title] 
+    text-decoration: underline solid red;
+
+[title="prvi odlomak"] 
+    font-weight: bold;
+
+[title*="odlomak"] 
+    color: darkgreen;
+
+[title~="odlomak"] 
+    text-transform: uppercase;
+
+[title^="odlomak"] 
+    font-style: italic;
+
+[title|="odlomak"] 
+    font-family: 'Courier New', Courier, monospace;
+
+[title$="odlomak"] 
+    color: darkorange;
+ 
+
+5. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom i dodijeliti im odgovarajuce title atribute
+- <h1 title="naslov stranice">
+- <h2> 
+- <h3>
+- <p title="prvi odlomak">
+- <p title="odlomak-2">
+- <p title="odlomak 3"> 
+- <strong> 
+    - <span title="adipisicing"> 
+- <p title="odlomakbla">
+- <strong> 
+    - <span title="adipisicing">  
+- <p>
+- <strong> 
+    - <span title="adipisicing">  --->
+        <style>
+                                                                            /*ovo je komentar u css-u*/
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        /* Atribut bez obzira na vrijednost */
+        [title] {
+            text-decoration: underline solid red;
+        }
+
+        /* Atribut sa točnom vrijednosti */
+        [title="prvi odlomak"] {
+            font-weight: bold;
+        }
+
+        /* navedani izraz nalazi se bilo gdje u vrijednosti atributa */
+        [title*="odlomak"] {
+            color: darkgreen;
+        }
+
+        /* navedani izraz nalazi se u vrijednosti atributa odvojen razmakom  */
+        [title~="odlomak"] {
+            text-transform: uppercase;
+        }
+
+        /* navedani izraz nalazi se na početku vrijednosti atributa  */
+        [title^="odlomak"] {
+            font-style: italic;
+        }
+
+        /* navedani izraz nalazi se na početku vrijednosti atributa odvojen znakom '-' */
+        [title|="odlomak"] {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* navedani izraz nalazi se na završetku vrijednosti atributa  */
+        [title$="odlomak"] {
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1 title="naslov stranice">Lorem ipsum dolor</h1>
+    <h2>Lorem ipsum</h2>
+    <h3>Lorem ipsum dolor sit amet</h3>
+    <p title="prvi odlomak">
+        Vedran
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua.</p>
+    <p title="odlomak-2">
+        Ivan
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua.</p>
+    <p title="odlomak 3">
+        Matija
+        Lorem ipsum dolor sit amet, <strong>consectetur <span title="adipisicing">adipisicing</span>
+            elit</strong>, sed do eiusmod tempor
+        incididunt ut
+        labore et dolore
+        magna aliqua. Ut enim ad minim veniam, <em>quis nostrud exercitation ullamco</em> laboris nisi ut aliquip ex ea
+        commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.</p>
+    <p title="odlomakbla">
+        Borna
+        Lorem ipsum dolor sit amet, <strong>consectetur <span title="adipisicing">adipisicing</span>
+            elit</strong>, sed do eiusmod tempor
+        incididunt ut
+        labore et dolore
+        magna aliqua. Ut enim ad minim veniam, <em>quis nostrud exercitation ullamco</em> laboris nisi ut aliquip ex ea
+        commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.</p>
+
+    <p> Krešo Lorem ipsum dolor sit amet, <strong>consectetur <span title="adipisicing">adipisicing</span> elit</strong>, sed
+        do eiusmod tempor
+        incididunt ut
+        labore et dolore
+        magna aliqua. Ut enim ad minim veniam, <em>quis nostrud exercitation ullamco</em> laboris nisi ut aliquip ex ea
+        commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.</p>
+
+</body>
+</html>
