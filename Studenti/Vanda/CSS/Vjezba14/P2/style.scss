@@ -41,13 +41,13 @@ section {
   }
   article {
     background-color: $color3;
-  }
     p {
       color: $color1;
     }
     a {
       color: #fff;
     }
+  }
 }
 
 footer {
@@ -58,7 +58,8 @@ footer {
     font-size: 12px; 
   }
   a {
-    
+    color: #0f0;
+    font-size: 20px;
   }
 }
 

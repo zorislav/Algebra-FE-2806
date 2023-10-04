@@ -25,8 +25,21 @@ section article {
   background-color: #eee;
   flex-basis: 48%;
 }
-section a {
+section article a {
   display: inline-block;
-  margin: 50px;
-  text-align: 1em;
+  margin: 1em 50px;
+  text-align: right;
+}
+
+footer a {
+  background-color: #333;
+  color: #eee;
+  padding: 10px;
+  margin: 1em;
+}
+footer a:visited {
+  background-color: #f93;
+}
+footer a:hover {
+  background-color: #800;
 }/*# sourceMappingURL=style.css.map */
