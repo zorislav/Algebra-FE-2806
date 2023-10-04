@@ -1,8 +1,7 @@
-@import "variables";
-@import "mixins";
-@import "reset";
-@import "typography";
-
+@import "abstract/variables";
+@import "abstract/mixins";
+@import "base/reset";
+@import "base/typography";
 
 body {
   background-color: $background;
@@ -12,39 +11,39 @@ body {
   line-height: $line-height-base;
 }
 
-
-h1, h2 {
+h1,
+h2 {
   @include align-element(null, center, 0 auto 1rem);
 }
 
-    
 @include linx($color1, $color2, $color4, $color5);
 
-
 %spaces {
-    padding: 1rem;
-    margin: 1rem auto;
-  }
+  padding: 1rem;
+  margin: 1rem auto;
+}
 
 %borders {
   border: $border-width $border-style $border-color;
 }
 
-header, nav, footer, main, section {
-  @extend %spaces; //@extend placeholder selectors
+header,
+nav,
+footer,
+main,
+section {
+  @extend %spaces;
 }
 
-
-header, footer {
+header,
+footer {
   background-color: $text-color;
   color: $background;
 }
-
-
-nav, section {
-  @extend %borders; //@extend placeholder selectors
+nav,
+section {
+  @extend %borders;
 }
-
 
 header {
   @include align-element(null, center, auto);
@@ -66,14 +65,13 @@ nav {
   }
 }
 
-
-main, footer {
+main,
+footer {
   @include flex-container;
   h1 {
     flex-basis: 100%;
   }
 }
-
 main {
   max-width: 1200px;
   section {
@@ -81,12 +79,9 @@ main {
   }
 }
 
-
 footer {
   margin-bottom: 0;
   section {
     flex-basis: 48%;
   }
 }
-
-
