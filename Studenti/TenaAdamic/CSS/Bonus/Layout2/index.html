@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-Bonus</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            width: 50vh;
+            height: 25vh;
+
+        }
+
+        p {
+            font-size: 40px;
+            font-weight: bold; 
+            align-self: center;
+        }
+
+        .lista-container {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width: 50vh;
+            height: 25vh;   
+        }
+
+        .lista-container2 {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding: 10px;
+        }
+
+        .middle-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .left-container {
+            display: flex;
+        }
+
+        .right-container {
+            display: flex;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: lightblue;
+            text-align: center;
+            font-weight: bold;
+            padding: 15px 0;
+      
+        }
+
+        .grid-container  {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            column-gap: 15px;
+            row-gap: 10px;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            border: 1px solid red;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="img1.jpeg" height="50px" width="50px" alt="logo">
+                <p>Moja tvrtka</p>
+            </div>
+            
+            <div class="lista-container">
+                <ul class="lista-container2">
+                    <li>Opcija1</li>
+                    <li>Opcija2</li>
+                    <li>Opcija3</li>
+                </ul>
+            </div>
+        </div>
+       
+    </header>
+    <hr>
+    <div class="middle-container">
+        <div class="left-container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+
+        <div class="right-container">
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="box">1</div>
+        </div>
+        <div class="grid-item">
+            <div class="box">2</div>
+        </div>
+        <div class="grid-item">
+            <div class="box">3</div>
+        </div>
+        <div class="grid-item">
+            <div class="box">4</div>
+        </div>
+        <div class="grid-item">
+            <div class="box">5</div>
+        </div>
+        <div class="grid-item">
+            <div class="box">6</div>
+        </div>
+        <div class="grid-item">
+            <div class="box">7</div>
+        </div>
+        <div class="grid-item">
+            <div class="box">8</div>
+        </div>
+        <div class="grid-item">
+            <div class="box">9</div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

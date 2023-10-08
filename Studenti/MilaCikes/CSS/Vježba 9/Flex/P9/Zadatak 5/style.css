@@ -1,0 +1,25 @@
+* {
+  margin:0;
+ box-sizing:border-box;
+}
+
+.container {
+  border: 1px dashed gainsboro;
+  padding: 1em;
+  min-height:100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: space-between;
+  align-content: start;
+}
+
+.item {
+  flex-basis: 24%;
+  height:100px;
+  text-align: center;
+  border: 2px solid gainsboro;
+  background-color: aqua;
+  margin-bottom: 2%;
+}

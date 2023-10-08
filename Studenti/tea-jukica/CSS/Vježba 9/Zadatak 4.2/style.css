@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+}
+.div1{
+  border: 1px dashed #666;
+  padding: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 510px;
+}
+.div1 div{
+  background-color: #eee;
+  border: 1px solid #666;
+  width: 23%;
+  height: 150px;
+  margin: 8px;
+  text-align: center;
+}

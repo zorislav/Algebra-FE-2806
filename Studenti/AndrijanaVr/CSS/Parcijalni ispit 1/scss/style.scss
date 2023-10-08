@@ -1,0 +1,34 @@
+@import "basics/colors";
+@import "basics/decoration";
+@import "basics/animation";
+
+body {
+  box-sizing: border-box;
+  font-family: $font; 
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color4;
+}
+
+.container {
+  @include container;
+}
+
+.container > div {
+  @include div;
+}
+
+.container > div:first-of-type {
+  background-color: $color1;
+  @include animacija1;
+}
+
+.container > div:nth-child(2) {
+  background-color: $color2;
+  @include animacija2;
+}
+
+.container > div:last-of-type {
+  background-color: $color3;
+  @include animacija3;
+}

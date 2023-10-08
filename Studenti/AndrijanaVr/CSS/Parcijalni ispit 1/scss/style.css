@@ -1,0 +1,48 @@
+@keyframes animacija1 {
+  0% {
+    transform: translate(0, -400px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+body {
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container > div {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.container > div:first-of-type {
+  background-color: #494545;
+  transform: translate(0, -400px);
+  animation: animacija1 2s linear forwards 1s;
+}
+
+.container > div:nth-child(2) {
+  background-color: #c07373;
+  transform: translate(0, -400px);
+  animation: animacija1 2s linear forwards 3s;
+}
+
+.container > div:last-of-type {
+  background-color: #f5bda7;
+  transform: translate(0, -400px);
+  animation: animacija1 2s linear forwards 5s;
+}/*# sourceMappingURL=style.css.map */
