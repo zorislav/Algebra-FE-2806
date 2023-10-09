@@ -1,7 +1,7 @@
 @mixin align-element($display, $txt-align, $space) {
     display: $display;
     margin: $space;
-    text-align: $text-align;
+    text-align: $txt-align;
   }
   
   @mixin linx($link, $visit, $hover, $active) {
