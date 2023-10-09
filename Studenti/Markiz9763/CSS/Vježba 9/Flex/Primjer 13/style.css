@@ -21,11 +21,11 @@ body {
 }
 .flex-container {
   display: flex;
-
-.flex-item{
+}
+.flex-item {
   flex-grow: 1;
 }
 
-  .flex-item:nth-child(3){
-    align-self: flex-end;
-  }
+.flex-item:nth-child(3) {
+  align-self: flex-end;
+}
