@@ -1,3 +1,22 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
 body {
   background-color: #eee;
   color: #333;
@@ -72,7 +91,7 @@ main {
   max-width: 1200px;
 }
 main section {
-  flex-basis: 30%;
+  flex-basis: 32%;
 }
 
 footer {

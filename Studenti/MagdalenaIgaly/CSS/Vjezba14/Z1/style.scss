@@ -1,7 +1,7 @@
 // Imports
 @import "abstract/variables";
 @import "abstract/mixins";
-// @import "base/reset";
+@import "base/reset";
 @import "base/typography";
 
 body {
@@ -44,7 +44,7 @@ header {
     @include align-element(null, center, auto);
 
     // Svi a elementi unutar headera
-    a { 
+    a {
         @include align-element(inline-block, center, 1rem auto);
         background-color: $color4;
         padding: 10px 2rem;
@@ -71,7 +71,7 @@ main, footer {
 main {
     max-width: 1200px;
     section {
-        flex-basis: 30%;
+        flex-basis: 32%;
     }
 }
 
