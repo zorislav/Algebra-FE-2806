@@ -1,0 +1,43 @@
+@import "base/colors";
+@import "base/reset";
+@import "abstract/mixins";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(back.JPG);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  @include flex-container;
+}
+header img {
+  width: 32%;
+  margin-top: 2em;
+}
+
+footer {
+  color: $color2;
+  font-size: 24px;
+  font-style: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  
+}
+
+.sunce {
+  border-radius: 100%;
+  background-color: $color1;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+
+
+
