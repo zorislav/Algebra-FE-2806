@@ -1,0 +1,46 @@
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: Tahoma, sans-serif;
+}
+
+p {
+  color: #fff;
+  background-color: #800;
+  padding: 1em;
+}
+
+header, footer, section, article {
+  border: 2px solid #333;
+  padding: 1em;
+}
+
+header {
+  /* mixin s proizvoljnim brojem parametara */
+  margin: 20px;
+}
+
+section {
+  /* mixin s proizvoljnim brojem parametara */
+  margin: 2em auto;
+  width: 80%;
+}
+section article {
+  /* mixin s proizvoljnim brojem parametara */
+  margin: 1em;
+  border-radius: 20px;
+}
+section article:last-child {
+  /* mixin s proizvoljnim brojem parametara */
+  margin: 0;
+  border-radius: 0 30px;
+}
+
+section .odlomak {
+  border: 8px dotted #eee;
+}
+
+footer {
+  /* mixin s proizvoljnim brojem parametara */
+  margin: 1em 0 2em 5em;
+}/*# sourceMappingURL=style.css.map */

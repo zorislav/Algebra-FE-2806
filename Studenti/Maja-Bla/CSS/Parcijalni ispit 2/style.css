@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  background-image: url("back.jpg");
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding-top: 2vh;
+}
+
+.wrapper div {
+  flex-basis: 30vw;
+  background: url("cloud.png") no-repeat center center/contain;
+  height: 20vw;
+  width: 33vw;
+  position: relative;
+  z-index: 2;
+}
+
+
+.wrapper .oblak1 {
+  animation: oblak 3.9s 1.1s ease-in-out alternate infinite;
+}
+.wrapper .oblak2 {
+  animation: oblak 3.9s 2.7s ease-in-out alternate infinite;
+}
+.wrapper .oblak3 {
+  animation: oblak 3.9s 3.9s ease-in-out alternate infinite;
+}
+
+.sunce {
+  animation: sunce 3.6s linear forwards;
+  background-color: rgb(231, 221, 129);
+  position: absolute;
+  top: 60vh;
+  left: 43vw;
+  width: 14vw;
+  height: 14vw;
+  border-radius: 100%;
+  z-index: 1;
+  
+}
+
+footer {
+  font-size: 25px;
+  font-family: Tahoma, sans-serif;
+  font-style:italic;
+  color: rgb(58, 9, 50);
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+  padding: 1em;
+  text-align: center;
+}
+
+@keyframes oblak {
+  0% {
+    top: 0vw;
+  }
+  50% {
+    top: 2vw;
+  }
+  100% {
+    top: -2vw;
+  }
+}
+
+@keyframes sunce {
+  0% {
+    top: 50vh;
+  }
+  100% {
+    top: 5vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper div {
+    flex-basis: 49vw;
+  }
+
+}
+@media (max-width: 479px) {
+  .wrapper .oblak2,
+  .wrapper .oblak3 {
+    display: none;
+  }
+}
