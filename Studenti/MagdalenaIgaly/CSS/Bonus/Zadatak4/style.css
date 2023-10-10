@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    max-width: 60rem;
+    color: #333;
+    padding: 1rem 0.5rem;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    
+}
