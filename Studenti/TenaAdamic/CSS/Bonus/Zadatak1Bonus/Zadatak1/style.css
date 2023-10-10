@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+#logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+
+#inner-header-container {
+    display: flex;
+}
+
+#inner-header-container li {
+    font-family: sans-serif;
+    font-size: 1.125em;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+#section-title {
+    margin-top: 34vh;
+    text-align: center;
+}
+
+#section-title h1 {
+    color: blue;
+    font-size: 48px;
+    font-family: sans-serif;
+}
+
+#section-title h3 {
+    font-size: 1.5em;
+    margin-top: 2.5vh;
+    font-family: sans-serif;
+}
+
+#section-title ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    padding: 0;
+    font-size: 1.17em;
+    font-weight: bold;
+    font-family: lato;
+    margin-bottom: 25vh;
+}
+
+#section-title ul li:nth-of-type(2) a {
+    
+    padding-left: 2.5vh;
+    color: red;
+    text-decoration-color: black;
+}
+
+
+ 
+#portfolio {
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+#portfolio p {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: green;
+    text-align: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+#portfolio hr {
+    border-color: white;
+    color: white;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    
+}
+
+
+
+#image-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(3, 300px);
+    gap: 2.5em;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+}
+
+#more {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 25vh;
+
+}
+
+
+#contact-us {
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 7vh; 
+}
+
+#contact-us p {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: green;
+    text-align: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+#contact-us hr {
+    border-color: white;
+    color: white;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    
+}
+
+#form-container {
+    width: fit-content;
+    margin: 1em auto; 
+    border: 1px solid black;
+      
+}
+
+
+.inner-form-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+/* .outer-form-container {
+    display: flex;
+    justify-content: center;
+} */
+
+.footer-container hr {
+    border-color: black;
+    color: black;
+    margin-top: 10vh;
+}
+
+#footer-logo {
+   text-align: center; 
+   margin-top: 0.7em;
+}
+
+#footer-logo a {
+   
+    color: red;
+    font-size: 3em;
+    text-decoration-color: black;
+    font-family: sans-serif;
+     
+}
+
+#footer-text {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.2em;
+    margin: 1em auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
