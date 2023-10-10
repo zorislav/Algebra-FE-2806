@@ -1,0 +1,32 @@
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+@mixin spacing($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+body {
+  @include spacing(0, 0); //postavljamo margine i padding na 0 u svim smjerovima
+  background-color: $color1;
+  color: $color2;
+  font-family: $font1;
+}
+
+div {
+  @include spacing(0 0 1em 0, 0);
+  background: $color3;
+  height: 20px;
+}
+
+// @for
+
+@for $i from 1 through 8 {
+  $width: percentage(1 / $i); //definiramo varijablu u koju smještamo postotak na koji želimo postaviti širinu
+  .col-#{$i} { //definiramo klasu (ime klase col-, a unutra interpoliramo vrijednost iterator vatijable i. U prvoj iteraciji col-1 i širina 100%, u drugoj col-2 i širina 50%, itd.)
+    width: $width; //koristimo gore definiranu varijablu
+  }
+}

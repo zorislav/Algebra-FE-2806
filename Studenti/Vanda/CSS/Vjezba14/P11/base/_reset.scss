@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; //nasljeđuje box-sizing od parent elementa (ciljamo border-box)
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}

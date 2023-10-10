@@ -35,10 +35,10 @@ section a {
 section article {
   background-color: #800;
 }
-section p {
+section article p {
   color: #eee;
 }
-section a {
+section article a {
   color: #fff;
 }
 
@@ -47,4 +47,8 @@ footer h1 {
 }
 footer p {
   font-size: 12px;
+}
+footer a {
+  color: #0f0;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

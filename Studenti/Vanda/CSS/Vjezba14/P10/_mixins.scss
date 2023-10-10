@@ -1,0 +1,29 @@
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+//media queries
+
+$breakpoints: (  //skup elemenata
+  "small": 480px, //ključ: vrijednost;
+  "medium": 768px,
+  "large": 1024px,
+  "x-large": 1200px
+);
+
+//keywords($args) //=> map
+@mixin mq($width, $type: min) { //type ima inicijalnu vrijednost min
+  // map-has-key($map, $key)
+  @if map_has_key($breakpoints, $width) { //provjerava da li u tom map-u (breakpoins) postoji ta labela (small, medium,...) koju predajemo kad pozivamo mixin
+    //map-get($map, $key)
+    $width: map_get($breakpoints, $width); //ako postoji, postavljamo varijablu width na map_get, npr. ako predamo large, dobit ćemo natrag 1024px i onda to spremamo u varijablu width
+    @if $type == max { //ako je type=max
+      $width: $width - 1px; //onda ćemo width postavit na -1 (smanjiti za 1px)
+    }
+    @media (#{$type}-width: $width) { //interpoliramo type; imamo ili min width ili max width ovisno o tome koji parametear predajemo
+      @content;
+    }
+  }
+}

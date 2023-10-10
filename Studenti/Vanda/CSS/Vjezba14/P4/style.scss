@@ -1,0 +1,69 @@
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+@mixin margin-mix ($margin...) { //proizvoljan broj parametara
+  margin: $margin;
+}
+
+@mixin border-radius ($r: 20px) { //argument sa zadanom inicijalnom vrijednošću
+  border-radius: $r;
+}
+
+@mixin has-content {
+  section {
+    @content;
+  }
+}
+
+@mixin odlomci ($color5) {
+  p {
+    color: $color5;
+    @content;
+  }
+}
+
+body {
+  background-color: $color1;
+  color: $color2;
+  font-family: $font1;
+}
+
+@include odlomci(#fff) { //color5 zamijenili smo s colorom fff
+  background-color: $color3; //sadržaj mixina odlomci
+  padding: 1em; //sadržaj mixina odlomci
+}
+
+header, footer, section, article {
+  border: 2px solid $color2;
+  padding: 1em;
+}
+
+header {
+  @include margin-mix(20px); //ima proizvoljan broj parametara, ovdje je stavljen samo jedan parametar, margina 20px u svim smjerovima
+}
+
+section {
+  @include margin-mix(2em auto);
+  width: 80%;
+  article { //gnijezdimo article unutar sectiona
+    @include margin-mix(1em);
+    @include border-radius(); //20px jer nismo predali niti jedan drugi parametar
+    &:last-child {
+      @include margin-mix(0);
+      @include border-radius(0 30px);
+    }
+  }
+}
+
+@include has-content() {
+  .odlomak {
+    border: 8px dotted $color1;
+  }
+}
+
+footer {
+  @include margin-mix(1em 0 2em 5em)
+}

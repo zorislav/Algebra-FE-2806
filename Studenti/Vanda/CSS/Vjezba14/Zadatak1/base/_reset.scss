@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after { //za slučaj da imamo content sadržaj kojeg stavljamo s before ili after selektorima pseudo klase
+  box-sizing: inherit; //nasljeđuje od parent elementa
+}
+
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+}
