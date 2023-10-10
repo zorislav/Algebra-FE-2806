@@ -47,3 +47,10 @@ body {
 .wrapper div {
   animation: animacija1 3s forwards;
 }
+
+.wrapper div:nth-child(2) {
+  animation: animacija1 3s 3s forwards;
+}
+.wrapper div:nth-child(3) {
+  animation: animacija1 3s 6s forwards;
+}

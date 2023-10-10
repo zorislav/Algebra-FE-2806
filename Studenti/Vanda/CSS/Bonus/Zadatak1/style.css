@@ -71,4 +71,120 @@ font-weight: 700px;
   text-decoration-color: black; /* underline ofarba u black */
  }
 
-  
+#portfolio {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  text-align: center;
+}
+
+#portfolio p {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: green;
+  text-align: center;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+}
+
+#portfolio hr {
+  border-color: white;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+#image-grid {
+  margin: auto;
+  padding-left: 15vh;
+  padding-right: 15vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* repeat(3, 1fr) */
+  grid-row-gap: 3vh;
+  grid-column-gap: 3vh;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* da se zaustavi unutar svog parent elementa */
+}
+
+#more {
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+#contact-us {
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+#contact-us p {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: blue;
+  text-align: center;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+}
+
+#contact-us hr {
+  border-color: black;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+#form-container {
+  width: fit-content;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.inner-form-container {
+  display: flex; /* elementi poslagani jedan do drugog */
+}
+
+.input-container {
+  border: 1px solid black;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.other-container {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+footer hr {
+  border-color: black;
+  border-width: 2px;
+  margin-top: 10vh;
+}
+
+#footer-logo {
+  margin-top: 2vh;
+  text-align: center;
+}
+
+#footer-logo a {
+  font-family: sans-serif;
+  font-size: 3em;
+  color: red;
+  text-decoration: none; /* uklanja underline */
+  border-bottom: 2px solid black;
+}
+
+#footer-text {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.25em;
+}
