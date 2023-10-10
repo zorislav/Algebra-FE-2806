@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasljeđivanje CSS svojstava</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #333;
+            font-size: 20px;
+            text-align: center;
+        }
+        p {
+            color: #060;
+        }
+        em {
+            color: aqua;
+        }
+        strong {
+            text-decoration: underline wavy red;
+        }
+        span {
+            font-weight: normal;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        #div1 {
+            background-color: red;
+        }
+        .klasa1 {
+            background-color:yellow !important;
+            border: 5px solid blue;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Est id quis veniam ad sit velit fugiat aliqua minim consectetur proident dolor anim.</h1>
+    <h2>Est id quis veniam ad sit velit fugiat aliqua minim consectetur proident dolor anim.</h2>
+    <h3>Est id quis veniam ad sit velit fugiat aliqua minim consectetur proident dolor anim.</h3>
+    <p>
+        Nulla irure aute veniam irure quis nostrud sunt. Aliquip eu exercitation reprehenderit 
+        labore veniam quis est excepteur ut nisi. Nisi magna labore officia excepteur magna 
+        reprehenderit culpa dolore deserunt. Commodo adipisicing duis dolor dolore eu. Sunt laborum
+         labore laboris minim. Commodo consequat officia cupidatat id esse dolore occaecat fugiat 
+         consequat nisi duis exercitation amet ut. Dolore non ipsum deserunt velit consequat
+          cupidatat qui labore.
+          Nulla irure aute veniam irure quis nostrud sunt. Aliquip eu exercitation reprehenderit 
+          labore veniam quis est excepteur ut nisi. Nisi magna labore officia excepteur magna 
+          reprehenderit culpa dolore deserunt. Commodo adipisicing duis dolor dolore eu. Sunt laborum
+           labore laboris minim. Commodo consequat officia cupidatat id esse dolore occaecat fugiat 
+           consequat nisi duis exercitation amet ut. Dolore non ipsum deserunt velit consequat
+            cupidatat qui labore.
+    </p>
+    <p>
+        Nulla irure aute veniam irure quis nostrud sunt. Aliquip eu exercitation reprehenderit 
+        labore veniam quis est excepteur ut nisi. Nisi magna labore officia excepteur magna 
+        reprehenderit culpa dolore deserunt. Commodo adipisicing duis dolor dolore eu. Sunt laborum
+         labore laboris minim. Commodo consequat officia cupidatat id esse dolore occaecat fugiat 
+         consequat nisi duis exercitation amet ut. Dolore non ipsum deserunt velit consequat
+          cupidatat qui labore.
+          Nulla irure aute veniam irure quis nostrud sunt. Aliquip eu exercitation reprehenderit 
+          labore veniam quis est excepteur ut nisi. Nisi magna labore officia excepteur magna 
+          reprehenderit culpa dolore deserunt. Commodo adipisicing duis dolor dolore eu. Sunt laborum
+           labore laboris minim. Commodo consequat officia cupidatat id esse dolore occaecat fugiat 
+           consequat nisi duis exercitation amet ut. Dolore non ipsum deserunt velit consequat
+            cupidatat qui labore.
+    </p>
+    <p>
+        Nulla irure aute veniam <strong>irure quis <span>nostrud</span>  sunt</strong> . Aliquip eu exercitation reprehenderit 
+        labore veniam quis est excepteur ut nisi. Nisi magna labore officia excepteur magna 
+        reprehenderit culpa dolore deserunt. Commodo adipisicing duis dolor dolore eu. Sunt laborum
+         labore laboris minim. Commodo consequat officia cupidatat id esse dolore occaecat fugiat 
+         consequat nisi duis exercitation amet ut. Dolore non ipsum deserunt velit consequat
+          cupidatat qui labore.
+          Nulla irure aute veniam <em>irure quis nostrud sunt</em> . Aliquip eu exercitation reprehenderit 
+          labore veniam quis est excepteur ut nisi. Nisi magna labore officia excepteur magna 
+          reprehenderit culpa dolore deserunt. Commodo adipisicing duis dolor dolore eu. Sunt laborum
+           labore laboris minim. Commodo consequat officia cupidatat id esse dolore occaecat fugiat 
+           consequat nisi duis exercitation amet ut. Dolore non ipsum deserunt velit consequat
+            cupidatat qui labore.
+    </p>
+    <div style="background-color: yellow;">
+        <div id="div1" class="klasa1"></div>
+    </div>
+    
+</body>
+</html>
