@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasljedjivanje CSS svojstava</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #333;
+        text-align: center;
+        font-size: 20px;
+      }
+      p {
+        color:#060;
+      }
+      em {
+        color: aqua;
+      }
+      strong {
+        text-decoration: underline wavy red;
+      }
+    span {
+      font-weight: normal;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    #div1 {
+      background-color: red;
+      border: 5px solid blue;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .klasa1 {
+      background-color: blue;
+      /* padding: padding-top padding-right padding-bottom padding-left;
+      padding: padding-top padding-left&padding-right padding-bottom;
+      padding: padding-top&padding-bottom padding-left&padding-right;
+      padding: padding-top&padding-bottom&padding-left&padding-right; */
+    }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Ad do veniam laborum officia sint deserunt aute quis proident esse ipsum
+      consectetur reprehenderit sint.
+    </h1>
+    <h2>Fugiat nulla proident cupidatat veniam ut id.</h2>
+    <h3>Dolor eiusmod tempor eiusmod nisi ea eu occaecat qui nisi nisi in.</h3>
+    <h4>
+      Consectetur dolor laboris exercitation enim voluptate sint nulla duis
+      deserunt.
+    </h4>
+    <p>
+      Quis adipisicing ad pariatur sit excepteur esse tempor nostrud cillum
+      dolor. Adipisicing ex incididunt ullamco et mollit dolor consectetur culpa
+      minim ad consequat. Aliqua officia anim pariatur minim minim nostrud ea.
+      Velit minim dolor officia dolore anim sit in ea magna labore aliqua dolor
+      occaecat.Officia veniam pariatur minim laborum est minim pariatur enim ad
+      aliquip aliquip eiusmod pariatur aliqua. Dolore magna sit quis qui quis
+      cillum labore ipsum aliqua tempor ullamco ea aliquip incididunt. Irure
+      reprehenderit nulla aliqua dolor minim aliquip. Incididunt excepteur in id
+      quis aliquip non non. Labore amet ex veniam commodo do.
+    </p>
+    <p>
+      Quis adipisicing ad pariatur sit excepteur esse tempor nostrud cillum
+      dolor. Adipisicing ex incididunt ullamco et mollit dolor consectetur culpa
+      minim ad consequat. Aliqua officia anim pariatur minim minim nostrud ea.
+      Velit minim dolor officia dolore anim sit in ea magna labore aliqua dolor
+      occaecat.Officia veniam pariatur minim laborum est minim pariatur enim ad
+      aliquip aliquip eiusmod pariatur aliqua. Dolore magna sit quis qui quis
+      cillum labore ipsum aliqua tempor ullamco ea aliquip incididunt. Irure
+      reprehenderit nulla aliqua dolor minim aliquip. Incididunt excepteur in id
+      quis aliquip non non. Labore amet ex veniam commodo do.
+    </p>
+    <p>
+      Quis adipisicing <strong>ad pariatur <span>sit excepteur</span> esse tempor nostrud cillum
+      dolor</strong>. Adipisicing ex incididunt ullamco et mollit dolor consectetur culpa
+      minim ad consequat. Aliqua officia anim pariatur minim minim nostrud ea.
+      Velit minim dolor officia dolore anim sit in ea magna labore aliqua dolor
+      occaecat.Officia veniam pariatur minim laborum est minim pariatur enim ad
+      aliquip aliquip <em>eiusmod pariatur aliqua</em>. Dolore magna sit quis qui quis
+      cillum labore ipsum aliqua tempor ullamco ea aliquip incididunt. Irure
+      reprehenderit nulla aliqua dolor minim aliquip. Incididunt excepteur in id
+      quis aliquip non non. Labore amet ex veniam commodo do.
+    </p>
+    <div style="background-color: yellow;">
+      <div id="div1" class="klasa1" style="background-color: #060;"></div>
+    </div>
+  </body>
+</html>
