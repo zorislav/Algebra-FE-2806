@@ -1,0 +1,90 @@
+@import 'abstracts/variables', 'abstracts/mixins';
+@import 'base/reset', 'base/fonts';
+
+body {
+  background: url(images/back.JPG) no-repeat center center/cover fixed;
+  font-family: $font-primary;
+  text-align: center;
+}
+
+.clouds {
+  @include flex-container;
+  padding-top: 2vh;
+  div {
+    background: url(images/cloud.png) no-repeat center center/contain;
+    height: 28vw;
+    width: 33vw;
+    position: relative;
+    z-index: 99;
+    flex-basis: 30vw;
+    @include animation('up-down 3.9s ease-in-out alternate infinite');
+  }
+  .cloud-1 {
+    animation-delay: 1.1s;
+  }
+  .cloud-2 {
+    animation-delay: 2.7s;
+  }
+  .cloud-3 {
+    animation-delay: 3.9s;
+  }
+}
+
+.sun {
+  width: 14vw;
+  height: 14vw;
+  background-color: $clr-yellow;
+  border-radius: 100%;
+  box-shadow: $clr-light-yellow 0 0 3.5rem;
+  position: absolute;
+  top: 60vh;
+  left: 42%;
+  @include animation('rising 3.5s linear forwards');
+}
+
+footer {
+  width: 100vw;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: $clr-grey;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+@include keyframes(rising) {
+  0% {
+    top: 50vh;
+  }
+  100% {
+    top: 5vh;
+  }
+}
+
+@include keyframes(up-down) {
+  0% {
+    top: 0vw;
+  }
+  50% {
+    top: 2vw;
+  }
+  100% {
+    top: -2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .clouds {
+    div {
+      flex-basis: 49vw;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .clouds {
+    .cloud-2,
+    .cloud-3 {
+      display: none;
+    }
+  }
+}
