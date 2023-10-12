@@ -13,6 +13,7 @@ body {
 }
 
 body {
+  background: url(./img/blur-clean.jpg) no-repeat center center/cover fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-align: center;
