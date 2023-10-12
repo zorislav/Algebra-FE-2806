@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+  background-color: #333
+}
+
+body {
+  background:
+  url(fire.png) center 30% / 15% no-repeat fixed,
+  url(pattern.png),
+  url(blossom.jpg) center center no-repeat fixed;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #ccc;
+  /* sto kad se resizea, kako sprijecit da se smanji slika? */
+} 
