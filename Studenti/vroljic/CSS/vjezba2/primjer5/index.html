@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selektori Pseudo-klase</title>
+    
+    
+</head>
+<style>
+    body {
+        color: #333;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+
+/*#                                                               SASTOJI SE OD 'ELEMENTA' ':' I 'AKCIJE'                                           --->*/
+
+    a:visited {
+        color: green;
+    }
+
+    a:hover { /*# kad se nalazimo mišem iznad linka--->*/
+        color: #f93;
+    }
+
+    a:focus {
+        color: #F0F;
+    }
+
+    a:active { /*# kad kliknemo i držimo--->*/
+        color: aquamarine
+    }
+</style>
+<body>
+    <ul> <!---# glumi privremenu adresu prije nego unesemo pravu--->
+
+        <li><a href="#">Lorem Ipsum dolor</a></li>
+        <li><a href="#">Lorem Ipsum dolor</a></li>
+        <li><a href="#">Lorem Ipsum dolor</a></li>
+        <li><a href="#">Lorem Ipsum dolor</a></li>
+        <li><a href="#">Lorem Ipsum dolor</a></li>
+        <li><a href="#">Lorem Ipsum dolor</a></li>
+    </ul>
+</body>
+
+</html>

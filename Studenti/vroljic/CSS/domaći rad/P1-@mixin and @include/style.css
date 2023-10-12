@@ -1,0 +1,49 @@
+.container {
+  background-color: #1b5500;
+  color: #c7f0f6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+button-basic, .button_report, .button_send {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: beige;
+}
+
+#prvi {
+  background-color: yellowgreen;
+  color: darkred;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+#drugi {
+  background-color: yellow;
+  color: darkblue;
+  border: red 3px dashed;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#treci {
+  border-radius: 35%;
+  border: rgb(30, 255, 0) 5px solid;
+}
+
+#cetvrti {
+  transform: rotate(10deg);
+}
+
+.button_send {
+  background-color: rgb(104, 157, 104);
+}
+
+.button_report {
+  background-color: rgb(195, 209, 122);
+}/*# sourceMappingURL=style.css.map */

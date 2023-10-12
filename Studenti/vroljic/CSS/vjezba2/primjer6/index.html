@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Selektori Pseudo-klase</title>
+    <style> /*# 31.08.2023. SELEKTORI PSEUDO KLASE 2. DIO--->*/
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        header {
+            color: red
+        }
+
+        footer {
+            color: orange;
+        }
+
+        p:first-child {   /*# ELEMENT:first-child   -->   ODNOSI SE ISKLJUČIVO AKO SU ZADOVOLJENI SVI UVIJETI : DA JE PRVO DIJETE I DA JE 'ELEMENT' (p, a, h1 ...) --->
+                                                          u ovom slučaju selektira svu 'prvu djecu' ako su 'p' element         */
+            text-decoration: underline wavy red;
+        }
+
+        p:last-child {    /* ELEMENT:last-child  --> isto kao i FIRST-CHILD samo se odnosi na zadnjeg */
+            font-size: 14px;
+        }
+
+        p:nth-child(2) {   /*ELEMENT:nth-child(BROJ)  -->  SELEKTIRA n-to DIJETE (u ovom slučaju 2.) ako je ELEMENT p*/
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        p:first-of-type { /* ELEMENT:first-of-type   --> SELEKTIRA SVU PRVU DJECU zadanog ELEMENTA*/
+            font-weight: bold;
+        }
+
+        p:last-of-type {
+            text-transform: uppercase;
+        }
+
+        p:nth-of-type(2) { /* 2n za parne brojeve // 2n-1 za neparne brojeve */
+            color: darkturquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Zaglavlje</h1>
+        <p>Odlomak u headeru</p>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section>
+        <p>Odlomak 1</p>
+        <p>Odlomak 2</p>
+        <p>Odlomak 3</p>
+        <p>Odlomak 4</p>
+        <p>Odlomak 5</p>
+    </section>
+    
+    <section>
+        <h1>Naslov sekcije DVA</h1>
+        <p>Odlomak - DVA 1</p>
+        <p>Odlomak - DVA 2</p>
+        <p>Odlomak - DVA 3</p>
+        <p>Odlomak - DVA 4</p>
+        <p>Odlomak - DVA 5</p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Odlomak PRVI u footeru</p>
+        <p>Odlomak DRUGI u footeru</p>
+        <p>Odlomak TREĆI u footeru</p>
+    </footer>
+</body>
+
+</html>
