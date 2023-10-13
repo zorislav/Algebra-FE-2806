@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>float - clear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .box1 {
+        width: 700px;
+        height: 300px;
+        border: 2px solid rgb(255, 1, 1);
+        background-color: lightblue;
+        /* overflow: scroll; */
+    }
+    img {
+        float: right;
+    }
+    #div1 {
+        background-color: yellow;
+        float: right;
+    }
+
+    #div2 {
+        background-color: green;
+    }
+</style>
+
+<body>
+    <div class="box1">
+        <img src="butterfly.png" alt="leptir" width="150" height="150">
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo qui cum voluptas beatae harum eos vero sequi eaque aliquid tenetur, nostrum similique temporibus quo adipisci voluptate repudiandae dolorem error.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo qui cum voluptas beatae harum eos vero sequi eaque aliquid tenetur, nostrum similique temporibus quo adipisci voluptate repudiandae dolorem error.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo qui cum voluptas beatae harum eos vero sequi eaque aliquid tenetur, nostrum similique temporibus quo adipisci voluptate repudiandae dolorem error.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo qui cum voluptas beatae harum eos vero sequi eaque aliquid tenetur, nostrum similique temporibus quo adipisci voluptate repudiandae dolorem error.
+</p>
+<div class="box1">
+    <div id="div1">
+        <p>Prvi dio</p>
+        </div>
+        <div id="div2">
+            <p>Drugi dio</p>
+        </div>
+</div>
+
+</div>
+    <h1>Svojstvo: display</h1>
+    <h2>Elementi bloka</h2>
+    <!-- Bilo koji block elementi -->
+    <p>Lorem ipsum</p>
+    <p class="inline">Lorem ipsum</p>
+    <p class="inline-block">Lorem ipsum</p>
+    <p class="box inline-block">Lorem ipsum</p>
+    <p class="none">Lorem ipsum xx</p>
+
+    <h2>Elemeti reda</h2>
+    <!-- Bilo koji inline elementi -->
+    <em>Lorem ipsum</em>
+    <em class="block">Lorem ipsum dolor</em>
+    <em class="inline-block">Lorem ipsum dolor sit amet</em>
+    <em class="box">Lorem ipsum dolor sit amet, consectetur</em>
+    <em class="box inline-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit</em>
+</body>
+
+</html>
