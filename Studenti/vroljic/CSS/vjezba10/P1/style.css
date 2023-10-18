@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px ;
+    color: black;
+}
+h1 {
+    text-align: center;
+}
+div {
+background-color: #f93;
+height: 150px;
+width: 400px;
+border: 1px solid #333;
+margin: 4em auto;
+
+
+}
+
+.translate {
+    transform: translate(300px, -20px);
+}
+
+.rotate {
+    transform: rotate(15deg);
+}
+.scale {
+    transform: scale(2, 01);
+}
+
+.skew {
+    transform: skew(5deg, 10deg);
+}
+.skew-x {
+    transform: skew(45deg, 300deg);
+}
+.multiple {
+    transform: rotate(180deg) scale(02,1);
+}

@@ -1,0 +1,67 @@
+$color_1: #c7f0f6;
+$color_2: #1b5500;   
+$font_size: 18px;
+$border: red 3px dashed;
+
+.container {
+    background-color: $color_2;
+    color: $color_1;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $font_size;  
+}
+
+button-basic {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: beige;
+  }
+
+@mixin prvi {
+    background-color: yellowgreen;
+    color: darkred;
+}
+@mixin drugi {
+    background-color: yellow;
+    color: darkblue;
+    border: $border;
+}
+@mixin treci($col, $width) {
+    border-radius: 35%;
+    border: $col $width solid;
+}
+
+@mixin rotacija($varijabla) {
+    transform: $varijabla;
+  }
+  
+#prvi {
+    @include prvi();
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    }
+#drugi {
+    @include drugi();
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+#treci {
+    @include treci(rgb(30, 255, 0), 5px);
+}
+#cetvrti {
+    @include rotacija(rotate(10deg));
+  }
+
+  .button_send {
+    @extend button-basic;
+    background-color: rgb(104, 157, 104);
+  }
+  .button_report {
+    @extend button-basic;
+    background-color: rgb(195, 209, 122);
+  }
+

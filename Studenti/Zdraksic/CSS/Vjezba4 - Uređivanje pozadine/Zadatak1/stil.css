@@ -1,0 +1,12 @@
+body{
+    background: url(fire.png) center 30%/20% fixed no-repeat,
+                url(pattern.png),
+                url(blossom.jpg) center center/ cover fixed no-repeat;
+    color: #ccc;
+    font-size: 16px;
+    font-family: Tahoma, sans-serif;
+}
+h1{
+    background: #333;
+    text-align: center;
+}

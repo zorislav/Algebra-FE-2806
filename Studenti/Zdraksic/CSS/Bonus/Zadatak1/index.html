@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple website using HTML only</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="banner.jpeg" link="black" alink="blue" vlink="black">
+    <header id="header-container">
+        <p id="logo">LOGO</p>
+        <nav>
+            <ul id="inner-header-container">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section-title">
+            <h1>SIMPLE AND ONE PAGE WEB SITE</h1>
+            <h3>USING HTML AND CSS</h3>
+            <ul>
+                <li><a href="">GET STARTED</a></li>
+                <li><a href="">SUBSCRIBE US</a></li>
+            </ul>
+        </section>
+        <section id="section-portfolio">
+            <div id="portfolio">
+               <hr>
+               <p>PORTFOLIO</p>
+               <hr> 
+            </div>
+            <div id="image-grid">
+               <div>
+                  <img class="image" src="img1.jpeg" alt="img1" width="300" height="200">
+               </div>
+               <div>
+                  <img class="image" src="img2.jpeg" alt="img2" width="300" height="200">
+               </div>
+               <div>
+                <img class="image" src="img3.jpeg" alt="img3" width="300" height="200">
+               </div>
+               <div>
+                  <img class="image" src="img4.jpeg" alt="img4" width="300" height="200">
+               </div>
+               <div>
+                  <img class="image" src="img5.jpeg" alt="img5" width="300" height="200">
+               </div>
+               <div>
+                  <img class="image" src="img6.jpeg" alt="img6" width="300" height="200">
+               </div>
+            </div>
+            <div id="more">
+                <a href="#">LOAD MORE</a>
+            </div>
+        </section>
+        <section id="contact">
+            <div id="contact-us">
+                <hr>
+                <p>CONTACT US</p>
+                <hr> 
+             </div>
+             <form action="" id="contact-form">
+                <div id="form-container">
+                <div class="inner-form-container">
+                    <div class="input-container">
+                        <input type="text" name="first_name" placeholder="First Name">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="last_name" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="inner-form-container">
+                    <div class="input-container">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-container">
+                        <input type="subject" name="subject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="other-container">
+                    <textarea name="message" placeholder="Enter message"></textarea>
+                </div>
+                <div class="other-container">
+                    <input type="submit" name="contact submit" value="SEND">
+                </div>
+                </div>
+             </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div id="footer-logo">
+            <a href="#">LOGO</a>
+        </div>
+        <div id="footer-text">
+             <p>Made by me. Free to use</p>
+        </div>
+    </footer>
+</body>
+</html>

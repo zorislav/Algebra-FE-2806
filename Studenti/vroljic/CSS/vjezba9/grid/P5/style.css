@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header, footer, main, article, aside, section {
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+header footer {
+  background-color: #6b0606;
+  height: 10vh;
+}
+
+main {
+display: flex;
+margin: auto;
+justify-content: space-between;
+
+}
+
+aside {
+  flex-basis: 32%;
+}
+
+section {
+  flex-basis: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+article {
+  width: 4em;
+
+}
+
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
