@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simole website using HTML only</title>
+    <title>Simple website using HTML only</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body background="banner.jpeg" link="black" alink="blue" vlink="black">
@@ -32,7 +32,7 @@
              
     
         <font size="4" face="sans">
-              <a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;<!--ovo su razmaci između elemenata po starim pravilima-->
+              <a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;ovo su razmaci između elemenata po starim pravilima-->
               <!-- <a href="#">VIDEOS</a>&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="#portfolio">PORTFOLIO</a>&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="#">BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -89,7 +89,7 @@
 
         <section id="contact">
           
-              <div id="conatc-us">
+              <div id="contact-us">
                 <hr>
                 <p>CONTACT US</p>
                 <hr>
@@ -97,33 +97,36 @@
               </div>
 
               <form action="" id="contact-form">
-               <div>
-                 <div>
-                     <div>
+               <div id="form-container">
+                 <div class="inner-form-container">
+                     <div class="input-container">
                          <input type="text" name="first-name" placeholder="First Name">
                      </div>
-                 </div>
-                 <div>
+                 
+                 <div class="input-container">
                      <div>
                          <input type="text" name="last-name" placeholder="Last Name">
                      </div>
                  </div>
-                
-                 <div>
-                     <div>
+                </div>
+
+                 <div class="inner-form-container">
+                     <div class="input-container">
                          <input type="email" name="email" placeholder="Email">
                      </div>
-                 </div>
-                 <div>
                      <div>
-                         <input type="text" name="Subject" placeholder="Subject">
-                     </div>
-                 </div>
-                 <div>
+                         <div class="input-container">
+                             <input type="text" name="Subject" placeholder="Subject">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                 <div class="other-container">
                     <textarea name="message"  placeholder="Enter Message"></textarea>
 
                 </div>
-                <div>
+                <div class="other-container">
                     <input type="submit" name="contact-submit" value="SEND">
                 </div>
 
@@ -243,10 +246,12 @@
     <hr>
     <div id="footer-logo">
         <a href="#">LOGO</a>
-        <hr>
-        <p>Made by Ivan. Free to use!</p>
-    
       </div>
+
+       <div id="footer-text">
+         <p>Made by Ivan. Free to use!</p>
+       </div>
+
 </footer>
 
 <br><br><br><br>
