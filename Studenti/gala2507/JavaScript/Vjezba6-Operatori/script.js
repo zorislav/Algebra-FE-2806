@@ -20,6 +20,8 @@ const price = 26.5;
 const taxRate = 0.082;
 
 let totalPrice = price + (price * taxRate);
-totalPrice.toFixed(2);
+var fixedPrice =totalPrice.toFixed(2);
 
 console.log("Total:", totalPrice);
+
+console.log("Total:", fixedPrice);
