@@ -11,10 +11,10 @@ text.replace('amet', 'elit'); // Ili regex, ako netko bas zna
 console.log(text);
 var newText = text + ', consectetur adipiscing elit';
 console.log(newText);
-text.toUpperCase();
-console.log(text);
+var veliko =text.toUpperCase();
+console.log(veliko);
 
 text.trim();
-console.log(text);
-text.charAt(12);
-console.log(text);
+var trim =console.log(trim);
+var slovo = text.charAt(12);
+console.log(slovo);
