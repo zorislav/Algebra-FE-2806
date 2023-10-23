@@ -1,0 +1,33 @@
+* { /*universal selector - selektira SVE elemente */
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    border: #333 dashed 1px;
+    /* height: 600px; */
+    padding: 1em;
+}
+
+.wrapper div { /*mozemo uređivati više klasa odjednom*/
+    background-color: 
+    #eee;
+    border: 1px solid #666;
+    width: 150px;                       /*ako su % onda se prilagođava prikazu containtera na ekranu, a ako je px onda su fixne širine i prebacuju se u novi red*/
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+.flex-item:nth-child(3) {
+    order: 5;
+}

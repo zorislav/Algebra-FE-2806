@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS vježba 1</title>
+    <script defer src="script.js">//odgađa izvršavanje i poarsiranje JS-a!!!
+   </script> 
+</head>
+<body>
+    <script>
+        console.log('Bok tu sam 1');
+    </script>
+    <div id="mojdiv"></div>
+
+    
+ <script>
+        console.log('Bok tu sam 2');
+        //u konzoli se ispisuje prvo pa drugo, a pošto je defer za vanjske 
+        //uključen, tek iza svega se izvršava vanjski javascript file
+    </script>
+
+    
+
+</body>
+</html>
