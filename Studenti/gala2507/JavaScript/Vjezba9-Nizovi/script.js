@@ -22,7 +22,7 @@ for(var element of names) {
 // 4.
 for(var i=0; i < names.length; i++) {
   if(!names[i]) {
-    names.splice(i,i);
+    names.splice(i,1);
   }
   
 
