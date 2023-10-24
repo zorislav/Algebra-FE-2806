@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+* :before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background: url(blur-clean.jpg) no-repeat center fixed;
+    font-size: 16;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.box {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.box div {
+    border: 4px solid rgb(255, 255, 255);
+    font-size: 8vw;
+    padding: 5%;
+    flex-basis: 25%;
+    position: relative;
+    top: -75vh; 
+}
+
+.box div:first-of-type {
+    background-color: rgba(51, 51, 51, 0.70);
+    animation: slide-down 1.5s ease-in-out forwards;  
+}
+
+.box div:nth-of-type(2){
+    background-color: rgba(136, 0, 0, 0.5);
+    animation: slide-down 1.5s ease-in-out 1.5s forwards;
+}
+
+.box div:nth-of-type(3){
+    background-color: rgba(255, 153, 51, 0.5);
+    animation: slide-down 1.5s ease-in-out 3s forwards;
+
+}
+
+@keyframes slide-down {
+    0% {
+        top: -80vh;
+    }
+    100% {
+        top: 0;
+    }
+}
