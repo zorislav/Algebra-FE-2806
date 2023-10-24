@@ -19,7 +19,8 @@ var auto = {
 			this.brzina -= 20; 
 			brojSekundi--;
 		}
-		return this.brzina;
+		return this.brzina > 0 ? this.brzina : 0;
+		//return this.brzina;
 	},
 	promijeniBoju: function(boja) {
 		this.boja = novaBoja;
@@ -27,8 +28,8 @@ var auto = {
 	}
 }
 
-console.log(auto.zakoci(4));
-console.log(auto.ubrzaj(10));
+console.log(auto.zakoci(10));
+console.log(auto.ubrzaj(5));
 
 for (key in auto) {
 	const value = auto[key];
@@ -38,5 +39,5 @@ for (key in auto) {
 	}
 }
 
-console.log('Boja mog ' + auto.brend.tip + ' auta je ' + auto.boja);
-console.log(JSON.stringify(auto));
+//console.log('Boja mog ' + auto.brend.tip + ' auta je ' + auto.boja);
+//console.log(JSON.stringify(auto));
