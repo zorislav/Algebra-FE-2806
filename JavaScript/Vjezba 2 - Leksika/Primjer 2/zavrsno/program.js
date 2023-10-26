@@ -21,5 +21,6 @@ function createTable(rows, cols) {
   }
 
   output = output + '</table>';
+  document.open();
   document.write(output);
 }
