@@ -16,11 +16,11 @@ var auto = {
         return this.brzina;
     },
     zakoci: function(brojSekundi) {
-        while (brojSekundi && this.brzina >= 20) {
+        while (brojSekundi && this.brzina > 0) {
             this.brzina -= 20;
             brojSekundi--;
         }
-        return this.brzina;
+        return this.brzina > 0 ? this.brzina : 0;
     },
     promijeniBoju: function(novaBoja){
         this.boja = novaBoja;
@@ -31,7 +31,7 @@ var auto = {
 // 2. dio
 console.log(auto);
 console.log(auto.ubrzaj(5));
-console.log(auto.zakoci(7));
+console.log('auto.zakoci(7) : ' + auto.zakoci(7));
 console.log('Nova boja = ' + auto.promijeniBoju('plava'));
 console.log('auto.boja = ' + auto.boja);
 
