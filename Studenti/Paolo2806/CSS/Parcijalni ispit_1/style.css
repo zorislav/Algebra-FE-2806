@@ -1,0 +1,73 @@
+@keyframes animacija1 {
+  0% {
+    transform: translate(0, -300px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes animacija2 {
+  0% {
+    transform: translate(0, -300px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes animacija3 {
+  0% {
+    transform: translate(0, -300px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.wrapper div:nth-child(1) {
+  animation-name: animacija1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.wrapper div:nth-child(2) {
+  animation-name: animacija2;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+}
+
+.wrapper div:nth-child(3) {
+  animation-name: animacija3;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.wrapper div {
+  font-size: 8vw;
+  padding: 7%;
+  text-align: center;
+  color: white;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper div:first-of-type {
+  background-color: rgba(51, 51, 51, 0.85);
+}
+.wrapper div:nth-of-type(2) {
+  background-color: rgba(136, 0, 0, 0.5);
+}
+.wrapper div:nth-of-type(3) {
+  background-color: rgba(255, 153, 51, 0.5);
+}/*# sourceMappingURL=style.css.map */

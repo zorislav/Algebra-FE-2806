@@ -1,0 +1,48 @@
+
+@keyframes animacija1 {
+  0% {
+    transform: translate(0,-300px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+@keyframes animacija2 {
+  0% {
+    transform: translate(0,-300px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+@keyframes animacija3 {
+  0% {
+    transform: translate(0,-300px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+.wrapper div:nth-child(1) {
+  animation-name: animacija1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.wrapper div:nth-child(2) {
+  animation-name: animacija2;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+}
+
+.wrapper div:nth-child(3) {
+  animation-name: animacija3;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-iteration-count:1;
+}

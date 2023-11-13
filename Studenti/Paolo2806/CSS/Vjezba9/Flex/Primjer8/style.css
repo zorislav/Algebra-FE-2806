@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  border: 1px dashed #666;
+  padding: 1em;
+/*   height: 500px; */
+  display: flex;
+
+}
+
+.container div {
+  background-color: #eee;
+  border: 1px solid #666;
+  width: 150px;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+.flex-item:nth-child(1) {
+  order: 1;
+}
+.flex-item:nth-child(2) {
+  order: 2;
+}
+.flex-item:nth-child(3) {
+  order: 4;
+}
+.flex-item:nth-child(4) {
+  order: 3;
+}
+.flex-item:nth-child(5) {
+  order: 5;
+}

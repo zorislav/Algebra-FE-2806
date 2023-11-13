@@ -1,0 +1,30 @@
+@import "base/_colors";
+@import "abstracts/_animation";
+
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  background-color: $color1;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  div {
+    font-size: 8vw;
+    padding: 7%;
+    text-align: center;
+    color: $color1;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    &:first-of-type {
+    background-color: $color2;
+  }
+    &:nth-of-type(2){
+    background-color: $color3;
+  }
+    &:nth-of-type(3){
+    background-color: $color4;
+  }
+  }
+}
