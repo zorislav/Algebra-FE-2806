@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a[title] {
+      color: green;
+    }
+
+    a[href="http://example.org"] {
+      color: red;
+    }
+
+    a[href*="primjer.org"] { /* ovaj selektor kaze da se "primjer.org" barem jednom ponavlja u href-u*/
+      color: blue;
+    }
+
+    a[href$=".com"] { /* ovaj selektor trazi sufiks ".com" u href-u*/
+      color: yellow;
+    }
+
+    p:hover {
+      background-color: indigo;
+    }
+
+    div::selection {
+      background-color: lightgreen;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <a title href="">Prvi a element</a>
+  <a href="http://example.org">Drugi a element</a>
+  <a href="http://primjer.org">Treci a element</a>
+  <a href="http://primjer.com">Cetvrti a element</a>
+  <p>Moj p element</p>
+  <div>Moj proizvoljni sadrzaj</div>
+</body>
+</html>

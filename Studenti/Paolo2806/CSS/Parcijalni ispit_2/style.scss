@@ -1,0 +1,116 @@
+@import "abstracts/mixins";
+@import "base/colors";
+@import "base/reset";
+
+
+body{
+  background-image: url(img/back.JPG);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  @include flex-container;
+  div {
+    width: 500px;
+    position: relative;
+    top:10vh;
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+main {
+  .sunce {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: $sunce;
+    margin: auto;
+    position: relative;
+    top: 20vh;
+    z-index: 0;
+  }
+}
+
+footer {
+  text-align: center;
+  margin:10vh auto;
+  padding: 20vh;
+  color: $font;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+@media (max-width: 1767px) {
+  header div {
+    flex:30%;
+  }
+}
+
+@media (max-width: 767px) {
+  header div {
+    flex:49%;
+  }
+}
+
+@media (max-width: 479px) {
+  .oblak2, .oblak3{
+    display: none;
+  }
+}
+
+@keyframes animacija1 {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(0,-20vh);
+  }
+}
+
+@keyframes animacija2 {
+  0% {
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(0,-30px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+main div {
+  animation-name: animacija1;
+  animation-duration: 3.6s;
+  animation-timing-function: ease;
+  animation-iteration-count: initial;
+}
+
+header div:first-of-type {
+  animation-name: animacija2;
+  animation-duration: 3.9s;
+  animation-delay: 1.1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+header div:nth-of-type(2) {
+  animation-name: animacija2;
+  animation-duration: 3.9s;
+  animation-delay: 2.7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+header div:nth-of-type(3) {
+  animation-name: animacija2;
+  animation-duration: 3.9s;
+  animation-delay: 3.9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}

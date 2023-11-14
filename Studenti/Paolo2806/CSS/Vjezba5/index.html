@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasljeđivanje CSS svojstava</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+      }
+      p {
+        color:#060;
+      }
+      em {
+        color: aqua;
+      }
+      strong {
+        text-decoration: underline wavy red;
+      }
+      span {
+        font-weight: normal;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      #div1 {
+        background-color: red;
+      }
+      .klasa1 {
+        background-color: blue !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pariatur qui ullamco laborum cillum.</h1>
+    <h2>Ullamco in aliqua anim</h2>
+    <h3>Sit incididunt do est dolor</h3>
+    <h4>Exercitation do dolor nisi aliqua.</h4>
+    <p>
+      Velit pariatur consequat et commodo ipsum id voluptate cillum ullamco et
+      reprehenderit ad pariatur fugiat. Officia duis do nulla minim duis
+      exercitation in qui excepteur fugiat dolore pariatur sint. In est et
+      cillum incididunt enim esse commodo. Commodo in cupidatat quis velit Lorem
+      consequat irure officia deserunt. Occaecat amet minim est sunt qui
+      cupidatat est incididunt. Eiusmod ea ut Lorem magna tempor commodo aliqua
+      adipisicing mollit est esse eu esse. Cupidatat Lorem exercitation duis
+      dolore nisi. Pariatur labore do mollit mollit nisi ullamco elit. Sint do
+      irure ad reprehenderit excepteur eiusmod officia cupidatat nulla ex.
+      Voluptate ullamco ut proident sit eiusmod reprehenderit sint fugiat id ea.
+      Aute reprehenderit deserunt officia non elit ex amet id dolor consectetur.
+    </p>
+    <p>
+      Velit pariatur consequat et commodo ipsum id voluptate cillum ullamco et
+      reprehenderit ad pariatur fugiat. Officia duis do nulla minim duis
+      exercitation in qui excepteur fugiat dolore pariatur sint. In est et
+      cillum incididunt enim esse commodo. Commodo in cupidatat quis velit Lorem
+      consequat irure officia deserunt. Occaecat amet minim est sunt qui
+      cupidatat est incididunt. Eiusmod ea ut Lorem magna tempor commodo aliqua
+      adipisicing mollit est esse eu esse. Cupidatat Lorem exercitation duis
+      dolore nisi. Pariatur labore do mollit mollit nisi ullamco elit. Sint do
+      irure ad reprehenderit excepteur eiusmod officia cupidatat nulla ex.
+      Voluptate ullamco ut proident sit eiusmod reprehenderit sint fugiat id ea.
+      Aute reprehenderit deserunt officia non elit ex amet id dolor consectetur.
+    </p>
+    <p>
+      Velit pariatur consequat
+      <strong
+        >et commodo <span>ipsum</span> id voluptate cillum ullamco et
+        reprehenderit ad pariatur fugiat.</strong
+      >
+      Officia duis do nulla minim duis exercitation in qui excepteur fugiat
+      dolore pariatur sint. In est et cillum incididunt enim esse commodo.
+      <em
+        >Commodo in cupidatat quis velit Lorem consequat irure officia
+        deserunt.</em
+      >
+      Occaecat amet minim est sunt qui cupidatat est incididunt.
+    </p>
+    <div style="background-color: yellow;">
+      <div id="div1" class="klasa1"></div>
+    </div>
+    
+  </body>
+</html>
