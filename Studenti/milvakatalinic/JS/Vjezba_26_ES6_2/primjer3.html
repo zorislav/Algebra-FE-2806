@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 Primjer 3</title>
+  </head>
+  <body>
+    <script>
+      const semafor = 1;
+      const prom = new Promise((resolve, reject) => {
+        if (semafor === 1) {
+          return resolve("Da!");
+        } else if (semafor === 0) {
+          return reject("Ne!");
+        } else {
+          throw new Error("Greska");
+        }
+      });
+
+      prom
+        .then(
+          (res) => {
+            console.log(res);
+          },
+          (rej) => {
+            console.log(rej);
+          }
+        )
+
+        .catch((error) => console.log(error.massage));
+    </script>
+  </body>
+</html>
