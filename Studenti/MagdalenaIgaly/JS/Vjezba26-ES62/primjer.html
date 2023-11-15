@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES62</title>
+</head>
+<body>
+    <script>
+        // Primjer 1
+        const bark = () => {
+            return "Wof Wof!";
+        }
+        console.log(bark());
+
+        // Primjer 2
+        const ispisiIme = ime => "Bok, " + ime;
+        console.log(ispisiIme("Perica"));
+
+        // Primjer 3
+        const imePrezime = (ime, prezime) => {
+            console.log(`Osoba se zove ${ime} ${prezime}`);
+            return `${ime} - ${prezime}`;
+        }
+        console.log(imePrezime("Ivan", "Horvat"));
+    </script>
+</body>
+</html>
