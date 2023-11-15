@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selektori atributa</title>
+    <style>
+     body {
+        color: #333;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+      }
+
+      [title] {
+        text-decoration: underline solid red;
+      }
+      [title= "Prvi odlomak"] {
+        font-weight: bold;
+      }
+      [title*="odlomak"] {
+        color:darkgreen;
+      }
+      [title~="odlomak"] {
+        text-transform: uppercase;
+      }
+      [title^="odlomak"] {
+        text-transform: uppercase;
+      }
+      [title|="odlomak"] {
+        font-family: 'Courier New', Courier, monospace;
+      }
+      [title$="odlomak"] {
+        color:darkorange;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1 title="Naslov stranice">Lorem ipsum dolor sit amet</h1>
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <h3>Lorem ipsum dolor sit</h3>
+    <p title="Prvi odlomak">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque
+      dolorem ipsam exercitationem nemo fugiat, laborum error corrupti, quos
+      esse sed quidem quod nam eveniet inventore culpa. Sit, non placeat!
+    </p>
+    <p title="odlomak-2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum debitis
+      ducimus neque molestias harum iure veniam laboriosam corrupti velit in
+      nostrum, eveniet, itaque atque delectus. Praesentium facere expedita modi
+      aliquid?
+    </p>
+    <p title="odlomak 3">
+      Lorem ipsum dolor sit,  amet consectetur adipisicing elit. Molestiae
+      quibusdam doloremque vel voluptas enim impedit, deleniti rem culpa fugit
+      consectetur dolore, reprehenderit officia deserunt minus dicta ex cumque
+      omnis eligendi?
+    </p>
+    <p title="odlomakbla">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum debitis
+      ducimus neque molestias harum iure veniam laboriosam corrupti velit in
+      nostrum, eveniet, itaque atque delectus. Praesentium facere expedita modi
+      aliquid?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum debitis
+      ducimus neque molestias harum iure veniam laboriosam corrupti velit in
+      nostrum, eveniet, itaque atque delectus. Praesentium facere expedita modi
+      aliquid?
+    </p>
+  </body>
+</html>

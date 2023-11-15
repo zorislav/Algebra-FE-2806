@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vjezba16-PromjenaStila</title>
+    <style>
+      .description {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="description">Primjer nekog teksta</div>
+    <script>
+      var divEl = document.querySelector(".decription");
+      var cssObj = window.getComputedStyle(divEl, null);
+      console.log(cssObj.getPropertyValue("font-size"));
+    </script>
+  </body>
+</html>
