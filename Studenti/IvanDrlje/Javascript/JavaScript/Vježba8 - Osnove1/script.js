@@ -1,0 +1,46 @@
+//1. zadatak -  Kreirajte varijable firstName i lastName i spojite ih u varijablu fullName, ali s razmakom ("") između imena i prezimena.
+
+var firstName = 'Ivan';
+var lastName = 'Horvat';
+
+var fullName = firstName + ' ' + lastName; //ovdi smo samo stavili razmak u stringu
+
+console.log(fullName);
+
+// 2.  Razlomite ovu ternarnu operaciju na 3 različite operacije! 
+//var x = z === 2? y : 5;
+
+//zato je puno lakše i brže sa ternary operatorom
+var z = 2;
+var y = 10;
+
+var x;
+
+if(z === 2){
+    x = y;
+} else {
+    x = 5;
+}
+
+console.log('x je: ' + x);
+
+
+//3.Napišite petlju koja će prolaziti kroz brojeve od 1 do 20. Za svaku će iteraciju provjeriti je li trenutni broj paran ili neparan, i console.log-ati rezultat (npr. "Broj 2 je paran"). 
+
+for ( i = 1; i <= 20; i++) {
+    if(i % 2 === 0){
+        console.log('Broj: ' + i + ' je paran');
+    } else {
+        console.log('Broj: ' + i + ' je neparan');
+    }
+}
+
+// for ( i = 1; i <= 20; i++) {
+//     if(i % 2){
+//         console.log('Broj: ' + i + ' je neparan');
+//     } else {
+//         console.log('Broj: ' + i + ' je paran');
+//     }
+// }
+
+//ovo je opcija 2. kada samo provjeravamo true/false - onda rezultat ide obrnut
