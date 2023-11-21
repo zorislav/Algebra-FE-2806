@@ -12,7 +12,7 @@ console.log(trueFalse);
 
 //2.
 console.log(q || x || y || z);
-//ispisuje prvu varijablu koja daje true vrijednost
+//ispisuje prvu varijablu koja daje true vrijednost - ovdi je to x
 
 
 //3.
@@ -20,14 +20,16 @@ var num = 6;
 num--;
 console.log(num); // konzola ispisuje 5
 
-//4.
+
+//4. ovi je zanimljiv jer metoda toFixed daje string
+
 var price = 26.5;
 var taxRate = 0.082;
 var totalPrice = price + (price * taxRate); // prioritet operacija radimosa zagradama
 console.log(totalPrice);
 console.log(totalPrice.toFixed(2)); // zaokružuje na dvije decimale
-console.log(typeof(totalPrice.toFixed(2))); //metoda tofixed daje STRING!!!
-console.log(typeof(+totalPrice.toFixed(2)));// konvertirali smo string nazad u broj
+console.log(typeof(totalPrice.toFixed(2))); //metoda toFixed daje STRING!!!
+console.log(typeof(+totalPrice.toFixed(2)));// konvertirali smo string nazad u broj sa + operatorom!!!
 
 
 

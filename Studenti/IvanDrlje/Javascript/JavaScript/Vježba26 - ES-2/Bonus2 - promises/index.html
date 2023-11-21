@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+
+    <script>
+
+        const semafor = 2;
+
+       const prom =  new Promise ((resolve, reject) => {
+
+            if(semafor === 1){
+                return resolve('Da!');
+            }else if (semafor === 0){
+                return reject('Ne!');
+            }else{
+                throw new Error('Greška!')//STVARA GREŠKA OBJEKT!!!
+                //throw {ime: 'Greška', tip: 'Nema interneta'};
+                //ali mi ovako kao gore možemo umjesto greška objekta, napraviti svoj
+                //objekt i on će tada biti vraćen u konzolu!!!
+            }
+
+        })
+
+        prom
+        .then(
+            (res) => {
+                console.log(res);
+            },
+             (rej) => {
+                console.log(rej);
+             }
+             )///ovako hvatamo oba parametra resolve i reject u .then, kao dvi funkcije/parametra
+            
+        .catch(error => console.log(error.message));///a sa .catch hvatamo taj error objekt
+
+        //ako je semafor = 1 resolve nam šalje kao argument 'Da' i on postaje res parametar,
+        // i ispisuje se u konzoli, ako je semafor = 0 resolve nam šalje kao argument 'Ne' ,
+        //i on postaje rej parametar i ispisuje se u konzoli!!!
+        //OVDE JE BITNO NAZNAČITI DA .THEN MOŽE PRIHVATITI OVA PARAMETRA I RESOLVE I
+        //REJECT, DA TO ZNAMO, A CATCH ONDA NIJE RESOLVE NEGO HVATA ERROR!!!
+
+        // OVO ERROR.MESSAGE JE SVOJSTVO NA OBJEKTU ERROR KOJE VRAĆA TEKST KOJI SMO ZADALI
+        //Tako ako je semafor nešto drugo osim 0 i 1 , onda .CATCH hvata grešku i
+        //u konzoli će biti ispis Error i naš tekst greške!!!
+
+        //VAŽNO JE I NAPOMENUTI I DA JE MOGLA BITI SAMO JEDNA OPCIJA RESOLVE I ONDA BI
+        //JU UHVATILI SA .THEN A .CATCH NAM NE BI NI TREBAO!!!
+
+        //NEGATIVAN ISHOD I GREŠKA NISU ISTO!!!
+
+
+
+
+    </script>
+    
+</body>
+</html>

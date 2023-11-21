@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 - Primjer 2 - Promises</title>
+</head>
+<body>
+
+    <script>
+
+        function getX(){
+            return Math.random() >= 0.5;//ovo je zapravo samo izraz koji može biti ili true ili false!!!!!!
+        }
+
+       const prom =  new Promise((resolve, reject) => { // ovo je zapravo definicija objekta promise!
+            const x = getX();
+            if(x){
+                return setTimeout(resolve, 1000); // vraćamo pozitivan ishod nakon vremenskog odmaka
+            }
+            return setTimeout(reject, 1000);
+        })//da ga nismo spremili u varijablu, radilo bi i da smo odma ovde nastavili sa .then i .catch!!!
+
+        ///prom.then().catch(); to je zapravo ov samo se tak piše
+        //vatamo pozitivni ishod sa then, a neg. sa catch!!!
+
+        prom
+        .then(() => console.log('Yay!'))
+        .catch(() => console.log('Oh no!'))
+        //dobijamo sa odmakom od 1 sekunde u konzoli 'oh no' ili 'yay'!!!
+
+    </script>
+</body>
+</html>
