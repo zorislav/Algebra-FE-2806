@@ -7,7 +7,8 @@ console.log(duljinaStringa);
 
 //2. izdvojit sit u varijablu
 
-var rijecSit = text.substr(19, 3); //uzima broj na kojem počine i daje 3 znaka iza, ali ovo je stara metoda kaže VS code
+var rijecSit = text.substr(19, 3); //uzima broj na kojem počine i daje 3 znaka iza,
+// ali ovo je stara metoda kaže VS code, zato je prekrižena iako radi
 console.log(rijecSit);
 
 //3. Zaminit amet sa elit
@@ -31,10 +32,11 @@ console.log(velikiText);
 var bezPrazninaText= text.trim();
 console.log(bezPrazninaText);
 
-//7. naši slovo na poziciji 12
+//7. nađi slovo na poziciji 12
 
 var slovo = text.charAt(12);
-console.log(slovo);
+console.log(slovo); // konzola ne ispisuje ništa jer je na poziciji 12 razmak :)
+
 
 
 // bonus-----------------------------------------------

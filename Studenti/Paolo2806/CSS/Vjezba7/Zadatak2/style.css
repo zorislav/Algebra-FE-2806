@@ -1,0 +1,12 @@
+body {
+  font-family: tahoma, sans-serif;
+  font-size: 16px;
+}
+
+div {
+  border: 2px solid #666;
+  padding: 1em;
+  width: 25%;
+  margin: 1em auto;
+
+}

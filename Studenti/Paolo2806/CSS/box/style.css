@@ -1,0 +1,29 @@
+body {
+  font-family: tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+body > div {
+  background-color: #eee;
+  height: 800px;
+  width: 800px;
+  margin: 2em auto;
+  border: 20px solid #999;
+}
+
+div > div {
+  width: 50%;
+  height: 50%;
+}
+
+div > div:first-child {
+  background-color: #f66;
+}
+
+div > div:last-child {
+  background-color: #69f;
+  margin-right: 0;
+  margin-left: auto;
+}
