@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vježba 27 - API</title>
+  </head>
+  <body>
+    <script>
+      var request = new XMLHttpRequest();
+      request.open("GET", "https.//dummyjson.com/products/1", true);
+
+      request.onload = function (result) {
+        console.log(result.currentTarget.responseText);
+      };
+
+      request.send();
+
+      function getData() {
+        var response = fetch("https.//dummyjson.com/products/1")
+          .then((response) => response.json())
+          .then((responseData) => console.log(JSON.stringify(responseData)))
+          .catch((error) => console.log(error));
+      }
+
+      getData();
+
+      async function getData2() {
+        const response = fetch("https.//dummyjson.com/products/1");
+        const responseData = await response.json();
+
+        consoloe.log(JSON.stringify(responseData));
+      }
+
+      getData2();
+    </script>
+  </body>
+</html>
