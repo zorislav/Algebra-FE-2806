@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  border: 1px dashed #666;
+  padding: 1em;
+  display: flex;
+}
+
+.container div {
+  background-color: #eee;
+  border: 1px solid #666;
+  width: 30%;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+.flex-item:nth-child(3) { /*Nešto mi ne štima. treba anći grešku*/
+  flex-grow: 3;
+}
