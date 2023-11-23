@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primjer - Promise</title>
+  </head>
+  <body>
+    <script>
+      let semafor = 1;
+
+      const prom = new Promise((response, reject) => {
+        if (semafor === 1) {
+          return response("Da");
+          // return setTimeout() => respones ("Da"), 1000);
+        } else if (semafor === 0) {
+          return reject("Ne");
+        }
+      });
+
+      prom.then((res) => console.log(res)).catch((rej) => console.log(rej));
+      //prom.then(res => console.log(res), rej => console.log(rej));
+    </script>
+  </body>
+</html>
