@@ -1,0 +1,24 @@
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: Tahoma, sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #333;
+  color: #eee;
+}
+
+h1 {
+  color: #800;
+}
+
+a {
+  font-family: courier, monospace;
+}
+
+article {
+  border: 2px solid #800;
+  margin: 1em 0;
+}/*# sourceMappingURL=style.css.map */

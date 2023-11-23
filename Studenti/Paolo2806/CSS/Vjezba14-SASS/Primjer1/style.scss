@@ -1,0 +1,30 @@
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+$font1: Tahoma, sans-serif;
+$font2: courier, monospace;
+
+body {
+  background-color: $color1;
+  color:$color2;
+  font-family: $font1;
+}
+
+header {
+  text-align: center;
+  background-color: $color2;
+  color: $color1;
+}
+
+h1 {
+  color:$color3;
+}
+
+a {
+  font-family: $font2;
+}
+
+article {
+  border:2px solid $color3;
+  margin: 1em 0;
+}
