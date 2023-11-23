@@ -7,19 +7,34 @@
   </head>
   <body>
     <script>
-      let semafor = 1;
+      let semafor = 2;
 
-      const prom = new Promise((response, reject) => {
+      try{
+
+        const prom = new Promise((response, reject) => {
+
+         if(semafor > 1) {
+
+          throw {ime: "Greska", opis: "Stranica nije pronadjena", kod:"404"};
+         }
         if (semafor === 1) {
           return response("Da");
           // return setTimeout() => respones ("Da"), 1000);
         } else if (semafor === 0) {
           return reject("Ne");
         }
+         
       });
 
-      prom.then((res) => console.log(res)).catch((rej) => console.log(rej));
+      }
+        
+      prom.then (res => console.log(res)).catch(rej => console.log(rej));
       //prom.then(res => console.log(res), rej => console.log(rej));
+
+  catch (error) {
+
+  console.log(`${error.ime} - ${error.opis} ${error.kod}` );
+}
     </script>
   </body>
 </html>
