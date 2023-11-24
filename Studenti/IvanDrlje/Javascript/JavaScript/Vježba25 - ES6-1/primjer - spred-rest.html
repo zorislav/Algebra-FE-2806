@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 - 1 Primjeri</title>
+</head>
+<body>
+
+
+    <script>
+        const x = ['Ivan', 'Marija', 'David'];
+        console.log(x); // konzola ispisuje niz!!!
+
+        console.log(...x); // konzola ispisuje 3 stringa!!!
+
+        function ispisiImena(prvi, drugi, treci){
+            console.log(prvi);
+        }
+
+        ispisiImena(...x); // konzola ispisuje Ivan
+        
+       // ovo je bio spred operator
+       // ------------------------------
+       // ovo je rest operator
+
+        function ispisiImena2(...args){
+            console.log(args); // OVO VRAĆA NIZ IVAN MARIJA
+            console.log(args[0]);//OVO VRAĆA SAMO IVAN - POZICIJU 0
+        }
+
+        ispisiImena2('Ivan', 'Marija');
+
+        //REST RADI OBRNUTO OD SPREDA, VRAĆA NIZ???
+        //ovaj širi ovaj grupira!!!
+
+
+
+    </script>
+</body>
+</html>
