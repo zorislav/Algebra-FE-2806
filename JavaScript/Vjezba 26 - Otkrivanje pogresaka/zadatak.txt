@@ -1,0 +1,13 @@
+1. Kreirajte datooteku app.js slijedećeg sadržaja:
+
+name = 'James'
+
+const person = {first: name}
+
+console.log(person)
+
+const sayHelloLinting = (fName) => {
+console.log(`Hello linting, ${fName}`);
+};
+
+2. Pomoću JSLint i ESLint izvršite statičku provjeru koda
