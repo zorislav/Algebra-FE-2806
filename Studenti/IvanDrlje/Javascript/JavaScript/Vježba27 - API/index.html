@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vježba27 API</title>
+</head>
+<body>
+
+
+    <script>
+// 1. Odite na stranicu https://any-api.com/ 
+// 2. Izaberite jedan public API sa liste koji podržava REST standard, pruža podatke u JSON obliku i ima upute za dohvaćanje sa XMLHttpRequest objektom (nativni JavaScript jezik).
+// 3. Napišite JS kod koji se priključuje na taj API (po uzoru na primjer iz prijašnje lekcije).
+// 4. Izaberite jedan endpoint u APIju nad kojim možete napraviti GET request. 
+// Ispišite rezultat u konzolu.
+
+
+        const request = new XMLHttpRequest(); //OVO JE AJAX
+        //S ovim smo kreirali novi objekt, koji je ugrađen u preglednik
+        request.open('GET', 'https://dummyjson.com/products/1', true);
+        //na objekt request koristimo metodu open koja ima 3 parametra:
+        // 1 je metoda/akcija, 2 parametar je URL servisa u navodnicima - ovdi je
+        // to URL od 1. producta na Dummy JSON stranici, 3. parametar je true ako
+        //je asinhrono dohvaćanje, false ako je sinhrono (ovdi je true)!!!
+        request.onload = function(result){
+            console.log(result.currentTarget.responseText);
+        };
+        //ovje stavljamo metodu .onload koja = funkcija koja će nešto odraditi s 
+        //dobivenim podacima kada ih dobijemo nazad(parametar smo rezutat pretrage,
+        //zapravo rezultat objekt)printamo onda prema metodama objekta koje smo 
+        //vidili u pregledniku .currentTarget.responseText da bi dobili nazad JSON file!!!
+
+        request.send();
+        //s ovom metodom šaljemo zahtjev API-u!!!
+
+
+        //--------------------------------------------------------------------------
+        //ovaj način AJAX slanja zahtjeva i obrade podataka je malo zastario
+        //a suvremeni JS više za AJAX koristi Fetch!!!
+        //ona podržava i promise i defolt vraća JSON file - primjer niže!!!
+        //--------------------------------------------------------------------------
+
+        function getData(){
+           fetch('https://dummyjson.com/products/1') //ako ne navedemo metodu u fetch, defoult je GET
+           .then(response => response.json())
+           .then(responseData => console.log(JSON.stringify(responseData)))
+           .catch(error => console.log(error));
+        }
+            //dodajemo metodu .THEN() da znamo što sa promisom kada se pozitivno razriješi
+            //response nam je objekt a na njega primjenjujemo metodu .JSON() koja vraća
+            //streem podataka u obliku PROMISA, zato na nju opet moramo staviti novu metodu
+            //.THEN() da opet razriješimo promise i onda dobijamo objekt u oblik JSON-a, na
+            //taj objekt stavljamo u metodu JSON.stringify i napokon dobijamo JSON FILE!!!!!
+            //Za u slučaju greške stavljamo .CATCH() metodu, te dobijemo error objekt i
+            //njega ispisujemo za sada ako bude greška!!!
+
+        getData();
+        //pozivamo funkciju
+
+       //-------------------------------------------------------------------------
+       //ISTA OVA STVAR SE MOŽE NAPISATI I U ASYNC/AWAIT VARIJANTI:
+
+
+
+       async function getData2(){
+           const response = await fetch('https://dummyjson.com/products/1');
+           const responseData = await response.json();
+
+           console.log(JSON.stringify(responseData));
+          
+        }
+      //u ovoj varijanti response stavljamo kao varijablu i u njoj prije .FETCH 
+      //stavljamo AWAIT DA PRIČEKAMO DA SVE STAJI DOK TO SVE STIGNE.
+      //Onda u novoj varijabli na response primjenimo .json() ali pošto i ona vraća
+      //promise i njoj stavljamo AWAIT da stoji dok se ne vrati!!
+      //I kao završnu fazu samo ispišemo taj set podataka u JSON fileu!!!
+      //OVO SE ČINI NAJJEDNOSTAVNIJA OPCIJA!!!
+
+        getData2();
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

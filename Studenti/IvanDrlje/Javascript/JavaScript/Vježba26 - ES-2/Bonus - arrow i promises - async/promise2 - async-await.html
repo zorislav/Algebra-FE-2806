@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primjer - promise</title>
+</head>
+<body>
+
+    <script>
+
+
+//. Prvi primjer------------------------------------------------------------
+        let semafor = 5;
+
+     try {
+
+
+       
+
+       const prom = new Promise((resolve, reject) => {
+            if(semafor > 1){
+            throw {ime: 'Greška', opis: 'Stranica nije pronađena', kod: '404'}
+            //ovo smo mi kreirali naš error objekt, postavili našu grešku
+           }
+           //ovaj dio koda bi morali zbaciti van promisa jer nam on odmah onda izlazi van
+           //i ide na catch i tako se riješi, mi ne želimo da ide na catch, nego da ide
+           //na vanjski catch-error i zato bi ga trebalo izbacili prije promisa
+
+            if(semafor === 1){
+                        return resolve('Da')//ovaj da postaje argument u funkciji then!!!
+                        //Realno ovo bi radilo i bez return, ali ovako smo sigurni da prekidamo
+                        //izvođenje svih drugih operacija!!!, a za izlaz iz anonimne funkcije,
+                        //nam ne treba return jer su resolve i reject povezane sa then i catch!!! 
+                    }else if( semafor === 0){
+                        return reject('Ne');
+                        //throw 'Greška'; MOŽEMO ZAVRŠIT I SA OVIM, NE SAMO SA REJECT
+                        //U OBA SLUČAJA CATCH VRAĆA NEGATVNI ISHOD
+                    }
+
+                });
+
+       prom.then(
+        res => console.log(res)//arrow funkcija u funkciji, piše što se izvraša kad je ptomis pozitivno izvršen
+       ).catch(rej => console.log(rej));
+
+       //prom.then(res => console.log(res),rej => console.log(rej));
+       //OVO JE OPCIJA DA UOPĆE NE KORISTIMO.CATCH NEGO OBE VARIJANTE PIŠEMO U .THEN,
+       //SAMO KAO 2 PARAMETRA!!!
+
+       //u pretohodnom primjeru smo stavili timeout samo iz razloga simulacije realne
+       //životne situacije, jer se ovo dohvačanje promisa uvijek odvija sa vremenskim
+       //odmakom, ali ono nam u stvari uopće ne treba!!!
+
+
+        } catch(error){//ovaj catch vraća error OBJEKT!!!
+            console.log(`${error.ime} - ${error.opis} - ${kod}`);
+
+        }
+
+
+
+//2. Primjer----------------------------------------------------------------------------
+
+        const uBudućnosti = new Promise((resolve, reject) => {
+
+            return setTimeout(resolve, 2000);
+
+        });
+
+        function buducnost1 (){
+            console.log('Početak1');
+            uBudućnosti.then(res => {
+                console.log('Done1');
+            }) // ovo sada radimo sa objektom iz Promisa, kada se pozitivno riješi
+            console.log('Kraj1');
+        }
+
+        //U konzoli dobijamo Početsak, kraj pa tek onda done, jer se promise 
+        //pozitivno razriješio sa odmakom od 2 sekunde, logično
+        
+        // druga opcija istog zadatka sa async/await----------------------------
+
+        //čIM JE FUNKCIJA OZNAČENA SA ASYNC ZNAČI DA VRAČA PROMISE, i u njoj možemo 
+        //koristiti await
+        async function buducnost2(){
+        console.log('Početak2');
+
+        await uBudućnosti;
+        //OVA LINIJA KAŽE, ČEKAJ STANI DOK PROMISE U BUDUĆNOSTI NE BUDE RAZRIJEŠEN
+        //I NAKON TOGA NAPIŠI DONE 2 I KRAJ DVA, OVO JE KAO LINEARNI NAČIN IZVRŠAVANJA
+        //DA SVE IDE PO REDU, ZAPRAVO SVE STAJE DOK SE PROMISE NE IZVRŠI
+        console.log('Done2');
+        console.log('Kraj2');
+        }
+
+        //U konzoli dobijamo Početak, done pa tek onda kraj, ovo sa async/await je
+        //drugačije jer
+
+        buducnost1();
+        buducnost2();
+
+
+
+
+       
+
+
+    </script>
+    
+</body>
+</html>

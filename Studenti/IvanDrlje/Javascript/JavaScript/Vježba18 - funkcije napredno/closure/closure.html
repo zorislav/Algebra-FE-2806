@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+
+    <script>
+
+        let globalnaVar = 5;
+
+        //CLOSURE - SA OBIČNIM FUNKCIJAMA
+
+        const vanjskaFn = () => {
+
+            let lokalnaVar = 10;
+
+            const unutarnjaFn = ()=>{
+                console.log(`Globalna ${globalnaVar}`);
+                console.log(`Lokalna ${lokalnaVar}`);
+            }
+
+          // unutarnjaFn();//unutrarnja f se mora pozvati u tijelu vanjske, a ne može
+           //iz globalnog scopa
+
+           return unutarnjaFn;//zapravo sada će rezultat pozivanja vanjske funkcije biti
+           // unutarnja funkcija
+
+        }
+
+        const vF = vanjskaFn();
+        //ako ovo spremimo u varijablu, zapravo smo spremili unutarnju funkciju!!!!
+        vF(); //a onda sa pozivanjem ove zapravo pozivamo unutarnu funkciju!!!
+
+        //console.log(vanjskaFn());//printa tijelo unutarnje funkcije!!!
+
+        //OVO JE JEDNOSTAVAN PRIMJER CLOSEURA, ZATO JER JE VANJSKA FUNKCIJA IZVRŠENA,
+        //A MI POZIVANJEM NOVE VARIJABLE(VRAĆENE VRIJUEDNOSTI VANJSKE FUNKIJE), ZAPRAVO
+        //DOBIJAMO PRISTUP ELEMENTIMA UNUTARNJE VARIJALBE!!! BEZ TOGA DO UNUTARNJE FUNKCIJE
+        ///SE NE MOŽE DOĆI!!!
+
+
+        //------------------------------------------------------------------------
+        //ISTI PRIMJER closura ALI SA IIFE, SAMOPOZIVAJUĆUM ANONIMNOM FUNKCIJOM:
+
+        const vanjskaFn1 = (() => {
+        let lokalnaVar = 10;
+
+        const unutarnjaFn = ()=>{
+            console.log(`Globalna ${globalnaVar}`);
+            console.log(`Lokalna ${lokalnaVar}`);
+        }
+
+        return unutarnjaFn;
+        })(); // s ovim zagradama smo izvršili vanjsku funkciju, zapravo dobili/vratili!!!
+        //vrijednost unutarnje funkcije
+
+       vanjskaFn1(); //a sada izvršavamo i unutarnu, pozivajuću vanjsku!!!!
+
+       // i dobijemo isti rezultat kao u primjeru gore
+
+
+       //-------------------------------------------------------------------------
+       //primjer KAKO ŠTITITI PODATKE!!!
+
+
+            const vanjskaFn2 = (() => {
+                let lokalnaVar = 10;
+
+            
+                //return unutarnjaFn; UMJESTO FUNKCIJE, VRAĆAMO OBJEKT!!!
+                return{
+                    get: () => lokalnaVar, // funkcija koja je postavljena na vrijednost lokalne varijable
+                    set: (novaVrijednost) => lokalnaVar = novaVrijednost // funkcija postavlja lokalnu varijablu na (parametar/argument) novuVrijednost
+                }
+
+            })(); 
+
+            //VANJSKAFN2 POSTAJE OBJEKT, JER JE VRAĆENA VRIJEDNOST OBJEKT, SA DVIJE METODE!!!!
+            //TQAKO NIŽE MOŽEMO PRISTUPITI SVOJSTVIMA/METODAMA OBJEKTA.
+
+            console.log(vanjskaFn2.get());//konzola printa 10
+            vanjskaFn2.set(35);//mijenjamo vrijednost lokalne varijable
+            console.log(vanjskaFn2.get());//konzola onda printa 35
+            console.log(vanjskaFn2.lokalnaVar);//konzola daje undefined!!!
+            //VARIJABLI U FUNKCIJI SE NE MOŽE PRISTUPITI, OSIM PREKO VRAĆENIH FUNKCIJA
+
+
+          
+
+
+
+    </script>
+    
+</body>
+</html>
