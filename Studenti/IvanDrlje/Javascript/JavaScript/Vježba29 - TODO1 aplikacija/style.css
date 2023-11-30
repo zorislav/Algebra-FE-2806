@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+h1 {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: rgb(68,69,68);
+}
+
+
+.button-group {
+  font-size: 0;
+}
+/*ovo radimo da bi nam se buttoni približili jedan uz drugog!!!
+Ovo je CSS trik!!!!!!*/
+
+
+.button-group button{
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid rgb(68,69,68);
+    color: rgb(68,69,68);
+    background-color: rgb(204,207,204);
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.button-group button:not(:last-child) {
+    border-right: none;
+}
+/*ovdi brišemo duple bordere, nije toliko bitno al eto da se nađe, inače 
+bitan je ovaj pseudoselektor :not u kojem smo makli last child!!!*/
+
+
+.button-group button:disabled {
+background-color: rgb(68,69,68);
+color: rgb(204,207,204);
+}
+/*s ovim smo birali botum koji je u HTML-u disabled*/
+
+
+.button-group button:not(:disabled):hover {
+    background-color: rgb(173,175,173);
+}
+/*ovako biramo onoga koji nije disabled*/
+
+
+
+#section-todo {
+    border: 1px solid rgb(68,69,68);
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgb(173,175,173);
+    width: 60%;
+    margin: 50px auto 0 auto;
+}
+
+
+
+#section-todo button {
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid rgb(68,69,68);
+    color: rgb(68,69,68);
+    background-color: rgb(204,207,204);
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+
+
+
+#section-input {
+    display: flex;
+}
+
+
+
+
+#input-text {
+    width: 70%;
+    text-align: left;
+    border: 1px solid rgb(68,69,68);
+}
+
+
+
+#input-text:focus {
+    outline: none;
+}
+/*s ovim skidamo fokus, kada dođemo mišem da se ne minja situacija, ovo je 
+//automatski fokus stavljen od strane browsera!!!*/
+
+
+
+#input-add {
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid rgb(68,69,68);
+    color: rgb(68,69,68);
+    background-color: rgb(204,207,204);
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+
+
+#input-add:hover {
+    background-color: rgb(173,175,173);
+}
+
+
+#section-clear-completed {
+    width: 60%;
+    margin: auto;
+}
+
+
+
+#button-clear-completed {
+    border: 0;
+    color: rgb(68,69,68);
+    background-color: white;
+    margin-top: 20px;
+    float: right;
+}
+
+
+
+#button-clear-completed:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#section-todo ul {
+    padding-left: 0;
+    /*skidamo zadani padding sa elementa, da zauzima cili red*/
+}
+
+
+.ul-todo li{
+list-style-type: none;/*skidamo točke sa elelmenata liste*/
+font-weight: bold;
+color: rgb(68,69,68);
+}
+/*s ovim selektiramo sve li elemente unutra naše liste, oni još ne postoje
+ali ih mi dodajemo putem JS-a!!! i onda radimo tu stilizaciju!!!*/
+
+
+.ul-todo li.done {
+    text-decoration: line-through;
+}
+/*kada je DONE(završen) precrtamo mu text!!!!*/
+/*to done rješavamo u kodu!!!*/
+
+
+.li-container { 
+    display: flex;
+    justify-content: space-between;
+}
+/* s ovim isto stiliziramo nove JS elemente koje smo napravili*/
+
+
+
+.li-container-int input {/*selektiramo naš checkbox*/
+    margin: 20px;
+}
+/*udaljavamo checkbox od teksta*/
+
+.removeButton {
+    display: inline-block;
+    color: rgb(68,69,68);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px;
+}
+/*ovo je klasa onog našeg x-a, namištamo naš x*/

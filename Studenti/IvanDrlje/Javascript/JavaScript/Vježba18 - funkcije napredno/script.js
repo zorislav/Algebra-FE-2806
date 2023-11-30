@@ -25,9 +25,10 @@ const myF = (function (name) {
    var x = name;
    function f() { return k; }
    return f;
-})(k);//OVDE SMO STAVILI VANJSKI PARAMETAR I POZVALI PRVU FUKCIJU!!!
+})(k);//OVDE SMO STAVILI VANJSKI PARAMETAR I POZVALI PRVi put vanjsku FUKCIJU!!!
 
-console.log(myF());//OVDE MORAMO POZVATI I DRUGU FUNKCIJU I ONDA SVE RADI!!!
+console.log(myF());//OVDE MORAMO POZVATI I DRUGU FUNKCIJU (zapravo izvršavamo
+//unutarnju kojoj smo returnom dobili vrijednost) I ONDA SVE RADI!!!
 
 
 

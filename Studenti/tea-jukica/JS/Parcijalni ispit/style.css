@@ -1,0 +1,49 @@
+#loading-spinner {
+  width :30px;
+  height: 30px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid black;
+  margin: 50px auto;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.list-item{
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  padding: .4em;
+  margin: .5em 0;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+}
+
+img {
+  width: 40px;
+}
+
+#itunes {
+  display: inline;
+  font-size: 40px;
+}
+
+#input {
+  display: inline-block;
+  width: 300px;
+  padding: 10px 5px;
+  background-color: white;
+  border-radius: 40px;
+  margin: 40px 0;
+}
