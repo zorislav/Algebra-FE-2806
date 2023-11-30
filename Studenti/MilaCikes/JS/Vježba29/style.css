@@ -55,13 +55,19 @@ h1 {
   cursor: pointer;
 }
 
-#section-input {
+#section-input:focus {
   display: flex;
+}
+
+#input-text {
+  outline: none;
 }
 
 #input-text {
   width: 70%;
   text-align: left;
+  border: none;
+  border: 1px solid rgb(204, 207, 204);
 }
 
 #input-add {
@@ -94,4 +100,35 @@ h1 {
 #button-clear-completed:hover {
   font-weight: bold;
   cursor: pointer;
+}
+
+#section-todo ul {
+  padding-left: 0;
+}
+
+.ul-todo li {
+  list-style-type: none;
+  font-weight: bold;
+  color: rgb(68, 69, 68);
+}
+
+.ul-todo li.done {
+  text-decoration: line-through;
+}
+
+.li-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.li-container-int input {
+  margin: 20px;
+}
+
+.removeButton {
+  display: inline-block;
+  color: rgb(68, 69, 68);
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px;
 }

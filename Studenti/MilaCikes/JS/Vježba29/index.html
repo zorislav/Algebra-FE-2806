@@ -3,31 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo app</title>
+    <title>TODO App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>My tasks</h1>
+      <h1>My Tasks</h1>
       <div>
-        <div class="button-group"></div>
-        <button id="button-all" disabled>All</button>
-        <button id="button-active">Active</button>
-        <button id=" button-completed">Completed</button>
+        <div class="button-group">
+          <button id="button-all" disabled>All</button>
+          <button id="button-active">Active</button>
+          <button id="button-completed">Completed</button>
+        </div>
       </div>
     </header>
+
     <main>
-      <div id="section todo">
+      <div id="section-todo">
         <div id="section-input">
           <input type="text" id="input-text" placeholder="Add todo" autofocus />
           <input type="submit" value="Add" id="input-add" />
         </div>
         <ul class="ul-todo"></ul>
       </div>
+
       <div id="section-clear-completed">
-        <button id="clear-completed">Clear completed</button>
+        <button id="button-clear-completed">Clear completed</button>
       </div>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
