@@ -1,26 +1,70 @@
-const inputE1 = document.getElementById("input");
-const ulE1 = document.getElementById("lista");
-const posaljiButton1 = document.getElementById("posalji");
-const procitajButtonE1 = document.getElementById("procitaj");
+const inputEl = document.getElementById("input");
+const ulEl = document.getElementById("lista");
+const posaljiButtonEl = document.getElementById("posalji");
+const procitajButtonEl = document.getElementById("procitaj");
+const lsEl = document.getElementById("loading-spinner");
 
 async function getData() {
-  const response = await fetch(
-    "https://algebra-fe-default-rtdb.europe-west1.firedatabase.app/demodb.json",
-    {
-      method: "GET",
+  try {
+    lsEl.style.display = "block";
+
+    const response = await fetch(
+      "https://algebra-fe-default-rtdb.europe-west1.firebasedatabase.app/demodb.json",
+      {
+        method: "GET",
+      }
+    );
+
+    const responseData = await response.json();
+
+    lsEl.style.display = "none";
+
+    while (ulEl.firstChild) {
+      ulEl.removeChild(ulEl.firstChild);
     }
-  );
-  const responseData = await response.json();
+
+    for (key in responseData) {
+      let liEl = document.createElement("li");
+      ulEl.appendChild(liEl);
+      liEl.innerText = responseData[key].poruka;
+    }
+  } catch (error) {
+    alert(error);
+  }
 }
 
-procitajButtonE1.addEventListener("click", getData);
+async function postData() {
+  const text = inputEl.value.trim();
 
-console.log(responseData);
+  const postObj = {
+    poruka: text,
+  };
 
-for (key in responseData) {
-  let liE1 = document.createElement("li");
-  ulE1.appendChild(liE1);
-  liE1.innerText = responseData(key).poruka;
+  try {
+    lsEl.style.display = "block";
+
+    const response = await fetch(
+      "https://algebra-fe-default-rtdb.europe-west1.firebasedatabase.app/demodb.json",
+      {
+        method: "POST",
+        body: JSON.stringify(postObj),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    const responseData = await response.json();
+    console.log(responseData);
+
+    lsEl.style.display = "none";
+
+    alert("Podaci poslani");
+    inputEl.value = "";
+  } catch (error) {
+    alert(error);
+  }
 }
 
-pročitajButtonE1.addEventListener("click", getData);
+procitajButtonEl.addEventListener("click", getData);
+posaljiButtonEl.addEventListener("click", postData);
