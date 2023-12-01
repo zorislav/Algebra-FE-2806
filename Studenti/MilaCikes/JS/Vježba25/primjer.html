@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES61 Primjeri</title>
+  </head>
+  <body>
+    <script>
+      const x = ["Ivan", "Marija", "David"];
+      console.log(x);
+      console.log(...x);
+
+      function ispisiImena(prvi, drugi, treći) {
+        console.log(prvi);
+      }
+
+      ispisiImena(...x);
+
+      function ispisiImena2(...args) {
+        console.log(args);
+        console.log(args[2]);
+      }
+
+      ispisiImena2("Ivan", "Marija", "Josip");
+    </script>
+  </body>
+</html>
