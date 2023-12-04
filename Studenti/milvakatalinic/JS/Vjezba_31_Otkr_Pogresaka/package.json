@@ -1,0 +1,15 @@
+{
+  "name": "vjezba_31_otkr_pogresaka",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.55.0"
+  }
+}

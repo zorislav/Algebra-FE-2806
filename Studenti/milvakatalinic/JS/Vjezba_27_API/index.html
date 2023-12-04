@@ -20,7 +20,7 @@
       var request = new XMLHttpRequest();
       request.open("GET", "https://dummyjson.com/products/1", true);
 
-      request.open = function (result) {
+      request.onload = function (result) {
         console.log(result.currentTareget.responseText);
       };
 

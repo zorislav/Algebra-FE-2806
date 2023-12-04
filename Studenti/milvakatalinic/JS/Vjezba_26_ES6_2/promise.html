@@ -9,32 +9,58 @@
     <script>
       let semafor = 2;
 
-      try{
-
+      try {
         const prom = new Promise((response, reject) => {
+          if (semafor > 1) {
+            throw {
+              ime: "Greska",
+              opis: "Stranica nije pronadjena",
+              kod: "404",
+            };
+          }
 
-         if(semafor > 1) {
+          if (semafor === 1) {
+            return response("Da");
+            // return setTimeout() => respones ("Da"), 1000);
+          } else if (semafor === 0) {
+            return reject("Ne");
 
-          throw {ime: "Greska", opis: "Stranica nije pronadjena", kod:"404"};
-         }
-        if (semafor === 1) {
-          return response("Da");
-          // return setTimeout() => respones ("Da"), 1000);
-        } else if (semafor === 0) {
-          return reject("Ne");
-        }
-         
+            //throw "Greska";
+          }
+        });
+
+        prom.then((res) => console.log(res)).catch((rej) => console.log(rej));
+        prom.then(
+          (res) => console.log(res),
+          (rej) => console.log(rej)
+        );
+      } catch (error) {
+        console.log(`${error.ime} - ${error.opis} - ${error.kod}`);
+      }
+
+      const uBuducnosti = new Promise((resolve, reject) => {
+        return setTimeoute(resolve, 2000);
       });
 
+      function buducnost1() {
+        console.log("Pocetak");
+        uBuducnosti.then((res) => {
+          console.log("Done1");
+        });
+        console.log("Kraj1");
       }
-        
-      prom.then (res => console.log(res)).catch(rej => console.log(rej));
-      //prom.then(res => console.log(res), rej => console.log(rej));
 
-  catch (error) {
+      async function buducnost2() {
+        console.log("Pocetak2");
 
-  console.log(`${error.ime} - ${error.opis} ${error.kod}` );
-}
+        await uBuducnosti;
+        console.log("Done2");
+
+        console.log("Kraj2");
+      }
+
+      buducnost1();
+      buducnost2();
     </script>
   </body>
 </html>
