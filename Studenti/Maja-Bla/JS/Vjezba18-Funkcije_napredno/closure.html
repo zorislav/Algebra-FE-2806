@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funkcije napredno - closure</title>
+</head>
+<body>
+  
+  <script>
+
+    let globalnaVar = 5;
+
+    //Closure
+
+    const vanjskaFn = (() => {
+
+     let lokalnaVar = 10;
+
+    const unutarnjaFn = () => {
+   
+      console.log (`Globalna: ${globalnaVar}`);
+      console.log (`Lokalna: ${lokalnaaVar}`);
+    }
+
+   return unutarnjaFn;
+  }) ();
+
+  //const vF = vanjskaFn();
+  //vF();
+
+  vanjskaFn();
+
+  //console.log(vanjskaFn());
+
+
+  const vanjskaFn2 = (() => {
+
+let lokalnaVar = 10;
+
+//const unutarnjaFn = () => {
+
+ //console.log (`Globalna: ${globalnaVar}`);
+ //console.log (`Lokalna: ${lokalnaaVar}`);
+//}
+
+//return unutarnjaFn;
+
+return {
+  get: () => lokalnaVar,
+  set: (novaVrijednost) => lokalnaVar = novaVrijednost
+};
+
+
+}) ();
+
+console.log(vanjskaFn2.get());
+vanjskaFn2.set(35);
+console.log(vanjskaFn2.get());
+console.log(vanjskaFn2.lokalnaVar);
+
+
+  </script>
+
+</body>
+</html>
