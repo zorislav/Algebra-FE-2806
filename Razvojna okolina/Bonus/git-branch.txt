@@ -1,0 +1,113 @@
+1. Pozicionirati se u folder bez repozitorija i kreirati prazni repozitorij
+
+# git init
+
+Provjera: 
+
+# git status
+
+2. Kreirati datoteku index.html slijedećeg sadržaja
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git merge</title>
+</head>
+<body>
+  <p>Pocetna linija</p>
+</body>
+</html>
+
+Provjera: 
+
+# git status
+
+3. Dodati datoteku index.html u staging area
+
+# git add .
+
+Provjera: 
+
+# git status
+
+4. Napraviti commit 
+
+# git commit -m "Prvi commit master"
+
+Provjera: 
+
+# git status
+# git log
+
+5. Kreiratri novi branch feature
+
+# git checkout -b feature
+
+Provjera:
+
+# git branch
+
+6. U datoteku index.html dodati red
+
+<p>Ovo sam dodao u feature branchu</p>
+
+7. U feature branchu dodati datoteku index.html u staging area
+
+# git add .
+
+Provjera: 
+
+# git status
+
+8. U feature branchu napraviti commit 
+
+# git commit -m "Prvi commit feature"
+
+Provjera: 
+
+# git status
+# git log
+
+9. Prebaciti se na branch master
+
+# git checkout master
+
+10. U datoteku index.html dodati red
+
+<p>Ovo sam dodao u master branchu</p>
+
+11. U master branchu dodati datoteku index.html u staging area
+
+# git add .
+
+Provjera: 
+
+# git status
+
+12. U master branchu napraviti commit 
+
+# git commit -m "Drugi commit master"
+
+Provjera: 
+
+# git status
+# git log
+
+13. U master branchu napraviti merge
+
+# git merge feature
+
+Provjera: 
+
+# git status
+
+14. U master branchu napraviti commit 
+
+# git commit -m "Finalni commit master"
+
+Provjera: 
+
+# git status
+# git log
