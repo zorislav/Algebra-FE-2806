@@ -19,15 +19,26 @@ function ConditionalRendering(props) {
 class App extends React.Component {
   constructor() {
     super();
-
     this.state = {
       number: null,
     };
   }
+
+  handleButtonClick(number) {
+    this.setState((currState) => {
+      return {
+        number: number,
+      };
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <h1>Hello World!!</h1>
+        <p>Hello World!</p>
+        <button onClick={() => this.handleButtonClick(1)}>1</button>
+        <button onClick={() => this.handleButtonClick(2)}>2</button>
+        <button onClick={() => this.handleButtonClick(3)}>3</button>
         <ConditionalRendering number={this.state.number} />
       </div>
     );

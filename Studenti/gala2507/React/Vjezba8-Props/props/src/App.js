@@ -1,6 +1,6 @@
-import React from "react";
 import "./App.css";
-import UserFunction from "./user/UserFunction";
+import React from "react";
+import { UserFunction, UserChildren, UserClass } from "./user";
 
 const users = [
   {
@@ -16,15 +16,18 @@ const users = [
     years: 25,
   },
 ];
-
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <UserFunction ime={users[0].name} years={users[0].years} />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <h1>React aplikacija</h1>
+      <p>Ovo zaista radi</p>
+      <UserFunction ime={users[0].name} years={users[0].years} />
+      <UserClass ime={users[1].name} years={users[1].years} />
+      <UserChildren ime={users[2].name} years={users[2].years}>
+        A hobi mi je skijanje.
+      </UserChildren>
+    </div>
+  );
 }
 
 export default App;
