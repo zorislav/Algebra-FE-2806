@@ -1,6 +1,9 @@
-function UserFunction({name, years}) {
-
-  return <p>Pozdrav, moje ime je {name} i imam {years} godina.</p>;
+function UserFunction({ props }) {
+  return (
+    <p>
+      Pozdrav, moje ime je {props.name} i imam {props.years} godina.
+    </p>
+  );
 }
 
 export default UserFunction;
