@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars</title>
+</head>
+<body>
+    <!-- ovdje dolje  definiramo template, i jako je bitno staviti u script tag
+    ovaj type="text/x-handlebars-template" tako ga prepozna html, onda u njemu
+    zapravo pišemo standardni html kod!!! -->
+    <script id="hb-template" type="text/x-handlebars-template">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Ime</th>
+            </tr>
+            {{#each pokemon}} <!-- ovo je neka petlja u handlebars, a pokemon je neko polje di ćemo imati sve ove elemente -->
+                <tr>
+                    <td>{{@index}}</td>
+                    <!-- @index u handlebars znači redni broj -->
+                    <td><a href="{{this.url}}">{{this.name}}</a></td>
+                    <!--interpolacija za uključivanje ovih dinamičkih kodova ide unutar
+                    dvostrukih vitičastih zagrada!!! -->
+                </tr>
+            {{/each}} <!-- ovo je kraj petlje u handlebars -->
+        </table>
+    </script>
+
+    <!-- ovaj gore template sa popunjenim podacima će se prikazati unutar ovog diva -->
+    <div id="hb-result"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ovo smo kopirali sa cdn.js (HANDLEBARS) i zaljepili ovdje! -->
+    <script src="script.js"></script>
+</body>
+</html>

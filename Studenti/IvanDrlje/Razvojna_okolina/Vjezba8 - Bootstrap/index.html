@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">	
+    <!-- uključili smo Bootstrap za CSS priko ovog link taga -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.2.0/handlebars.min.js"></script>
+    <!-- ovo smo kopirali sa cdn.js (HANDLEBARS) i zaljepili ovdje! -->
+</head>
+<body>
+    <!-- ovdje dolje  definiramo template, i jako je bitno staviti u script tag
+    ovaj type="text/x-handlebars-template" tako ga prepozna html, onda u njemu
+    zapravo pišemo standardni html kod!!! -->
+    <script id="hb-template" type="text/x-handlebars-template">
+        <table class="{{tableClass}}">
+            <tr>
+                <th class="col-sm-1 hidden-xs">#</th>
+                <th class="col-xs-12 col-sm-11">Ime</th>
+                <!-- ovi col su iz Bootstrapa, naučit na stranici -->
+            </tr>
+            {{#each pokemon}} <!-- ovo je neka petlja u handlebars, a pokemon je neko polje di ćemo imati sve ove elemente -->
+                <tr>
+                    <td class="col-sm-1 hidden-xs">{{@index}}</td>
+                    <!-- @index u handlebars znači redni broj -->
+                    <td class="col-xs-12 col-sm-11"><a href="{{this.url}}" data-trigger="hover" data-toggle="popover" title="{{this.name}}" data-content="{{this.url}}">{{this.name}}</a></td>
+                    <!--interpolacija za uključivanje ovih dinamičkih kodova ide unutar
+                    dvostrukih vitičastih zagrada!!! -->
+                </tr>
+            {{/each}} <!-- ovo je kraj petlje u handlebars -->
+        </table>
+    </script>
+
+    <!-- ovaj gore template sa popunjenim podacima će se prikazati unutar ovog diva -->
+    <div id="hb-result"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ovo smo kopirali sa cdn.js JQUERY i zaljepili ovdje! Sada ga imamo uključenog! -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     <!-- ovo smo kopirali sa cdn.js Bootstrap i zaljepili ovdje! Sada ga imamo uključenog! -->
+ 
+    <script src="script.js"></script>
+</body>
+</html>
