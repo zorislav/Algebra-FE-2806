@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ZADACI
+    1. Napraviti novu mapu i unutar mape napraviti datoteku index.html s nekim html kodom
+    2. Otvoriti Command Prompt, pozicionirati se u upravo napravljenu mapu
+    3. Inicijalizirati mapu kao git repozitorij (git init)
+    # git init 
+    4. Provjeriti da li se repozitorij zbilja inicijalizirao (je li nastala .git mapa)
+    5. Provjeriti trenutno stanje repozitorija (git status)
+    # git status
+    6. Dodati datoteku index.html u repozitorij (git add .)
+    # git add .
+    7. Potrebno je napraviti commit trenutnog stanja repozitorija (git commit)
+    # git commit -m "prvi"
+    8. Provjeriti trenutno stanje repozitorija (git status)
+    # git status
+    9. Provjeriti log repozitorija (git log)
+    # git log
+    10. Napraviti promjene u index.html datoteci
+    11. Napraviti novu mapu unutar našeg projekat i unutar nje napraviti test.html datoteku
+    12. Provjeriti trenutno stanje repozitorija
+    # git status
+    13. Dodati novu mapu i datoteku u repozitorij (git add .)
+    # git add .
+    14. Provjeriti trenutno stanje repozitorija
+    # git status
+    15. Potrebno je napraviti commit trenutnog stanja repozitorija (git commit)
+    # git commit -m "drugi"
+    16. Provjeriti log repozitorija (git log)
+    # git log
+    17. Dodati još jedan paragraf u index.html
+    18. Commitati novonastale promjene
+    # git add .
+    # git commit -m "treci" -->
+
+    <!-- RJEŠENJE
+    - OTVARAMO INTEGRIRANI TERMINAL NA OVOM FOLDERU, UPIŠEMO GIT I AKO JE 
+    INSTALIRAN DAJE NAM POKAZATELJ NAREDBI!!!
+    - POKREĆEMO INICIJALIZACIJU REPOZIRORIJA U OVOM FOLDERU SA : GIT init
+    - PIŠE DA SMO INICIJALIZIRALI PRAZNI GIT REPOZITORIJ !!!
+    - SA NAREDBOM: GIT STATUS PROVJERAVAMO STANJE, DA LI JE UOPĆE TAJ FOLDER IMA
+    GIT REPOZITORIJ, AKO NEMA JAVLJA NAM !!! AKO I IMA JAVLJA NAM STATUS, 
+    TE KOJE DATOTEKE SU PRAĆENE ITD, BITNO!!!
+    - NAŠA GLAVNA GRANA SE ZOVE MASTER, A NA GITHUBU SE ZOVE MAIN, DA NE BISMO 
+    IMALI I MASTER I MAIN MORAMO PROMINIT U TERMINALU IME GLAVNE GRANE U 
+    MAIN - TO RADIMO NAREDBOM: GIT BRANCH -M MASTER MAIN
+    ZNAČI NAREDBOM BRANCH -M(JE PORUKA) MIJENJAMO MASTER U MAIN!!!!
+    -SAD U STATUSU VIDIMO DA SE PROMIJENILO IME BRANCHA U MAIN!!!
+    OVO TRIBA NAPRAVIT SVAKI PUT KAD INICIJALIZIRAMO NOVI PROJEKT!!!
+    - SLJEDEĆI KORAK JE DA NAŠE DATOTEKE POČNEMO PRATITI  SA NAREDBOM: 
+    GIT ADD . - TAKO SVE DATOTEKE IZ FOLDERA PRATIMO. DA SMO TI LI JEDNU DATOTEKU
+    ONDA BI IŠLI SA: GIT ADD (IME DATOTEKE).
+    VIDIT ĆEMO DA SE GORE UZ IME DATOTEKE POJAVILO A - ADDED
+    - AKO BI TI LI MAKNIT TU DATOTEKU IZ STAGING AREA GIT NAM PORUČUJE DA
+    ZA TO MOŽEMO KORISTITI NAREDBU GIT RM --CACHED (IME FILEA)
+    - MI SADA TU VERZIJU NAŠEG DOKUMENTA KOJI JE U STAGING AREA ŽELIMO ZAPISATI
+    U NAŠU PAZU ODATAKA I TO RADIMO DA GIT COMMIT - M "PORUKA NEKA"
+    - SA GIT LOG NAREDBOM PROVJERAVAMO SVE COMMITOVE KOJE SMO NAPRAVILI NA 
+    OVOM REPOZITORIJU, AUTOR, KAD SU BILE ITD
+    - KADA IDEMO RADITI PROMJENE U NAŠEM FILEAU KOJ SMO COMMITALI POJAVI NAM
+    SE SLOVO M KOD NASLOVA, ŠTO ZNAČI MODIFIED. AKO UPIŠEMO GIT STATUS TERMINAL 
+    NAM JAVLJA DA IMAMO NAŠU DATOTEKU MODIFICIRANU.
+    -GIT NAM ONDA DAJE DVIJE OPCIJE. ILI ĆEMO TU PROMJENU OPET ZABILJEŽITI SA 
+    ADD PA OPET COMMMIT, ILI MOŽEMO VRATITI POSTAVKE NA STARU VERZIJU SA GIT RESTORE
+    TO RADIMO NA NAČIN GIT RESTORE --SOURCE 66C62 INDEX.HTML  - ZAPRAVO
+    U SOURCE MORAMO UPISATI PRVIH 5 ZNAMENKI ONOG COMMITA KOJEG ŽELIMO VRATITI
+    (SA GIT LOG GLEDAMO COMMITOVE), I ONDA SAMO IME DATOTEKE KOJE ŽELIMO VRATITI 
+    NA PROŠLU VERZIJU. KADA TO IZVRŠIMO SVE PROMJENE SE BRIŠU I DOKUMENT SE VRAĆA NA 
+    STARU VERZIJU!!! -->
+
+
+
+</body>
+</html>
