@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 Primjeri</title>
+  </head>
+  <body>
+    <script>
+      const x = ["Ivan", "Marija", "David"];
+
+      console.log(x);
+
+      console.log(...x); //spred raspakirava niz, a rest obrnuto radi
+
+      function ispisiImena(prvi, drugi, treci) {
+        console.log(prvi);
+      }
+
+      ispisiImena(...x);
+
+      function ispisiImena2(...imena) {
+        //rest operator, koristi se args notacija
+
+        console.log(imena);
+        console.log(imena[2]);
+      }
+
+      ispisiImena2("Ivan", "Marija", "David");
+    </script>
+  </body>
+</html>

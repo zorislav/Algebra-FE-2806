@@ -1,0 +1,5 @@
+Omogućiti instalaciju dokumenta index.html unutra browsera
+
+- Kreirati mainfest datoteku
+- Kreirati service worker skriptu
+- Kreirati skriptu za registraciju service workera

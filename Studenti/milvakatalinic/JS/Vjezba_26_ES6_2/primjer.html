@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6_2</title>
+  </head>
+  <body>
+    <script>
+      const bark = () => "Woof woof"; //ovdije ne trebamo return jer imamo
+      //samo jedan izraz/liniju
+      //inace bi izgledalo ovako:
+      //funcrion bark(){
+      //return "Woof woof";
+      //}
+
+      console.log(bark());
+
+      const ispisiIme = (ime) => ime; //kada imamo samo jedan parametar ne trebamo zagradu;
+
+      // function ispisiIme(ime){
+      //  return ime;
+      //}
+
+      console.log(ispisiIme("Perica"));
+
+      const imePrezime = (ime, prezime) => {
+        console.log(`Osoba se zove ${ime} ${prezime}`);
+        return `${ime} - ${prezime}`;
+      };
+
+      console.log(imePrezime("Ivan", "Horvat"));
+    </script>
+  </body>
+</html>

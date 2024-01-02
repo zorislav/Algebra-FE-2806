@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES62 Primjer 3</title>
+  </head>
+  <body>
+    <script>
+      const prom = new Promise((resolve, reject) => {
+        if (semafor === 1) {
+          return resolve("Da!");
+        } else if (semafor === 0) {
+          return reject("No!");
+        } else {
+          throw new Error("Greška!");
+        }
+      });
+
+      prom
+        .then(
+          (res) => {
+            console.log(res);
+          },
+          (rej) => {
+            console.log(rej);
+          }
+        )
+
+        .catch((error) => console.log(error.message));
+    </script>
+  </body>
+</html>
