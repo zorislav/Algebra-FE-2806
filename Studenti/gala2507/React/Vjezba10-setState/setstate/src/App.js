@@ -15,6 +15,14 @@ class App extends React.Component {
       childrenText: "A hobi mi je skijanje",
     };
   }
+
+  btnClickHandler = (event) => {
+    console.log(event);
+    const newUsers = this.state.users.map((user) => {
+      return { ...user, years: user.years + 1 };
+    });
+    this.setState({ users: newUsers });
+  };
   // state = {
   //   users: [
   //     { name: "Ivan", years: 30 },
@@ -39,7 +47,7 @@ class App extends React.Component {
         <UserChildren name={users[2].name} years={users[2].years}>
           {childrenText}
         </UserChildren>
-        <button>Promjena godina</button>
+        <button onClick={this.btnClickHandler}>Promjena godina</button>
       </div>
     );
   }
