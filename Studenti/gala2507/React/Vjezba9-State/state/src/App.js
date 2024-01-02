@@ -3,14 +3,26 @@ import React from "react";
 import { UserFunction, UserChildren, UserClass } from "./user";
 
 class App extends React.Component {
-  state = {
-    users: [
-      { name: "Ivan", years: 30 },
-      { name: "Marko", years: 35 },
-      { name: "Ana", years: 25 },
-    ],
-    childrenText: "A hobi mi je skijanje",
-  };
+  constructor() {
+    super();
+
+    this.state = {
+      users: [
+        { name: "Ivan", years: 30 },
+        { name: "Marko", years: 35 },
+        { name: "Ana", years: 25 },
+      ],
+      childrenText: "A hobi mi je skijanje",
+    };
+  }
+  // state = {
+  //   users: [
+  //     { name: "Ivan", years: 30 },
+  //     { name: "Marko", years: 35 },
+  //     { name: "Ana", years: 25 },
+  //   ],
+  //   childrenText: "A hobi mi je skijanje",
+  // };
 
   render() {
     const { users, childrenText } = this.state;
