@@ -8,11 +8,14 @@ import React from 'react';
 //importiramo React iz reacta!
 import './App.css';
 import UserFunction from './user/UserFunction.js';
-//importirali smo našu komponentu izrađenu funkcijom
+//importirali smo našu komponentu izrađenu funkcijom,
+//iz user foldera
 import UserClass from './user/UserClass.js';
-//importirali smo našu komponentu izrađenu klasom
+//importirali smo našu komponentu izrađenu klasom,
+//iz user foldera
 import UserChildren from './user/UserChildren.js';
-//importirali smo našu 2 komponentu izrađenu funkcijom
+//importirali smo našu 2 komponentu izrađenu funkcijom,
+//iz user foldera
 
 // import {UserFunction, UserClass, UserChildren} from './user';
 //OPCIJA KADA BI SVE OVE GORE IMPORTE KOMPONENTI ZAMINILI SA JEDNIM UVOZOM IZ
