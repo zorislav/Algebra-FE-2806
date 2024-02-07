@@ -64,6 +64,11 @@ h1 {
 #input-text {
   width: 70%;
   text-align: center;
+  border: 1px solid rgb(68, 69, 68);
+}
+
+#input-text:focus {
+  outline: none;
 }
 
 #input-add:hover {
@@ -86,4 +91,14 @@ h1 {
 #section-clear-completed {
   width: 60%;
   margin: auto;
+}
+
+.ul-todo li {
+  list-style-type: none;
+  font-weight: bold;
+  color: rgb(68, 69, 68);
+}
+
+#section-todo ul {
+  padding-left: 0;
 }
